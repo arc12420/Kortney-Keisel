@@ -22,28 +22,28 @@ class Nav extends Component {
       <nav className="navigationComponent">
         <div
           className="navHome"
-          onClick={() => this.props.history.push("/Home")}>
+          onClick={() => this.props.history.push("/")}>
           Home
         </div>
         <div
           className="navBooks"
-          onClick={() => this.props.history.push("/Add_Post")}>
+          onClick={() => this.props.history.push("/Books")}>
           BOOKS
         </div>
         <div className="navAboutTheAuthor"
-          onClick={() => this.props.history.push("/Add_Post")}>
+          onClick={() => this.props.history.push("/Newsletter")}>
           Newsletter
         </div>
         <div className="navAboutTheAuthor"
-          onClick={() => this.props.history.push("/Add_Post")}>
+          onClick={() => this.props.history.push("/About")}>
           About
         </div>
         <div className="navAboutTheAuthor"
-          onClick={() => this.props.history.push("/Add_Post")}>
+          onClick={() => this.props.history.push("/Contact")}>
           Contact
         </div>
         <div className="navAboutTheAuthor"
-          onClick={() => this.props.history.push("/Add_Post")}>
+          onClick={() => this.props.history.push("/Blog")}>
           Blog
         </div>
       </nav>
