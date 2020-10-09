@@ -24,6 +24,11 @@
   justify-content: center;
 }
 
+.footerLeader{
+  display: flex;
+  justify-content: center;
+}
+
 body{
   display: flex;
   flex-direction: column;

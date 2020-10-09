@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Home.css";
-import KLogo from "../../Kortney-Logo-Clear.png";
+import KLogo from "../../Kortney-Logo-Clear-2.png";
 import booksPicOne from "./booksPicOne.jpg";
 import loveSavageDance from "./loveSavageDance.jpg";
 
@@ -59,7 +59,7 @@ function Home(props) {
               <span className="freeBookButton">Get yours here!</span></a></li>      
             </div>
           </div>
-        </section>
+        </section>						
       </main>
       <hr />
     </body>
