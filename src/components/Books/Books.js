@@ -4,9 +4,9 @@ import "./Books.css";
 
 function Books() {
   return (
-    <div>
-      BOOKS
-    </div>
+    <body className="pageBody">
+        BOOKS
+    </body>
   );
 }
 

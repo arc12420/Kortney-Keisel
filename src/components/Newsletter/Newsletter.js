@@ -4,9 +4,9 @@ import "./Newsletter.css";
 
 function Newsletter() {
   return (
-    <div>
+    <body>
       NEWSLETTER
-    </div>
+    </body>
   );
 }
 

@@ -30,7 +30,7 @@ function Authentication(props) {
       });
   };
   return (
-    <div className="AuthenticationComponent">
+    <body className="AuthenticationComponent">
       <main className="authenticationLoginBox">
         <h6 className="welcome">Welcome!</h6>
         <div className="authenticationInputsAndButtons">
@@ -62,7 +62,7 @@ function Authentication(props) {
           </div>
         </div>
       </main>
-    </div>
+    </body>
   );
 }
 

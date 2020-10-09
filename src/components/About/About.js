@@ -3,9 +3,9 @@ import "./About.css";
 
 function About() {
   return (
-    <div>
+    <body>
       ABOUT      
-    </div>
+    </body>
   );
 }
 export default About;

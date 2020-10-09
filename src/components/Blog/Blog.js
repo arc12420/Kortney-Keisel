@@ -4,9 +4,9 @@ import "./Blog.css";
 
 function Blog() {
   return (
-    <div>
+    <body>
       BLOG
-    </div>
+    </body>
   );
 }
 

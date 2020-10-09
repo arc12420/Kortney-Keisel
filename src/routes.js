@@ -4,7 +4,7 @@ import Newsletter from "./components/Newsletter/Newsletter";
 import About from "./components/About/About";
 import Authentication from "./components/Authentication/Authentication";
 import Home from "./components/Home/Home";
-import Photos from "./components/Photos/Photos";
+// import Photos from "./components/Photos/Photos";
 import Books from "./components/Books/Books";
 import Contact from "./components/Contact/Contact";
 import Blog from "./components/Blog/Blog";
@@ -18,6 +18,6 @@ export default (
     <Route path="/Contact" component={Contact} />
     <Route path="/Blog" component={Blog} />
     <Route path="/Authentication" component={Authentication} />
-    <Route path="/photos/:albumid" component={Photos} />
+    {/* <Route path="/photos/:albumid" component={Photos} /> */}
   </Switch>
 );

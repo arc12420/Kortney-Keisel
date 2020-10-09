@@ -1,18 +1,47 @@
+
+
+/* ------------General Set-up--------------- */
+
+
 .app {
   /* background-image: url(white-destressed-board-bg.jpg); */
   width: 100vw;
   min-height: 100vh;
+  height: auto;
   color: #4d4d4d;
   display: flex;
   flex-direction: column;
-  font-size: 20px;
   background-attachment: fixed;
   background-size: cover;
   overflow-y: hidden;
   overflow-x: hidden;
+  font-size: 20px;
+  font-family: "kemuri-regular.eot";
 }
 
 .navLeader{
   display: flex;
   justify-content: center;
 }
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+/* -----------Fade In---------------- */
+body ,.navigationComponent{
+  animation: fadeIn 2s;
+}
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+

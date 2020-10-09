@@ -7,6 +7,7 @@ import "./reset.css";
 import axios from "axios";
 import { loginUser } from "../src/redux/reducer";
 import { connect } from "react-redux";
+import "./Fonts/Kemuri-Regular.eot";
 
 class App extends Component {
   componentDidMount() {
@@ -18,16 +19,18 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.props.location);
+    console.log(this.props);
+    // console.log(this.props.location);
+    // console.log(this.props.location.pathname);
     return (
       <div>
         <div className="app">
-          <header className="projectHeader">
+          <div className="projectHeader">
             <div className="navLeader">
                 <Navigation />
             </div>
             {routes}
-          </header>
+          </div>
         </div>
       </div>
     );

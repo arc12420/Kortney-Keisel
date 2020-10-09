@@ -1,15 +1,159 @@
-.homePage{
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    flex-direction: column;
-    height: auto;
-    min-height: 100vh;
+.homePage {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  min-height: 100vh;
 }
 
-.KLogoBox{
-    margin-top: 100px;
-    margin-bottom: 100px;
-    height:auto;
-    width: auto;
+.KLogoBox {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: auto;
+  width: auto;
+}
+
+li{
+    list-style-type: none;
+    height: 30%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{    
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+  height: auto;
+  min-height: 1500px;
+  width: 1000px;
+  /* background-color: rgb(255, 158, 174); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.homeTitle {
+  font-size: 50px;
+  color: black;
+}
+
+.imageOneBox {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  /* background-color: purple; */
+}
+
+.imageOne {
+  margin-top: 10px;
+  width: 80%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.homeBookTitle {
+  font-size: 35px;
+}
+
+.homeBookTitle-Info {
+  font-size: 20px;
+  width: 90%;
+  height: auto;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.homeFreeBook {
+  width: 100%;
+  height: auto;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* background-color: purple; */
+}
+
+.homeFreeBookImage {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.freeBook {
+  height: auto;
+  max-height: 500px;
+  border-radius: 4px;
+}
+
+.freeBookText-Button {
+  width: auto;
+  height: 100%;
+  max-height: 500px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.freeBookText {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 60px;
+  text-transform: uppercase;
+}
+
+.freeBookButtonBox{
+    width:100%;
+    height:250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.freeBookButton {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: royalblue; */
+  border-width: 5px;
+  border-color: rgb(90, 90, 90);
+  border-style: solid;
+  text-transform: uppercase;
 }
