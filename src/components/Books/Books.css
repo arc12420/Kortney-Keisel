@@ -1,0 +1,78 @@
+.booksComponent{
+    height: auto;
+    min-height: 750px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: space-evenly;
+}
+
+.bookRow{
+    height: auto;
+    /* height: 400px; */
+    width:95%;
+    margin: 10px;
+    /* background-color: lightcoral;     */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.booksBook{
+    height:790px;
+    width: 23%;
+    /* background-color: lightskyblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bFreeBook{
+    width: 100%;
+}
+
+.title{
+    margin-top: 15px;
+    font-weight: 900;
+    text-align: center;
+    font-size: 25px;
+}
+
+.bkDiscription{
+    height: 265px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.buyButtonContainer{
+    height: 40px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.buyLinkButtonBox{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 25px;
+        /* margin-top: 20px;
+        margin-bottom: 50px;
+        margin-right: 10px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-width: 2px;
+        border-color: rgb(90, 90, 90);
+        border-style: solid;
+        text-transform: uppercase;
+}

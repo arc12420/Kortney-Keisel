@@ -2,11 +2,11 @@
 
 .navigationComponent{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    height: 8vh;
+    height: 30vh;
     width: 70vw;
     background-color: white;
     color: rgb(93, 93, 93);    
@@ -15,6 +15,56 @@
     font-size: 25px;
     text-transform: uppercase;
     font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navButtons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.KLogo{
+    height:20vh;
+    margin-right: 10vh;
+    margin-left: 10vh;
+}
+
+.KLogoNav{
+    height:100px;
+    margin-right: 10vh;
+    margin-left: 10vh;
+}
+
+.navHome{
+    margin-right: 1.3vw;
+    margin-left: 1.3vw;
+}
+
+.navBooks{
+    margin-right: 1.3vw;
+    margin-left: 1.3vw;
+}
+
+.navNewsletter{
+    margin-right: 1.3vw;
+    margin-left: 1.3vw;
+}
+
+.navAbout{
+    margin-right: 1.3vw;
+    margin-left: 1.3vw;
+}
+
+.navContact{
+    margin-right: 1.3vw;
+    margin-left: 1.3vw;
+}
+
+.navBlog{
+    margin-right: 1.3vw;
+    margin-left: 1.3vw;
 }
 
 /* ------------Nav Functionality--------------- */
@@ -26,7 +76,10 @@ nav div:hover {
 
 .selected{
     color: rgb(0, 0, 0);
+    margin-right: 1.3vw;
+    margin-left: 1.3vw;
 }
+
 
 
  

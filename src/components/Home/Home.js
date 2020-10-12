@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Home.css";
-import KLogo from "../../Kortney-Logo-Clear-2.png";
+import FreeBook from "../Free Book/FreeBook";
+// import KLogo from "../../Kortney-Logo-Clear-2.png";
 import booksPicOne from "./booksPicOne.jpg";
-import loveSavageDance from "./loveSavageDance.jpg";
 
 function Home(props) {
   const [posts, setPosts] = useState([]);
@@ -20,9 +20,9 @@ function Home(props) {
 
   return (
     <body className="homePage">
-      <div className="KLogoBox">
+      {/* <div className="KLogoBox">
         <img src={KLogo} className="KLogo" alt="Logo" />
-      </div>
+      </div> */}
       <main>
       <header className="homeTitle">Coming Soon!</header>
         <section className="imageOneBox" >
@@ -46,20 +46,7 @@ function Home(props) {
                        </p>         
           </div>
         </section>
-        <section className="homeFreeBook">
-          <div className="homeFreeBookImage">
-          <img src={loveSavageDance} className="freeBook"/>
-          </div>
-          <div className="freeBookText-Button" >
-            <div className="freeBookText" >
-              Want a copy of <br/>"love savage Dance" <br/> for free?
-            </div>
-            <div className="freeBookButtonBox">
-            <li><a href="https://www.amazon.com/Love-Time-Corona/dp/B08KFM4HJM/ref=sr_1_1?dchild=1&keywords=sappy+love+book&qid=1602196274&s=books&sr=1-1" >
-              <span className="freeBookButton">Get yours here!</span></a></li>      
-            </div>
-          </div>
-        </section>						
+        <FreeBook/>						
       </main>
       <hr />
     </body>
