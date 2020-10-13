@@ -1,0 +1,11 @@
+.blogComponent{
+    height: auto;
+    min-height: 750px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: space-evenly;
+}

@@ -2,12 +2,24 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import "./Contact.css";
 
-function Contact() {
+function contact() {
   return (
     <body>
-      CONTACT
+      <div className="contactComponent">
+        <div className="titleAndContentcontact">
+          <h6 className="contactTitle">Have a question for Kortney?</h6>
+          <p className="contactContent">Email her here!</p>
+        </div>
+        <div className="contactInputFields">
+          <input className="contactInput" placeholder="Your Email" />
+          <input className="contactInput" placeholder="First Name" />
+          <input className="contactInput" placeholder="Last Name" />
+          <textarea className="contactEmail" placeholder="Email Body" />
+        </div>
+        <button className="contactButton">Send</button>
+      </div>
     </body>
   );
 }
 
-export default withRouter(Contact);
+export default withRouter(contact);

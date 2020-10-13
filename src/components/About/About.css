@@ -1,0 +1,30 @@
+
+
+.aboutComponent{
+    height: auto;
+    min-height: 750px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: space-evenly;
+}
+
+.kortneyAboutPic{
+    width: 80%;
+
+}
+
+.aboutText{
+    width: 80%;
+
+}
+.aboutText p{
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    /* margin: unset; */
+
+}

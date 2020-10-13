@@ -1,0 +1,50 @@
+.newsletterComponent{
+    height: auto;
+    min-height: 500px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: space-evenly;
+}
+
+.titleAndContentNewsletter{
+    text-align: center;
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.newsletterTitle{
+    font-size: 50px;
+}
+
+.newsletterContent{
+    font-size: 25px;
+}
+
+/* -----------Inputs------------------ */
+
+
+.inputFields{
+    height:20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.newsletterInput{
+    font-size: 25px;
+    text-align: center;
+}
+
+/* ---------------------------Button---------------- */
+
+.newsletterButton{
+    font-size: 25px;
+}
+
+
