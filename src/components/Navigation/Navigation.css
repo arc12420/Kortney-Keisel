@@ -9,7 +9,7 @@
     height: 30vh;
     width: 70vw;
     background-color: white;
-    color: rgb(93, 93, 93);    
+    color: rgb(71, 71, 71);    
     margin-bottom: 20px;
     margin-top: 100px;
     font-size: 25px;
@@ -69,9 +69,10 @@
 
 /* ------------Nav Functionality--------------- */
 
-nav div:hover {
+nav div div:hover {
     color: rgb(148, 148, 148); 
     cursor: pointer;
+    transform: translateY(-10%) scaleY(1);
 }
 
 .selected{

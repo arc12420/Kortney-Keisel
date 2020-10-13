@@ -8,4 +8,9 @@
     flex-direction: column;
     padding: 40px;
     justify-content: space-evenly;
+    background-color: rgb(255, 142, 114);
+}
+
+.postMain{
+
 }
