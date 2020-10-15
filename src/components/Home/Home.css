@@ -94,4 +94,26 @@ main {
   flex-direction: column;
 }
 
+/* -------------------------------------------------------------------Media Queries------------------------------------------------------- */
+
+@media (max-width: 1400px){
+  .homePage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .KLogoBox {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: auto;
+    width: auto;
+  }
+
+
+}
+
+
 

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { logoutUser, getUser } from "../../redux/reducer";
+import { GiHamburgerMenu } from "react-icons/gi";
 import "./Navigation.css";
 import axios from "axios";
 import KLogo from "../../Kortney-Logo-Clear-2.png";
@@ -44,8 +45,18 @@ class Nav extends Component {
     console.log(this.props.location.pathname);
     return (
       <nav className="navigationComponent">
+        <div className="hamburger">
+        <li>
+          <a
+            href="https://www.instagram.com/authorkortneykeisel/"
+            class="iconHamburger"
+          >
+            <GiHamburgerMenu />
+          </a>
+        </li>
+        </div>
         <div className="navButtons">
-          {/* <img src={logo} className="KLogoNav" alt="Logo" /> */}
+          {/* <img src={KLogo} className="KLogoNav" alt="KLogo" /> */}
           <div
             className={
               this.props.location.pathname === "/" ? "selected" : "navHome"

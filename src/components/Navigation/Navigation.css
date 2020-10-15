@@ -22,8 +22,26 @@
 .navButtons{
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
+
+.hamburger{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.iconHamburger{
+    display: none;
+    height:auto;
+    width: auto;
+    margin-top: 150px;
+    font-size: 40px;
+    color:black;
+    margin: 70px 170px 0 0;
+}
+
+
 
 .KLogo{
     height:20vh;
@@ -81,6 +99,76 @@ nav div div:hover {
     margin-left: 1.3vw;
 }
 
+
+/* -------------------------------------------------------------------Media Queries------------------------------------------------------- */
+
+@media (max-width: 1400px){
+    .navigationComponent{
+        font-size: 30px;
+        color: black;
+    }
+    
+    .KLogo{
+        height:15vh;
+        margin-right: 10vh;
+        margin-left: 10vh;
+    }
+    
+    .selected{
+        color: rgb(97, 97, 97);
+    }
+  
+  
+  }
+
+
+@media (max-width: 400px){
+    
+    .hamburger{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 90vw;
+        height: 10vh;
+    }
+    
+    .navigationComponent{
+        margin-top: 10px;
+        height: 300px;
+        width: 90vw;
+
+    }
+
+    .hamburger li{
+        width:auto;
+        /* margin-top: 100px; */
+    }
+    
+    
+    .iconHamburger{
+        display: contents;
+    }
+
+
+    .navButtons{
+        display: none;
+    }
+    
+    .KLogoBox{
+        margin-top:unset;
+        margin-bottom:none;
+        background-color: red;
+    }
+    
+    .KLogo{
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+
+  
+  
+  }
 
 
  
