@@ -1,5 +1,10 @@
 /* ----------NAVIGATION PAGE--------------- */
 
+@font-face {
+    src: url(../../Denver-Black-Font/Denver-Black.ttf);
+    font-family: 'Denver-Black';
+  }
+
 .navigationComponent{
     display: flex;
     flex-direction: column;
@@ -22,7 +27,8 @@
 .navButtons{
     display: flex;
     flex-direction: row;
-    /* margin-top: 100px; */
+    margin-top: 100px;
+    font-family: 'Denver-Black';
 }
 
 .hamburger{
@@ -44,7 +50,7 @@
 
 
 .KLogo{
-    height:20vh;
+    height:25vh;
     margin-right: 10vh;
     margin-left: 10vh;
 }

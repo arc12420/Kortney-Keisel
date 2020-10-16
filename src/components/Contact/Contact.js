@@ -7,7 +7,8 @@ function contact() {
     <body>
       <div className="contactComponent">
         <div className="titleAndContentcontact">
-          <h6 className="contactTitle">Have a question for Kortney?</h6>
+          <h6 className="contactTitle">Have a question for Kortney? <br/> <hr className="line"/></h6>
+        
           <p className="contactContent">Email her here!</p>
         </div>
         <div className="contactInputFields">
@@ -16,7 +17,9 @@ function contact() {
           <input className="contactInput" placeholder="Last Name" />
           <textarea className="contactEmail" placeholder="Email Body" />
         </div>
-        <button className="contactButton">Send</button>
+        <div className="contactButtonBox">
+          <div className="contactButton">Send</div>
+        </div>
       </div>
     </body>
   );

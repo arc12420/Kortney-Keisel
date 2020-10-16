@@ -24,8 +24,8 @@ function Home(props) {
         <img src={KLogo} className="KLogo" alt="Logo" />
       </div> */}
       <main>
-      <header className="homeTitle">Coming Soon!</header>
         <section className="imageOneBox" >
+      <header className="homeTitle">Coming Soon!</header>
           <img src={booksPicOne} className="imageOne" />
           <div className="homeBookTitle-Info">
             <p className="homeBookTitle" >Love Savage Secret</p>

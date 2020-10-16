@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Denver-Black';
+  src: url('Denver-Black.eot?#iefix') format('embedded-opentype'),  url('Denver-Black.otf')  format('opentype'),
+	     url('Denver-Black.woff') format('woff'), url('Denver-Black.ttf')  format('truetype'), url('Denver-Black.svg#Denver-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

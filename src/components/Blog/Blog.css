@@ -1,3 +1,10 @@
+@font-face {
+    src: url(../../Denver-Black-Font/Denver-Black.ttf);
+    font-family: 'Denver-Black';
+  }
+
+
+
 .blogComponent{
     height: auto;
     min-height: 750px;

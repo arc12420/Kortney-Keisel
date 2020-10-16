@@ -6,19 +6,11 @@ import { AiFillTwitterCircle, AiFillInstagram } from "react-icons/ai";
 function Home(props) {
   return (
     <footer>
-      <ul class="iconsBox">
-        <li>
-          <a
-            href="https://twitter.com/kortney_keisel/"
-            class="iconTwitter"
-          >
-            <AiFillTwitterCircle />
-          </a>
-        </li>
+      <ul class="iconsBox">   
         <li>
           <a
             href="https://www.facebook.com/kortney.keisel"
-            class="icon brands fa-facebook-f"
+            class="iconFacebook"
           >
             <SiFacebook />
           </a>

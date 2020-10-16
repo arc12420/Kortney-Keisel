@@ -1,25 +1,48 @@
+@font-face {
+    src: url(../../Denver-Black-Font/Denver-Black.ttf);
+    font-family: 'Denver-Black';
+  }
+
+
+
+
+
+
 .newsletterComponent{
     height: auto;
-    min-height: 500px;
+    min-height: 600px;
     width: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 40px;
     justify-content: space-evenly;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #2b3452ec;
+    border-width: 3px;
+    margin-top: 100px;
+    color:#2b3452ec;
 }
 
 .titleAndContentNewsletter{
     text-align: center;
-    height: 20vh;
+    height: 17vh;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
 }
 
 .newsletterTitle{
-    font-size: 50px;
+    font-size: 35px;
+    font-family: 'Denver-Black';
+    color: #41b9bf;
+    /* text-decoration: underline; */
+}
+
+.line{
+    border-color:#41b9bf;
+
 }
 
 .newsletterContent{
@@ -43,8 +66,29 @@
 
 /* ---------------------------Button---------------- */
 
+.NewsletterButtonBox{
+    height: 50px;
+    width: 20%;
+}
 .newsletterButton{
-    font-size: 25px;
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 2px;
+    border-color: rgb(90, 90, 90);
+    border-style: solid;
+    text-transform: uppercase;
+    font-family: 'Denver-Black';
 }
 
-
+.NewsletterButtonBox :hover{
+    background-color: #2A324B;
+    color: white;
+    border-color: #2A324B;
+    cursor: pointer;
+}

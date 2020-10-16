@@ -1,3 +1,10 @@
+@font-face {
+    src: url(../../Denver-Black-Font/Denver-Black.ttf);
+    font-family: 'Denver-Black';
+  }
+
+
+
 
 
 .aboutComponent{
@@ -22,9 +29,14 @@
 
 }
 .aboutText p{
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 30px;
     text-align: center;
-    /* margin: unset; */
+    color: #2b3452ec;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #2b3452ec;
+    border-width: 3px;
 
 }

@@ -1,3 +1,8 @@
+@font-face {
+    src: url(../../Denver-Black-Font/Denver-Black.ttf);
+    font-family: 'Denver-Black';
+  }
+
 .booksComponent{
     height: auto;
     min-height: 750px;
@@ -8,14 +13,17 @@
     flex-direction: column;
     padding: 40px;
     justify-content: space-evenly;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #2b3452ec;
+    border-width: 3px;
+    margin-top: 40px;
 }
 
 .bookRow{
     height: auto;
-    /* height: 400px; */
     width:95%;
     margin: 10px;
-    /* background-color: lightcoral;     */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,10 +50,13 @@
 }
 
 .title{
+    color: #f98c88;
     margin-top: 15px;
-    font-weight: 900;
+    text-decoration: underline;
     text-align: center;
     font-size: 25px;
+    font-family: 'Denver-Black';
+    line-height: 26pt;
 }
 
 .bkDiscription{
@@ -58,16 +69,14 @@
     height: 40px;
     width: 80%;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .buyLinkButtonBox{
         height: 100%;
         width: 100%;
         border-radius: 5px;
-        font-size: 25px;
-        /* margin-top: 20px;
-        margin-bottom: 50px;
-        margin-right: 10px; */
+        font-size: 22px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -75,4 +84,11 @@
         border-color: rgb(90, 90, 90);
         border-style: solid;
         text-transform: uppercase;
+        font-family: 'Denver-Black';
+}
+
+.buyButtonContainer :hover{
+    background-color: #2A324B;
+    color: white;
+    border-color: #2A324B;
 }

@@ -9,7 +9,7 @@
   min-height: 100vh;
   height: auto;
   /* color: #4d4d4d; */
-  color: #0a071f;
+  color: black;
   display: flex;
   flex-direction: column;
   background-attachment: fixed;
@@ -17,7 +17,7 @@
   overflow-y: hidden;
   overflow-x: hidden;
   font-size: 20px;
-  font-family: "kemuri-regular.eot";
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navLeader{

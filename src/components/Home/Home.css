@@ -1,6 +1,13 @@
+@font-face {
+  src: url(../../Denver-Black-Font/Denver-Black.ttf);
+  font-family: 'Denver-Black';
+}
+
+
+
+
 .homePage {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   height: auto;
@@ -14,10 +21,6 @@
   width: auto;
 }
 
-
-.label{
-    /* display: none; */
-}
 
 li{
     list-style-type: none;
@@ -42,7 +45,6 @@ main {
   height: auto;
   min-height: 1500px;
   width: 1000px;
-  /* background-color: rgb(255, 158, 174); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +54,10 @@ main {
 
 .homeTitle {
   font-size: 50px;
-  color: black;
+  color: #f98c88d5;
+  font-family: 'Denver-Black';
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .imageOneBox {
@@ -66,9 +71,10 @@ main {
   flex-direction: column;
   padding-bottom: 40px;
   padding-top: 40px;
-  background-color: #ED6A5E;
-  border-radius: 8px;
-  box-shadow: -9px 10px 8px 0px rgba(0,0,0,0.75);
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #2b3452ec;
+  border-width: 3px;
 }
 
 .imageOne {
@@ -80,7 +86,8 @@ main {
 }
 
 .homeBookTitle {
-  font-size: 35px;
+  font-size: 50px;
+  margin-bottom: 10px;
 }
 
 .homeBookTitle-Info {
@@ -92,6 +99,10 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+p {
+  text-align: center;
 }
 
 /* -------------------------------------------------------------------Media Queries------------------------------------------------------- */
