@@ -55,8 +55,10 @@ class Nav extends Component {
           </a>
         </li>
         </div>
+        <div className="KLogoBox">
+          <img src={KLogo} className="KLogo" alt="Logo" />
+        </div>
         <div className="navButtons">
-          {/* <img src={KLogo} className="KLogoNav" alt="KLogo" /> */}
           <div
             className={
               this.props.location.pathname === "/" ? "selected" : "navHome"
@@ -114,9 +116,9 @@ class Nav extends Component {
             Blog
           </div>
         </div>
-        <div className="KLogoBox">
+        {/* <div className="KLogoBox">
           <img src={KLogo} className="KLogo" alt="Logo" />
-        </div>
+        </div> */}
       </nav>
     );
   }
