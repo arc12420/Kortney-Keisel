@@ -9,9 +9,10 @@
     width: 80vw;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     justify-content: space-evenly;
     border-style: solid;
     border-radius: 5px;
@@ -20,29 +21,35 @@
     margin-top: 40px;
 }
 
-.bookRow{
-    height: auto;
-    width:95%;
-    margin: 10px;
+.booksBook{
+    margin:40px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    justify-content: space-between;
 }
 
-.booksBook{
-    height:790px;
-    width: 23%;
-    /* background-color: lightskyblue; */
+.booksImage{
+    width: 30%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.booksTitleDiscButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    margin-right: 40px;
+}
+
+.booksTitleDisc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 85%;
 }
 
 .bFreeBook{
@@ -60,21 +67,25 @@
 }
 
 .bkDiscription{
-    height: 265px;
+    height: 100%;
     text-align: center;
     margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .buyButtonContainer{
     height: 40px;
     width: 80%;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .buyLinkButtonBox{
         height: 100%;
-        width: 100%;
+        width: 80%;
         border-radius: 5px;
         font-size: 22px;
         display: flex;
