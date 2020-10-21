@@ -30,13 +30,13 @@ function Authentication(props) {
       });
   };
   return (
-    <body className="AuthenticationComponent">
-      <main className="authenticationLoginBox">
-        <h6 className="welcome">Welcome!</h6>
-        <div className="authenticationInputsAndButtons">
+    <body>
+      <main className="authenticationComponent">
+        <h6 className="welcome">Welcome Kortney!</h6>
+        <div className="authenticationInputsAndButton">
           <div className="authenticationInputs">
             <input
-              placeholder="Email"
+              placeholder="Username"
               className="authenticationEmailInput"
               onChange={(event) => handleEmail(event.target.value)}
             />
@@ -47,19 +47,9 @@ function Authentication(props) {
               onChange={(event) => handlePassword(event.target.value)}
             />
           </div>
-          <div className="authenticationButtons">
-            <button className="authButtons" onClick={login}>
-              {" "}
-              Sign-in{" "}
-            </button>
-            <button
-              className="authButtons"
-              onClick={() => props.history.push("/Registration")}
-            >
-              {" "}
-              Register{" "}
-            </button>
-          </div>
+            <div className="authButtonBox">
+              <div className="authButton"> Sign-in </div>
+            </div>
         </div>
       </main>
     </body>

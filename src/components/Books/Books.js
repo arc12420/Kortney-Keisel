@@ -49,7 +49,7 @@ function Books() {
             <div className="buyButtonContainer">
               <li className="buyLinkButtonBox">
                 <a href={bk1.link}>
-                  <span className="buyLinkButton">Purchase</span>
+                  Purchase
                 </a>
               </li>
             </div>
@@ -69,7 +69,7 @@ function Books() {
             <div className="buyButtonContainer">
               <li className="buyLinkButtonBox">
                 <a href={bk2.link}>
-                  <span className="buyLinkButton">Purchase</span>
+                    Purchase
                 </a>
               </li>
             </div>

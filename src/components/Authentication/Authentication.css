@@ -1,0 +1,109 @@
+
+.authenticationComponent{
+    height: 50vh;
+    min-height:unset;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #2b3452ec;
+    border-width: 3px;
+    margin-top: 75px;
+    /* margin-bottom: -150px; */
+    color:#2b3452ec;
+}
+
+.welcome{
+    font-size: 35px;
+    font-family: 'Denver-Black';
+    color:#2A324B;
+    text-decoration: underline;
+}
+
+.authenticationInputsAndButton{
+    height:50%;
+    width: 75%;
+    /* background-color: coral; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.authenticationInputs{
+    height:80vh;
+    width:65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.authenticationInputs input{
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f98c8894;
+    border-color: #f98c88;
+}
+
+.authenticationInputs input:focus {
+    outline: none !important;
+    border:1px solid #f98c8894;
+    box-shadow: 0 0 10px #000105;
+}
+
+.authenticationInputs input, select, :focus{
+    color:#2A324B;
+}
+
+.authenticationInputs input :placeholder-shown{
+    color:#2A324B;
+}
+
+.authButtonBox{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.authButton{
+    width: 100%;
+    border-radius: 5px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 30px;
+    border-width: 2px;
+    border-color: rgb(90, 90, 90);
+    border-style: solid;
+    text-transform: uppercase;
+    font-family: 'Denver-Black';
+}
+
+.authButtonBox :hover{
+    background-color: #2A324B;
+    color: white;
+    border-color: #2A324B;
+    cursor: pointer;
+    box-shadow: 0 0 10px #000105;
+}
+
+
+
+
+
+
+
+
+
+
+

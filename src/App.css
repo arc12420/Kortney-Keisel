@@ -51,3 +51,18 @@ body ,.navigationComponent{
   }
 }
 
+::placeholder{
+  color:#2A324B;
+  opacity: .7;
+}
+
+:-ms-input-placeholder {
+  color:#2A324B;
+  opacity: .1;
+}
+
+::-ms-input-placeholder { 
+  color:#2A324B;
+  opacity: .1;
+}
+

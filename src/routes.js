@@ -17,7 +17,7 @@ export default (
     <Route path="/About" component={About} />
     <Route path="/Contact" component={Contact} />
     <Route path="/Blog" component={Blog} />
-    <Route path="/Authentication" component={Authentication} />
+    <Route path="/Admin" component={Authentication} />
     {/* <Route path="/photos/:albumid" component={Photos} /> */}
   </Switch>
 );

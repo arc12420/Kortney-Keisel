@@ -103,4 +103,5 @@
     color: white;
     border-color: #2A324B;
     cursor: pointer;
+    box-shadow: 0 0 10px #000105;
 }
