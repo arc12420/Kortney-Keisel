@@ -66,3 +66,27 @@ body ,.navigationComponent{
   opacity: .1;
 }
 
+
+/* --------------------------------inputs---------------------- */
+input{
+  font-size: 22px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f98c8894;
+  border-color: #f98c88;
+}
+
+input:focus {
+  outline: none !important;
+  border:1px solid #f98c8894;
+  box-shadow: 0 0 10px #000105;
+}
+
+input, select, :focus{
+  color:#2A324B;
+}
+
+input :placeholder-shown{
+  color:#2A324B;
+}
+

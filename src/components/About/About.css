@@ -1,7 +1,7 @@
 @font-face {
     src: url(../../Denver-Black-Font/Denver-Black.ttf);
     font-family: 'Denver-Black';
-  }
+}
 
 
 
@@ -15,28 +15,104 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 50px;
     padding: 40px;
     justify-content: space-evenly;
-}
-
-.kortneyAboutPic{
-    width: 80%;
-
-}
-
-.aboutText{
-    width: 80%;
-
-}
-.aboutText p{
-    margin-top: 50px;
-    font-size: 30px;
-    text-align: center;
-    color: #2b3452ec;
-    padding: 10px;
     border-style: solid;
     border-radius: 5px;
     border-color: #2b3452ec;
     border-width: 3px;
-
 }
+
+.aboutTitle{
+    color: #f98c88;
+    font-size: 60px;
+    font-family: "Denver-Black";
+    /* text-decoration: underline; */
+    margin-bottom: 50px;
+    border-bottom: #f98c88 solid 5px;
+    padding: 5px;
+}
+
+.aboutText{
+    width: 95%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    /* text-align: center; */
+    color: #2b3452ec;
+}
+
+.aboutImage1-P1 p{
+    text-align: unset;
+}
+
+.aboutImage2-P2 p{
+    text-align: unset;
+}
+
+.P3 p{
+    text-align: unset;
+}
+
+/* ----------------Paragraph1------------- */
+.aboutImage1-P1{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.kortneyChildPic{
+    width: 30%;
+    margin: 20px;
+}
+
+.aboutP1{
+    width: 50%;
+}
+
+/* ----------------Paragraph2------------- */
+.aboutImage2-P2{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.aboutP2{
+    width: 50%;
+}
+
+.kortneyAboutPic{
+    width: 35%;
+    margin: 20px;
+}
+
+
+/* ----------------Paragraph3------------- */
+.P3{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.aboutP3{
+    width: 92%;
+}
+
+
+

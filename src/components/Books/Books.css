@@ -18,11 +18,13 @@
     border-radius: 5px;
     border-color: #2b3452ec;
     border-width: 3px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .booksBook{
     margin:40px;
+    margin-left: 80px;
+    margin-right: 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -54,21 +56,27 @@
 
 .bFreeBook{
     width: 100%;
+
+    /* --------------------------------------Remove Next Two Lines When Real Covers Arrive------------------------ */
+    border: 1px solid #777777;
+    border-radius: 5px;
 }
 
 .title{
     color: #f98c88;
-    margin-top: 15px;
+    margin-top: 30px;
     text-decoration: underline;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Denver-Black';
     line-height: 26pt;
 }
 
 .bkDiscription{
-    height: 100%;
+    height: auto;
+    min-height: 140px;
     text-align: center;
+    align-items: center;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;

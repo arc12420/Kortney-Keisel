@@ -5,7 +5,7 @@ import { logoutUser, getUser } from "../../redux/reducer";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "./Navigation.css";
 import axios from "axios";
-import KLogo from "../../Logos/Kortney-Logo-Clear-3.png";
+import KLogo from "../../Logos/KKLogo-2.1-Clear.png";
 
 class Nav extends Component {
   constructor() {
