@@ -14,13 +14,6 @@
   min-height: 100vh;
 }
 
-/* .KLogoBox {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  height: auto;
-  width: auto;
-} */
-
 
 li{
     list-style-type: none;
@@ -67,19 +60,29 @@ main {
   height: auto;
   display: flex;
   justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 40px;
-  padding-top: 40px;
+  padding-bottom: 80px;
+  padding-top: 80px;
   border-style: solid;
   border-radius: 5px;
   border-color: #2b3452ec;
   border-width: 3px;
 }
 
+.imageOneBoxContent {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
 .imageOne {
   margin-top: 10px;
-  width: 80%;
+  width: 30%;
   height: auto;
   border-radius: 4px;
   object-fit: cover;
@@ -92,7 +95,7 @@ main {
 
 .homeBookTitle-Info {
   font-size: 20px;
-  width: 90%;
+  width: 45%;
   height: auto;
   margin: 20px;
   display: flex;

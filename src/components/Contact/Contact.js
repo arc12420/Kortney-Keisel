@@ -7,7 +7,7 @@ function contact() {
     <body>
       <div className="contactComponent">
         <div className="titleAndContentcontact">
-          <h6 className="contactTitle">Have a question for Kortney? <br/> <hr className="line"/></h6>
+          <h6 className="contactTitle">Have a question for Kortney?</h6>
         
           <p className="contactContent">Email her here!</p>
         </div>

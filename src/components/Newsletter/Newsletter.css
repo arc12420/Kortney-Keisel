@@ -36,14 +36,10 @@
 .newsletterTitle{
     font-size: 35px;
     font-family: 'Denver-Black';
-    color: #41b9bf;
-    /* text-decoration: underline; */
+    color: #f98c88;
+    border-bottom: 5px #f98c88 solid;
 }
 
-.line{
-    border-color:#41b9bf;
-
-}
 
 .newsletterContent{
     font-size: 25px;

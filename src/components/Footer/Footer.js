@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Footer.css";
 import { SiFacebook } from "react-icons/si";
-import { AiFillTwitterCircle, AiFillInstagram } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
+import { GrPinterest } from "react-icons/gr";
 
 function Home(props) {
   return (
@@ -9,7 +10,7 @@ function Home(props) {
       <ul class="iconsBox">   
         <li>
           <a
-            href="https://www.facebook.com/kortney.keisel"
+            href="https://www.facebook.com/groups/1095939214157711/"
             class="iconFacebook"
           >
             <SiFacebook />
@@ -21,6 +22,14 @@ function Home(props) {
             class="iconInstagram"
           >
             <AiFillInstagram />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.pinterest.com/kortneykeisel/"
+            class="iconPinterest"
+          >
+            <GrPinterest />
           </a>
         </li>
       </ul>

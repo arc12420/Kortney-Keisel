@@ -7,9 +7,11 @@ function Newsletter() {
     <body>
       <div className="newsletterComponent">
         <div className="titleAndContentNewsletter">
-          <h6 className="newsletterTitle">Want to receive my newsletter?<br/> <hr className="line"/></h6>
+          <h6 className="newsletterTitle">Want to receive my newsletter?
+          </h6>
           <p className="newsletterContent">
-            Sign-up to receive updates on upcoming books!
+          {/* Sign up for my (<u>unspammy</u>) mailing list to get fun freebies<br/> and to stay informed about my upcoming releases! */}
+          Join my mailing list to stay informed on my upcoming <br/> releases and to have the opportunity to get fun freebies!
           </p>
         </div>
         <div className="inputFields">

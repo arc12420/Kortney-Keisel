@@ -46,3 +46,9 @@ ul li a{
     font-size: 80px;  
 }
 
+.iconPinterest :hover{   
+    color: #41b9bf; 
+    cursor: pointer;
+    font-size: 80px;  
+}
+

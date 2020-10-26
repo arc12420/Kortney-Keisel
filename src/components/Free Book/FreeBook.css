@@ -2,6 +2,10 @@
   src: url(../../Fonts/Denver-Black-Font/Denver-Black.ttf);
   font-family: 'Denver-Black';
 }
+@font-face {
+  src: url(../../Fonts/Kemuri-Regular.ttf);
+  font-family: 'Kemuri';
+}
 
 
 
@@ -58,9 +62,18 @@
     align-items: center;
     flex-direction: column;
   }
+
+  .freeBookTitle{
+    font-family: Denver-Black;
+    text-decoration: underline;
+    text-underline-position: under;
+    font-size: 35px;
+    margin: 10px;
+
+  }
   
   .freeBookText {
-    font-size: 38px;
+    font-size: 28px;
     color: white;
     text-align: center;
     text-transform: uppercase;
@@ -69,6 +82,13 @@
     background-color: #f98c88c0;
     border-radius: 8px;
     box-shadow: -9px 10px 8px 0px rgba(189, 186, 186, 0.75);
+  }
+
+  .freeBookText p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* font-family:Kemuri ; */
+    text-transform: none;
   }
   
   .freeBookButtonBox{
