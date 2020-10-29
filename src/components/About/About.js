@@ -25,7 +25,7 @@ const kortneyAbout = {
   talking about the perfect romance movie, playing card games, traveling with her family, and laughing with 
   her husband. 
   `,
-};
+}; 
 
 // ------------------------Structure--------------------------
 function About() {
