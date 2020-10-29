@@ -6,15 +6,6 @@ const controller = require("./controller");
 const app = express();
 const nodemailer = require("nodemailer");
 
-//index.js
-
-const path = require('path')
-
-//middleware, endpoints, massive, etc...
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../build/index.html'))
-})
 
 const {
   CONNECTION_STRING,
