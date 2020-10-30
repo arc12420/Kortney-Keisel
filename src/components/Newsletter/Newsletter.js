@@ -20,7 +20,7 @@ function Newsletter() {
           <input className="newsletterInput" placeholder="Last Name" />
         </div>
         <div className= "NewsletterButtonBox">
-          <div className="newsletterButton">Sign-up!</div>
+          <div className="newsletterButton">Sign up!</div>
         </div>
       </div>
     </body>
