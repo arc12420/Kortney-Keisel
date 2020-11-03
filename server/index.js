@@ -44,25 +44,15 @@ massive({
   console.log(`Database is connected.`);
 });
 
-app.get("/api/users", controller.getAllUsers);
+// app.get("/api/users", controller.getAllUsers);
 app.get("/api/posts", controller.getAllPosts);
-app.get("/api/getPost/:id", controller.getPost);
-app.get("/api/photos/:id", controller.getAllPhotosFromAlbum);
-app.get("/api/albums", controller.getAllAlbums);
-app.get("/api/album/:id", controller.getAlbum);
-// app.get("/api/postAuthor/:id", controller.getPostAuthor);
 app.post("/api/user", controller.login);
 app.get("/api/logout", controller.logout);
 app.get("/api/verify", controller.user);
-app.post("/api/addUser", controller.register);
+app.post("/api/contact", controller.contact);
 app.post("/api/addPost", controller.addPost);
-app.post("/api/addPhoto/:album", controller.addPhoto);
-app.post("/api/addAlbum", controller.addAlbum);
-// app.put("/api/updateUser/:id", controller.updateUser);
 app.put("/api/updatePost/:id", controller.updatePost);
 app.delete("/api/deletePost/:id", controller.deletePost);
-app.delete("/api/deletePhoto/:id", controller.deletePhoto);
-app.delete("/api/deleteAlbum/:id", controller.deleteAlbum);
 
 app.listen(SERVER_PORT, () =>
   console.log(`You are connected to port ${SERVER_PORT}.`)
