@@ -40,6 +40,7 @@
 
 .contactContent{
     font-size: 25px;
+    margin-top: 20px;
 }
 
 /* -----------Inputs------------------ */
@@ -69,6 +70,11 @@
     min-height: 200px;
     font-size: 25px;    
     padding: 10px;
+    border-radius: 5px;
+    background-color: #f98c8894;
+    border-color: #f98c88;    
+    border-width: 2px;
+    border-style: inset;
 }
 
 /* ---------------------------Button---------------- */
