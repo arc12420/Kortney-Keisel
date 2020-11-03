@@ -28,13 +28,26 @@ class Contact extends Component {
     console.log(this.state);
   };
 
-  // --------------------------------------------------------Function--------------------------------------
+  // --------------------------------------------------------Functions--------------------------------------
 
-  resetFields = () => {
-    this.setState({ 
-      email: '' ,
-    name: '' ,
-  emailBody: '' })
+  requiredEmail = () => {
+var rEmail = this.state.email.value;
+if (rEmail !== "@")
+{
+alert("Please enter a valid email");
+return false;
+}
+else 
+{
+alert('Code has accepted : you can try another');
+return true; 
+}
+}
+
+resetFields = () => {
+    let inputs = document.querySelectorAll("input", "textarea");
+    inputs.forEach((input) => (input.value = ""));
+    this.setState({ email: "", name: "", emailBody: "" });
   };
 
   contact = () => {
@@ -47,12 +60,14 @@ class Contact extends Component {
       })
       .then((res) => {
         console.log(res.data);
+        this.resetFields();
         alert(`Email successfully sent! Kortney will respond soon!`);
-        this.resetFields()        
       })
       .catch((err) => {
         console.log(err);
-        alert("Email failed to send. Make sure all input fields have been filled.");
+        alert(
+          "Email failed to send. Make sure all input fields have been filled."
+        );
       });
   };
 
@@ -72,16 +87,19 @@ class Contact extends Component {
               onChange={(event) => this.handleEmail(event.target.value)}
               className="contactInput"
               placeholder="Your Email"
+              value={this.state.email}
             />
             <input
               onChange={(event) => this.handleName(event.target.value)}
               className="contactInput"
               placeholder="Name"
+              value={this.state.name}
             />
             <textarea
               onChange={(event) => this.handleEmailBody(event.target.value)}
               className="contactEmail"
               placeholder="Email Body"
+              value={this.state.emailBody}
             />
           </div>
           <div className="contactButtonBox">
