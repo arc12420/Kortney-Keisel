@@ -1,0 +1,2 @@
+SELECT *
+FROM about;

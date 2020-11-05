@@ -44,15 +44,41 @@ massive({
   console.log(`Database is connected.`);
 });
 
-// app.get("/api/users", controller.getAllUsers);
-app.get("/api/posts", controller.getAllPosts);
-app.post("/api/user", controller.login);
+
+// --------------------------------************----------------------ENDPOINTS--------------------***********-----------------------------------
+
+// ------------------------------------------------------TEMPORARY ENDPOINTS-------------------------------------------------------
+app.post("/api/addUser", controller.register);
+
+// ------------------------------------------------------USER-------------------------------------------------------
 app.get("/api/logout", controller.logout);
+app.post("/api/user", controller.login);
 app.get("/api/verify", controller.user);
+
+// ------------------------------------------------------CONTACT/NODEMAILER-------------------------------------------------------
 app.post("/api/contact", controller.contact);
+
+// ------------------------------------------------------POSTS-------------------------------------------------------
+app.get("/api/posts", controller.getAllPosts);
 app.post("/api/addPost", controller.addPost);
 app.put("/api/updatePost/:id", controller.updatePost);
 app.delete("/api/deletePost/:id", controller.deletePost);
+
+// ------------------------------------------------------BOOKS-------------------------------------------------------
+app.get("/api/books", controller.getAllBooks);
+app.post("/api/addBook", controller.addBook);
+app.put("/api/updateBook/:id", controller.updateBook);
+app.delete("/api/deleteBook/:id", controller.deleteBook);
+
+// ------------------------------------------------------FREEBOOK-------------------------------------------------------
+app.get("/api/freebook", controller.getFreeBook);
+app.put("/api/updateFreeBook/:id", controller.updateFreeBook);
+
+// ------------------------------------------------------ABOUT-------------------------------------------------------
+app.get("/api/about", controller.getAbout);
+app.put("/api/updateabout/:id", controller.updateAbout);
+
+
 
 app.listen(SERVER_PORT, () =>
   console.log(`You are connected to port ${SERVER_PORT}.`)
