@@ -41,15 +41,16 @@ class Nav extends Component {
   // navHome = document.body;
 
   // --------------------------RENDERED INFO-------------------------
-  render(props) {
-    console.log(this.props.location.pathname);
+  render(props) {  
+    console.log(this.props);
+    console.log(this.props.user);
     return (
       <nav className="navigationComponent">
         <div className="hamburger">
         <li>
           <a
             href="https://www.instagram.com/authorkortneykeisel/"
-            class="iconHamburger"
+            className="iconHamburger"
           >
             <GiHamburgerMenu />
           </a>

@@ -4,7 +4,7 @@ import "./Newsletter.css";
 
 function Newsletter() {
   return (
-    <body>
+    <div className = "body">
       <div className="newsletterComponent">
         <div className="titleAndContentNewsletter">
           <h6 className="newsletterTitle">Want to receive my newsletter?
@@ -23,7 +23,7 @@ function Newsletter() {
           <div className="newsletterButton">Sign up!</div>
         </div>
       </div>
-    </body>
+    </div>
   );
 }
 

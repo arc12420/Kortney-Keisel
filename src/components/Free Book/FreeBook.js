@@ -5,10 +5,10 @@ import loveSavageDance from "./loveSavageDance.jpg";
 
 function FreeBook() {
   return (
-    <body className="freeBookComponent">
+    <div className ="freeBookComponent">
       <section className="homeFreeBook">
         <div className="homeFreeBookImage">
-          <img src={loveSavageDance} className="freeBook" />
+          <img src={loveSavageDance} className="freeBook" alt="Free Book"/>
         </div>
         <div className="freeBookText-Button">
           <div className="freeBookText">
@@ -37,7 +37,7 @@ function FreeBook() {
           </div>
         </div>
       </section>
-    </body>
+    </div>
   );
 }
 

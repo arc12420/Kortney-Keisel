@@ -75,7 +75,7 @@ resetFields = () => {
 
   render() {
     return (
-      <body>
+      <div className = "body">
         <div className="contactComponent">
           <div className="titleAndContentContact">
             <h6 className="contactTitle">Have a question for Kortney?</h6>
@@ -108,7 +108,7 @@ resetFields = () => {
             </div>
           </div>
         </div>
-      </body>
+      </div>
     );
   }
 }

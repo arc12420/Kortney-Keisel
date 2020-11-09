@@ -30,25 +30,25 @@ const kortneyAbout = {
 // ------------------------Structure--------------------------
 function About() {
   return (
-    <body>
+    <div className = "body">
       <div className="aboutComponent">
         
         <div className="aboutText">
           <h5 className="aboutTitle" >About Kortney</h5>
           <div className="aboutImage1-P1">
-            <img src={kortneyChildPic} className="kortneyChildPic" />
+            <img src={kortneyChildPic} className="kortneyChildPic" alt="Childhood" />
             <p className="aboutP1" >{kortneyAbout.paragraph1}</p>
           </div>
           <div className="aboutImage2-P2">
             <p className="aboutP2">{kortneyAbout.paragraph2}</p>
-            <img src={kortneyAboutPic} className="kortneyAboutPic" />
+            <img src={kortneyAboutPic} className="kortneyAboutPic" alt = "Family"/>
           </div>
           <div className="P3">
             <p className="aboutP3">{kortneyAbout.paragraph3}</p>
           </div>
         </div>
       </div>
-    </body>
+    </div>
   );
 }
 export default About;

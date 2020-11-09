@@ -38,6 +38,14 @@ body{
   min-height: 100vh;
 }
 
+.body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
 /* -----------Fade In---------------- */
 body ,.navigationComponent{
   animation: fadeIn 2s;

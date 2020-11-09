@@ -47,12 +47,12 @@ const bk2 = {
 
 function Books() {
   return (
-    <body>
+    <div className = "body">
       <div className="booksComponent">
         {/* -------------------------------------Book One------------------------------- */}
         <div className="booksBook">
           <div className="booksImage">
-            <img src={bk1.coverPhoto} className="bFreeBook" />
+            <img src={bk1.coverPhoto} className="bFreeBook" alt="Book 1" />
           </div>
           <div className="booksTitleDiscButton">
             <div className="booksTitleDisc">
@@ -72,7 +72,7 @@ function Books() {
         {/* --------------------------------------------Book Two------------------------------- */}
         <div className="booksBook">
           <div className="booksImage">
-            <img src={bk2.coverPhoto} className="bFreeBook" />
+            <img src={bk2.coverPhoto} className="bFreeBook" alt="Book 2" />
           </div>
           <div className="booksTitleDiscButton">
             <div className="booksTitleDisc">
@@ -92,7 +92,7 @@ function Books() {
         
       </div>
       <FreeBook />
-    </body>
+    </div>
   );
 }
 

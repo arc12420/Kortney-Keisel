@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.props);
+    // console.log(this.props);
     // console.log(this.props.location);
     // console.log(this.props.location.pathname);
     return (

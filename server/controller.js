@@ -95,9 +95,9 @@ module.exports = {
   addPost: (req, res) => {
     const dbInstance = req.app.get("db");
     console.log("body", req.body);
-    console.log("session", req.session.user);
-    const { title, img, post } = req.body;
-    const { userId } = req.session.user;
+    // console.log("session", req.params);
+    const { title, img, post, userId } = req.body;
+    // const { userId } = req.params;
 
     dbInstance
       .Posts.addPost([title, img, post, userId])

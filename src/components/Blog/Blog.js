@@ -4,7 +4,7 @@ import "./Blog.css";
 
 function Blog() {
   return (
-    <body>
+    <div className = "body">
       <div className="blogComponent">      
         <div className="postMain">
           <div className="postContent">
@@ -13,7 +13,7 @@ function Blog() {
             </div>
         </div>
       </div>
-    </body>
+    </div>
   );
 }
 
