@@ -1,2 +1,2 @@
-DELETE FROM posts
+DELETE FROM books
 WHERE id = $1;

@@ -76,7 +76,7 @@ app.put("/api/updateFreeBook/:id", controller.updateFreeBook);
 
 // ------------------------------------------------------ABOUT-------------------------------------------------------
 app.get("/api/about", controller.getAbout);
-app.put("/api/updateabout/:id", controller.updateAbout);
+app.put("/api/updateAbout/:id", controller.updateAbout);
 
 
 

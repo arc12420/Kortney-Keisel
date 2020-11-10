@@ -114,10 +114,9 @@ module.exports = {
   updatePost: (req, res) => {
     const dbInstance = req.app.get("db");
     const { params, body } = req;
-    const { userId } = req.session.user;
 
     dbInstance
-      .Posts.updatePost([params.id, body.title, body.img, body.post, userId])
+      .Posts.updatePost([params.id, body.title, body.img, body.post])
       .then(() => res.sendStatus(200))
       .catch((err) => {
         res.status(500).send({
@@ -164,7 +163,6 @@ getAllBooks: (req, res) => {
 addBook: (req, res) => {
   const dbInstance = req.app.get("db");
   console.log("body", req.body);
-  console.log("session", req.session.user);
   const { title, img, descriptionp1, descriptionp2, urllink } = req.body;
 
   dbInstance
@@ -182,10 +180,9 @@ addBook: (req, res) => {
 updateBook: (req, res) => {
   const dbInstance = req.app.get("db");
   const { params, body } = req;
-  const { userId } = req.session.user;
 
   dbInstance
-    .Books.updateBook([params.id, body.title, body.img, body.post, userId])
+    .Books.updateBook([params.id, body.title, body.img, body.descriptionp1, body.descriptionp2, body.urllink ])
     .then(() => res.sendStatus(200))
     .catch((err) => {
       res.status(500).send({
@@ -201,7 +198,7 @@ deleteBook: (req, res) => {
   const { id } = req.params;
 
   dbInstance
-    .Books.deletePost(id)
+    .Books.deleteBook(id)
     .then(() => res.sendStatus(200))
     .catch((err) => {
       res.status(500).send({
@@ -231,10 +228,9 @@ getFreeBook: (req, res) => {
 updateFreeBook: (req, res) => {
   const dbInstance = req.app.get("db");
   const { params, body } = req;
-  const { userId } = req.session.user;
 
   dbInstance
-    .FreeBook.updateBook([params.id, body.title, body.img, body.post, userId])
+    .FreeBook.updateFreeBook([params.id, body.title, body.img, body.releasedate, body.description])
     .then(() => res.sendStatus(200))
     .catch((err) => {
       res.status(500).send({
@@ -263,10 +259,9 @@ getAbout: (req, res) => {
 updateAbout: (req, res) => {
   const dbInstance = req.app.get("db");
   const { params, body } = req;
-  const { userId } = req.session.user;
 
   dbInstance
-    .About.updateAbout([params.id, body.title, body.img, body.post, userId])
+    .About.updateAbout([params.id, body.img1, body.img2, body.paragraph1, body.paragraph2, body.paragraph3  ])
     .then(() => res.sendStatus(200))
     .catch((err) => {
       res.status(500).send({

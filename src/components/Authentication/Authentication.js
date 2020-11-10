@@ -22,6 +22,7 @@ class Authentication extends Component {
   };
 
   login = () => {
+    // preventDefault();
     const { email, password } = this.state;
     axios
       .post("/api/user", { email, password })
@@ -36,6 +37,7 @@ class Authentication extends Component {
       });
   };
 
+  
   render() {
     return (
       <div className="body" >
@@ -48,12 +50,15 @@ class Authentication extends Component {
                 className="authenticationEmailInput"
                 onChange={(event) => this.handleEmail(event.target.value)}
               />
+              <form
+                onSubmit={ this.login}>
               <input
                 placeholder="Password"
                 className="authenticationPasswordInput"
                 type="password"
                 onChange={(event) => this.handlePassword(event.target.value)}
               />
+              </form>
             </div>
             <div className="authButtonBox">
               <div className="authButton" onClick={this.login}>

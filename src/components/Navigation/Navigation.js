@@ -3,6 +3,7 @@ import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { logoutUser, getUser } from "../../redux/reducer";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { RiLogoutBoxRLine } from "react-icons/ri";
 import "./Navigation.css";
 import axios from "axios";
 import KLogo from "../../Logos/KKLogo-2.1-Clear.png";
@@ -41,20 +42,33 @@ class Nav extends Component {
   // navHome = document.body;
 
   // --------------------------RENDERED INFO-------------------------
-  render(props) {  
+  render(props) {
     console.log(this.props);
     console.log(this.props.user);
     return (
       <nav className="navigationComponent">
-        <div className="hamburger">
-        <li>
-          <a
-            href="https://www.instagram.com/authorkortneykeisel/"
-            className="iconHamburger"
-          >
-            <GiHamburgerMenu />
-          </a>
-        </li>
+        <div className="hiddenButtons">
+          <div className="hamburger">
+            <li>
+              <a
+                href="https://www.instagram.com/authorkortneykeisel/"
+                className="iconHamburger"
+              >
+                <GiHamburgerMenu />
+              </a>
+            </li>
+          </div>
+
+          {this.props.isLoggedIn === true ? (
+            <div className="logoutComp">
+              <div className="logoutBox" onClick={() => this.logout()}>
+                <div className="iconLogout">
+                  <RiLogoutBoxRLine />
+                </div>
+                logout
+              </div>
+            </div>
+          ) : null}
         </div>
         <div className="KLogoBox">
           <img src={KLogo} className="KLogo" alt="Logo" />

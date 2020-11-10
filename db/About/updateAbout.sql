@@ -1,1 +1,1 @@
-UPDATE posts SET (title, img, post, author) = ($2, $3, $4, $5) WHERE id = ($1); 
+UPDATE about SET (img1, img2, paragraph1, paragraph2, paragraph3) = ($2, $3, $4, $5, $6) WHERE id = ($1); 
