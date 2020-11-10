@@ -1,6 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
+import axios from "axios";
 import { withRouter } from "react-router-dom";
 import "./Books.css";
+import BooksIndividual from "../Books Individual/Books Individual";
 import FreeBook from "../Free Book/FreeBook";
 import BK1 from "../../Photos/promised-prince.jpg";
 import BK2 from "../../Photos/rejected-king.jpg";
@@ -15,7 +17,7 @@ const bk1 = {
   must try to keep her feelings for the prince in check. But he’s not making it easy. The prince is charming and funny 
   and impossible for her to forget. Can Renna break down societal expectations and find her happily ever after?
   `,
-  descriptionP2:`
+  descriptionP2: `
   In this post-Desolation world, where the Council of Essentials controls everything and royalty is elected, not 
   appointed, Prince Ezra has no room for mistakes. He must marry the princess of New Hope, securing the marriage 
   alliance and his future as king. The safety of his kingdom depends on it. Duty and honor never bothered Prince 
@@ -33,7 +35,7 @@ const bk2 = {
     rules, and King Davin would never break those rules for a working-class girl like her. Besides, Emree has a boyfriend—at 
     least she thinks she does.
   `,
-  descriptionP2:`
+  descriptionP2: `
   When you're the most unpopular king in the history of Enderlin, you fix your reputation by getting married. Davin has sixty 
   ruling-class women to choose from. He should be able to find a suitable wife and please the newswriters. But there's a 
   problem: the one girl Davin wants is the one he can't have. Miss Dutson is his employee, from the wrong social class, and 
@@ -45,55 +47,40 @@ const bk2 = {
 
 // ---------------------------------Structure------------------
 
-function Books() {
-  return (
-    <div className = "body">
-      <div className="booksComponent">
-        {/* -------------------------------------Book One------------------------------- */}
-        <div className="booksBook">
-          <div className="booksImage">
-            <img src={bk1.coverPhoto} className="bFreeBook" alt="Book 1" />
-          </div>
-          <div className="booksTitleDiscButton">
-            <div className="booksTitleDisc">
-              <h5 className="title">{bk1.title}</h5>
-              <p className="bkDiscription">{bk1.description}</p>
-              <p className="bkDiscription">{bk1.descriptionP2}</p>
-            </div>
-            <div className="buyButtonContainer">
-              <li className="buyLinkButtonBox">
-                <a href={bk1.link}>
-                  Purchase
-                </a>
-              </li>
-            </div>
-          </div>
+class Books extends Component {
+  constructor() {
+    super();
+    this.state = {
+      books: []
+    };
+  }
+
+  componentDidMount() {
+    this.getData();
+  }
+  async getData() {
+    const book = await axios.get("/api/books");
+    this.setState({
+      books: book.data
+    });
+  }
+  render() {
+    const arr = this.state.books.map((element, index) => {
+      return (
+        <div className="pullPost">
+          <BooksIndividual className="booksIndividualTopComp" books={element}/>
         </div>
-        {/* --------------------------------------------Book Two------------------------------- */}
-        <div className="booksBook">
-          <div className="booksImage">
-            <img src={bk2.coverPhoto} className="bFreeBook" alt="Book 2" />
-          </div>
-          <div className="booksTitleDiscButton">
-            <div className="booksTitleDisc">
-              <h5 className="title">{bk2.title}</h5>
-              <p className="bkDiscription">{bk2.description}</p>
-              <p className="bkDiscription">{bk2.descriptionP2}</p>
-            </div>
-            <div className="buyButtonContainer">
-              <li className="buyLinkButtonBox">
-                <a href={bk2.link}>
-                    Purchase
-                </a>
-              </li>
-            </div>
-          </div>
+      );
+    });
+    return (
+      <div className="body">
+        <div className="booksComponent">
+          {arr}
         </div>
-        
+        <FreeBook/>
       </div>
-      <FreeBook />
-    </div>
-  );
+    );
+  }
 }
 
 export default withRouter(Books);
