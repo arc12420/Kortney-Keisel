@@ -211,11 +211,11 @@ deleteBook: (req, res) => {
 
 
 
-// ------------------------------------------------------FREEBOOK-------------------------------------------------------
-getFreeBook: (req, res) => {
+// ------------------------------------------------------NEWBOOK-------------------------------------------------------
+getNewBook: (req, res) => {
   const db = req.app.get("db");
 
-  db.FreeBook.getFreeBook()
+  db.NewBook.getNewBook()
     .then((posts) => res.status(200).send(posts))
     .catch((err) => {
       res.status(500).send({
@@ -225,12 +225,12 @@ getFreeBook: (req, res) => {
       console.log(err);
     });
 },
-updateFreeBook: (req, res) => {
+updateNewBook: (req, res) => {
   const dbInstance = req.app.get("db");
   const { params, body } = req;
 
   dbInstance
-    .FreeBook.updateFreeBook([params.id, body.title, body.img, body.releasedate, body.description])
+    .NewBook.updateNewBook([params.id, body.title, body.img, body.releasedate, body.description])
     .then(() => res.sendStatus(200))
     .catch((err) => {
       res.status(500).send({

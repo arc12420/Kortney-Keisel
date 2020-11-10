@@ -1,56 +1,53 @@
-import React from "react";
-// import axios from "axios";
+import React, { Component } from "react";
+import axios from "axios";
 import "./Home.css";
 import FreeBook from "../Free Book/FreeBook";
 import booksPicOne from "../../Photos/Blue-Book.jpg";
+import NewBook from "../NewBook/NewBook";
 
-function Home(props) {
-  // const [posts, setPosts] = useState([]);
-  // const [albums, setAlbums] = useState([]);
-  // useEffect(() => {
-  //   getData();
-  // }, []);
-  // async function getData() {
-  //   const post = await axios.get("/api/posts");
-  //   const albums = await axios.get("/api/albums");
-  //   setPosts(post.data);
-  //   setAlbums(albums.data);
-  // }
+class Home extends Component {
+  constructor() {
+    super();
+    this.state = {
+      newbook: [],
+    };
+  }
 
-  return (
-    <div className="body">
-      <div className="homePage">
-        <main>
-          <div className="imageOneBox">
-            <header className="homeTitle">Coming Soon!</header>
-            <section className="imageOneBoxContent">
-              <img src={booksPicOne} className="imageOne" alt="Book" />
-              <div className="homeBookTitle-Info">
-                <p className="homeBookTitle">Love Savage Secret</p>
-                <p>November 15th</p>
-                <hr />
-                <p>
-                  Love in the Time of Corona is an epic love story written in
-                  its entirety during the Coronavirus pandemic. Sloane Knox and
-                  Hayden Foster are trying to climb their respective ladders in
-                  life. Through pure coincidence they spend a single night
-                  together in Minneapolis, MN before their worlds get turned
-                  upside down. The stage has been set for the most incredibly
-                  timely love story ever told. Through a twist of monumental
-                  proportions, this boundary defying tale of romance is
-                  challenged at every turn. What will happen to the world? Will
-                  these star-crossed lovers survive seemingly insurmountable
-                  odds?
-                </p>
-              </div>
-            </section>
-          </div>
-          <FreeBook />
-        </main>
-        <hr />
+  componentDidMount() {
+    this.getData();
+  }
+  async getData() {
+    const newbook = await axios.get("/api/newbook");
+    this.setState({
+      newbook: newbook.data,
+    });
+  }
+
+  render() {
+    // console.log(this.state.newbook);
+    const arr = this.state.newbook.map((element, index) => {
+      // console.log(this.arr);
+      return (
+        <div className="pullNewbook">
+          <NewBook className="newBookTopComp" newbook={element} booksPicOne={booksPicOne} />
+        </div>
+      );
+    });
+    return (
+      <div className="body">
+        <div className="homePage">
+          <main>
+            <div className="imageOneBox">
+              <header className="homeTitle">Coming Soon!</header>
+              {arr}
+            </div>
+            <FreeBook />
+          </main>
+          <hr />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Home;

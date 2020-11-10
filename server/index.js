@@ -70,9 +70,9 @@ app.post("/api/addBook", controller.addBook);
 app.put("/api/updateBook/:id", controller.updateBook);
 app.delete("/api/deleteBook/:id", controller.deleteBook);
 
-// ------------------------------------------------------FREEBOOK-------------------------------------------------------
-app.get("/api/freebook", controller.getFreeBook);
-app.put("/api/updateFreeBook/:id", controller.updateFreeBook);
+// ------------------------------------------------------NEWBOOK-------------------------------------------------------
+app.get("/api/newbook", controller.getNewBook);
+app.put("/api/updateNewBook/:id", controller.updateNewBook);
 
 // ------------------------------------------------------ABOUT-------------------------------------------------------
 app.get("/api/about", controller.getAbout);
