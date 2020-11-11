@@ -9,7 +9,8 @@ function BooksIndividual(props) {
     <div className="booksIndividualComponent">
       <div className="booksBook">
         <div className="booksImage">
-          <img src={props.books.title === "The Promised Prince" ? (BK1) : props.books.title === "The Rejected King" ? (BK2): (null)} className="bookImg" alt="BookCover" />
+          <img src={props.books.title === "The Promised Prince" ? (BK1) : props.books.title === "The Rejected King" ? (BK2): (null)} 
+          className="bookImg" alt="BookCover" />
         </div>
         <div className="booksTitleDiscButton">
           <div className="booksTitleDisc">
