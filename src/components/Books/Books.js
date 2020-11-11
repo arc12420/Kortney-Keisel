@@ -27,7 +27,7 @@ class Books extends Component {
   render() {
     const arr = this.state.books.map((element, index) => {
       return (
-        <div className="pullPost">
+        <div className="pullBooks">
           <BooksIndividual className="booksIndividualTopComp" books={element}/>
         </div>
       );
