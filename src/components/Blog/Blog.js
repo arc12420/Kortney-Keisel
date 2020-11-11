@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Post from "../Post/Post";
+import { MdAdd } from "react-icons/md";
 import "./Blog.css";
 
 class Blog extends Component {
   constructor() {
     super();
     this.state = {
-      posts: []
+      posts: [],
     };
   }
 
@@ -17,11 +18,11 @@ class Blog extends Component {
   async getData() {
     const post = await axios.get("/api/posts");
     this.setState({
-      posts: post.data
+      posts: post.data,
     });
   }
-  render() {
-    console.log(this.state.posts)
+  render(props) {
+    console.log(this.state.posts);
     const arr = this.state.posts.map((element, index) => {
       return (
         <div className="pullPost">
@@ -32,11 +33,17 @@ class Blog extends Component {
     return (
       <div className="body">
         <div className="blogComponent">
-              Kortneys Blog
+          <p className="blogTitle">Kortney's Blog</p>
           <div className="postMain">
-            <div className="postContent">
-              {arr}
+            <div className="addPostButtonBox">
+            {/* {props.isLoggedIn === true ? (             */}
+              <div className="addPostButton">
+                {/* <p className="tooltipAddPost">Add Post</p> */}
+                <MdAdd />
+              </div>
+          {/* // ) : null} */}
             </div>
+            <div className="postContent">{arr}</div>
           </div>
         </div>
       </div>

@@ -20,6 +20,93 @@
     border-width: 3px;
     margin-top: 50px;
 }
+/* -----------------------------ADDBOOKBUTTON------------------------------- */
+.bookCompAddBook{
+    width:97%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.addBookButton{
+    height: 40px;
+    width: 40px;
+    font-size: 33px;
+    color: #f98c88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addBookButton :hover{
+    cursor: pointer;
+    font-size: 38px;
+    color: #fb807b;
+}
+
+/* ------------------------------------TITLE----------------------- */
+.bookPageTitleBox{
+    width:Auto;
+}
+
+.bookPageTitle{
+    color: #f98c88;
+    font-size: 35px;
+    font-family: "Denver-Black";
+    margin-bottom: 50px;
+    border-bottom: #f98c88 solid 5px;
+    padding: 5px;
+}
+/* -------------------------------------EDITBUTTON-------------------- */
+
+.bookCompEditBook{
+    width:97%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.editBookButton{
+    height: 40px;
+    width: 40px;
+    font-size: 26px;
+    color: #f98c88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editBookButton :hover{
+    cursor: pointer;
+    font-size: 30px;
+    color: #fb807b;
+}
+
+
+
+/* -------------------------------------DELETEBUTTON-------------------- */
+
+.deleteBookButton{
+    height: 40px;
+    width: 40px;
+    font-size: 28px;
+    color: #f98c88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteBookButton :hover{
+    cursor: pointer;
+    font-size: 31px;
+    color: #fb807b;
+}
+
+/* ---------------------------------------------------------------------------- */
+.boxBookPageTitleBox{
+    display: flex;
+    justify-content: center;
+    Width:80vw;
+}
 
 .booksIndividualComponent{
     height:100%;
@@ -65,7 +152,6 @@
 
 .bookImg{
     width: 100%;
-
     /* --------------------------------------Remove Next Two Lines When Real Covers Arrive------------------------ */
     border: 1px solid #777777;
     border-radius: 5px;

@@ -22,6 +22,55 @@
   color:#2b3452ec;
 }
 
+.blogTitle{  
+  font-size: 35px;
+  font-family: 'Denver-Black';
+  color: #f98c88;
+  border-bottom: 5px #f98c88 solid;
+}
+
+/* ----------------------------ADD POST BUTTON---------------- */
+.addPostButtonBox{
+  width:90%;
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-end; 
+}
+
+.addPostButton{
+  height: 40px;
+  width: 40px;
+  font-size: 33px;
+  color: #f98c88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+.tooltipAddPost{
+  font-size: 15px;
+  visibility: hidden;
+  background-color: #f68682;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  opacity: .75;
+  margin-bottom: 5px;
+}
+
+.addPostButton:hover{
+  cursor: pointer;
+  font-size: 38px;
+  color: #fb807b;
+}
+
+.addPostButton:hover .tooltipAddPost{
+  visibility: visible;
+}
+/* ------------------------------------------------------- */
+
 .pullPost{
   border-style: solid;
   border-radius: 5px;

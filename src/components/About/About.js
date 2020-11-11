@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
-import "./About.css";
 import AboutData from "../About Data/About Data";
+import "./About.css";
 
 
 class About extends Component {

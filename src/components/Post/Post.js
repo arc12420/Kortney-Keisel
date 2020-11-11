@@ -1,26 +1,33 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import "./Post.css";
+import { RiEditFill } from "react-icons/ri";
+import { MdDeleteForever } from "react-icons/md";
 
 function Post(props) {
+  console.log(props)
   return (
     <div className="postComponent">      
       <div className="updateAndPost">
         <div className="titleAndButtons">
           <div className="postTitle">{props.posts.title}</div>
-          <div className="postButtons">
+          {/* {props.isLoggedIn === true ? ( */}
+            <div className="postButtons">            
             <h5
-              className="editAndX"
+              className="editPost"
               onClick={() => props.history.push(`/Edit/${props.posts.id}`)}
             >
-              {" "}
-              EDIT{" "}
+              <RiEditFill />  
+              {/* <p className="tooltipEdit" >Edit</p>             */}
             </h5>
-            <h5 onClick={() => props.dlt(props.posts.id)} className="editAndX">
-              {" "}
-              X{" "}
+            <h5 
+            className="deletePost"
+            onClick={() => props.dlt(props.posts.id)}>
+              <MdDeleteForever/>
+              {/* <p className="tooltipDelete" >Delete</p>       */}
             </h5>
           </div>
+          {/* ) : null}           */}
         </div>
         <div className="postInfo">
           <img src={props.posts.img} className="uploadedImage" alt="Post Upload" />

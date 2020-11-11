@@ -1,52 +1,70 @@
 @font-face {
-    src: url(../../Fonts/Denver-Black-Font/Denver-Black.ttf);
-    font-family: 'Denver-Black';
-  }
-  
-  .newBookComponent{
-      height: 100%;
-      width: 100%;
-  }
-  
-  .imageOneBoxContent {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-  }
-  
-  .imageOne {
-    margin-top: 10px;
-    width: 30%;
-    height: auto;
-    border-radius: 4px;
-    object-fit: cover;
-  }
-  
-  
-  .newBookTitle-Info {
-      font-size: 20px;
-      width: 45%;
-      height: auto;
-      margin: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
-    
-    .newBookTitle {
-      font-size: 50px;
-      margin-bottom: 10px;
-    }
-    
-  p {
-    text-align: center;
-  }
-  
+  src: url(../../Fonts/Denver-Black-Font/Denver-Black.ttf);
+  font-family: "Denver-Black";
+}
 
-  
-  
-  
+.newBookComponent {
+  height: 100%;
+  width: 100%;
+}
+
+.imageOneBoxContent {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+/* --------------------------------------------------EDITBOOK------------- */
+.newBookEditBox {
+  width: 92.5%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -30px;
+  height: 40px;
+}
+
+.editNewBookButton {
+  height: 40px;
+  width: 40px;
+  font-size: 26px;
+  color: #f98c88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editNewBookButton :hover {
+  cursor: pointer;
+  font-size: 30px;
+  color: #fb807b;
+}
+/* ------------------------------------------------------------------------ */
+.imageOne {
+  margin-top: 10px;
+  width: 30%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.newBookTitle-Info {
+  font-size: 20px;
+  width: 45%;
+  height: auto;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.newBookTitle {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+}

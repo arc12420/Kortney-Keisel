@@ -23,12 +23,36 @@
     border-color: #2b3452ec;
     border-width: 3px;
 }
+/* -------------------------------------EDIT ABOUT---------------------- */
+.aboutEditBox{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -50px;
+    margin-top: -50px;
+    margin-Bottom: 50px;
+}
 
+.aboutEdit{
+    height: 40px;
+    width: 40px;
+    font-size: 33px;
+    color: #f98c88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutEdit:hover{
+    cursor: pointer;
+    font-size: 38px;
+    color: #fb807b;
+  }
+/* ------------------------------------------------------------------ */
 .aboutTitle{
     color: #f98c88;
-    font-size: 60px;
+    font-size: 35px;
     font-family: "Denver-Black";
-    /* text-decoration: underline; */
     margin-bottom: 50px;
     border-bottom: #f98c88 solid 5px;
     padding: 5px;
@@ -41,7 +65,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 27px;
     /* text-align: center; */
     color: #2b3452ec;
 }
@@ -111,7 +135,7 @@
 }
 
 .aboutP3{
-    width: 92%;
+    width: 88%;
 }
 
 

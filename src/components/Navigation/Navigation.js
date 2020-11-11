@@ -42,7 +42,6 @@ class Nav extends Component {
               </a>
             </li>
           </div>
-
           {this.props.isLoggedIn === true ? (
             <div className="logoutComp">
               <div className="logoutBox" onClick={() => this.logout()}>
