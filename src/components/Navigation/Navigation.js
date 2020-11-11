@@ -25,22 +25,6 @@ class Nav extends Component {
       })
       .catch((err) => console.log(err));
   };
-  // ------------------TEST---------------
-
-  // home = "/";
-  // books = "/Books";
-  // Newsletter = "/Newsletter";
-  // about = "/About";
-  // contact = "/Contact";
-  // blog = "/Authentication";
-
-  // this.props.location.pathname === "/" ? null : this.props.location
-  //                 .pathname === "/Registration" ? null : (
-  //               <Navigation />
-  // )
-
-  // navHome = document.body;
-
   // --------------------------RENDERED INFO-------------------------
   render(props) {
     console.log(this.props);

@@ -1,15 +1,15 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-// import BK1 from "../../Photos/promised-prince.jpg";
-// import BK2 from "../../Photos/rejected-king.jpg";
-// import "./Books Individual.css";
+import BK1 from "../../Photos/promised-prince.jpg";
+import BK2 from "../../Photos/rejected-king.jpg";
+
 
 function BooksIndividual(props) {
   return (
     <div className="booksIndividualComponent">
       <div className="booksBook">
         <div className="booksImage">
-          <img src={props.books.img} className="bookImg" alt="BookCover" />
+          <img src={props.books.title === "The Promised Prince" ? (BK1) : props.books.title === "The Rejected King" ? (BK2): (null)} className="bookImg" alt="BookCover" />
         </div>
         <div className="booksTitleDiscButton">
           <div className="booksTitleDisc">

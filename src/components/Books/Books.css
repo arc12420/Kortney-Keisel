@@ -21,6 +21,11 @@
     margin-top: 50px;
 }
 
+.booksIndividualComponent{
+    height:100%;
+    width: 100%;
+}
+
 .booksBook{
     margin:40px;
     margin-left: 80px;
@@ -36,6 +41,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.bookImg{
+    width: 100%;
 }
 
 .booksTitleDiscButton{
