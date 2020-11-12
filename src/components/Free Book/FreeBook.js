@@ -25,9 +25,8 @@ function FreeBook() {
           </div>
           <div className="freeBookButtonBox">
             <li>
-              <a href="https://www.amazon.com/Love-Time-Corona/dp/B08KFM4HJM/ref=sr_1_1?dchild=1&keywords=sappy+love+book&qid=1602196274&s=books&sr=1-1">
+              <a href="https://mailchi.mp/8344eea1dbe9/newsletter-landing">
                 <span
-                  // href="https://www.amazon.com/Love-Time-Corona/dp/B08KFM4HJM/ref=sr_1_1?dchild=1&keywords=sappy+love+book&qid=1602196274&s=books&sr=1-1"
                   className="freeBookButton"
                 >
                   Get yours here!

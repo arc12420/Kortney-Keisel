@@ -1,0 +1,70 @@
+@font-face {
+  src: url(../../Fonts/Denver-Black-Font/Denver-Black.ttf);
+  font-family: "Denver-Black";
+}
+
+.newsletterSuccessComponent {
+  height: 70vh;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 50px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #2b3452ec;
+  border-width: 3px;
+  color: #2b3452ec;
+}
+
+.successBox {
+  display: flex;
+  justify-content: center;
+  width: 18%;
+}
+
+.success {
+  font-size: 35px;
+  font-family: "Denver-Black";
+  color: #f98c88;
+  border-bottom: 5px #f98c88 solid;
+}
+
+.newsletterSuccessComponent p {
+  font-size: 25px;
+  margin-bottom: 5vh;
+}
+
+.checkOutBooks {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toBooksButton {
+  height: 90%;
+  width: 32%;
+  border-radius: 5px;
+  font-size: 23px;
+  font-family: "Denver-Black";
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 2px;
+  border-color: rgb(90, 90, 90);
+  border-style: solid;
+  text-transform: uppercase;
+}
+
+.toBooksButton:hover {
+  cursor: pointer;
+  background-color: #2a324b;
+  color: white;
+  border-color: #2a324b;
+  box-shadow: 0 0 10px #000105;
+}

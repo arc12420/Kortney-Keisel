@@ -8,6 +8,7 @@ import Home from "./components/Home/Home";
 import Books from "./components/Books/Books";
 import Contact from "./components/Contact/Contact";
 import Blog from "./components/Blog/Blog";
+import Success from "./components/Newsletter/Success";
 
 export default (
   <Switch>
@@ -18,6 +19,6 @@ export default (
     <Route path="/Contact" component={Contact} />
     <Route path="/Blog" component={Blog} />
     <Route path="/Admin" component={Authentication} />
-    {/* <Route path="/photos/:albumid" component={Photos} /> */}
+    <Route path="/NewsletterSuccess" component={Success} />
   </Switch>
 );

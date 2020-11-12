@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import Navigation from "./components/Navigation/Navigation";
 import Footer from "./components/Footer/Footer";
 import routes from "./routes";
-import { withRouter } from "react-router-dom";
-import "./App.css";
-import "./reset.css";
 import axios from "axios";
+import { withRouter } from "react-router-dom";
 import { loginUser } from "../src/redux/reducer";
 import { connect } from "react-redux";
+import "./App.css";
+import "./reset.css";
 import "./Fonts/Kemuri-Regular.eot";
 
 class App extends Component {
