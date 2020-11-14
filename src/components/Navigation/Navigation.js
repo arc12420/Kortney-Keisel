@@ -80,10 +80,17 @@ class Nav extends Component {
               this.props.location.pathname === "/Newsletter"
                 ? "selected"
                 : "navNewsletter"
-            }
-            onClick={() => this.props.history.push("/Newsletter")}
+            }            
           >
-            Newsletter
+            <li>
+              <a href="https://mailchi.mp/8344eea1dbe9/newsletter-landing">
+                <span
+                  className="newsLetterButton"
+                >
+                  Newsletter
+                </span>
+              </a>
+            </li>            
           </div>
           <div
             className={
@@ -91,7 +98,7 @@ class Nav extends Component {
                 ? "selected"
                 : "navAbout"
             }
-            onClick={() => this.props.history.push("/About")}
+            onClick={() => this.props.history.push("/About")}            
           >
             About
           </div>

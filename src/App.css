@@ -8,7 +8,6 @@
   width: 100vw;
   min-height: 100vh;
   height: auto;
-  /* color: #4d4d4d; */
   color: black;
   display: flex;
   flex-direction: column;
@@ -44,11 +43,12 @@ body{
   align-items: center;
   width: 100vw;
   min-height: 90vh;
+  animation: transitionIn 2.5s;
 }
 
 /* -----------Fade In---------------- */
 body ,.navigationComponent{
-  animation: fadeIn 2s;
+  animation: fadeIn 2.5s;
 }
 @keyframes fadeIn{
   from {

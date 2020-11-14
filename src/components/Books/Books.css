@@ -3,6 +3,10 @@
     font-family: 'Denver-Black';
   }
 
+  .pullBooks{
+    animation: transitionIn 2.5s;
+}
+
 .booksComponent{
     height: auto;
     min-height: 750px;
@@ -56,6 +60,7 @@
     margin-bottom: 50px;
     border-bottom: #f98c88 solid 5px;
     padding: 5px;
+    animation: transitionIn 2.5s;
 }
 /* -------------------------------------EDITBUTTON-------------------- */
 

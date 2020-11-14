@@ -23,6 +23,10 @@
     border-color: #2b3452ec;
     border-width: 3px;
 }
+
+.aboutComponentTop{    
+  animation: transitionIn 2.5s;
+}
 /* -------------------------------------EDIT ABOUT---------------------- */
 .aboutEditBox{
     width: 100%;
@@ -56,6 +60,7 @@
     margin-bottom: 50px;
     border-bottom: #f98c88 solid 5px;
     padding: 5px;
+    animation: transitionIn 2.5s;
 }
 
 .aboutText{

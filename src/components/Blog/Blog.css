@@ -19,6 +19,8 @@
   border-color: #2b3452ec;
   border-width: 3px;
   margin-top: 50px;
+  padding-top:50px;
+  padding-bottom:50px;
   color:#2b3452ec;
 }
 
@@ -27,6 +29,13 @@
   font-family: 'Denver-Black';
   color: #f98c88;
   border-bottom: 5px #f98c88 solid;
+  animation: transitionIn 2.5s;
+}
+
+.postMain{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* ----------------------------ADD POST BUTTON---------------- */
@@ -76,5 +85,7 @@
   border-radius: 5px;
   border-color: #2b3452ec;
   border-width: 2px;
+  margin-bottom: 75px;
+  animation: transitionIn 2.5s;
 
 }

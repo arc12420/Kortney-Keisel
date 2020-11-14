@@ -51,6 +51,7 @@ main {
   font-family: 'Denver-Black';
   margin-top: 30px;
   margin-bottom: 30px;
+  animation: transitionIn 2.5s;
 }
 
 .imageOneBox {

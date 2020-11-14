@@ -1,55 +1,53 @@
-.iconsBox{
-    color: Black;
-    height:100px;
-    width: 80vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 60px;
-    color: #41b9bfaf;
-    margin-bottom: 50px;
-    margin-top: 50px;
+.iconsBox {
+  color: Black;
+  height: 100px;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 60px;
+  color: #41b9bfaf;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
-ul li{    
-    height: 100px;  
-    width: 100px;  
+ul li {
+  height: 100px;
+  width: 100px;
 }
 
-ul li a{    
-    height: 100px;  
-    width: 100px;  
+ul li a {
+  height: 100px;
+  width: 100px;
 }
 
-.iconFacebook{    
-    height: 100px;  
-    width: 100px;  
+.iconFacebook {
+  height: 100px;
+  width: 100px;
 }
 
-.iconInstagram{
-    font-size:70px;
-    height: 100px;  
-    width: 100px;  
+.iconInstagram {
+  font-size: 70px;
+  height: 100px;
+  width: 100px;
 }
-
 
 /* --------------------------------------Effects---------------------------------- */
-.iconFacebook :hover{    
-    color: #41b9bf; 
-        cursor: pointer;
-        font-size: 70px; 
+.iconFacebook :hover {
+  color: #41b9bf;
+  cursor: pointer;
+  font-size: 70px;
 }
 
-.iconInstagram :hover{   
-    color: #41b9bf; 
-    cursor: pointer;
-    font-size: 80px;  
+.iconInstagram :hover {
+  color: #41b9bf;
+  cursor: pointer;
+  font-size: 80px;
 }
 
-.iconPinterest :hover{   
-    color: #41b9bf; 
-    cursor: pointer;
-    font-size: 80px;  
+.iconPinterest :hover {
+  color: #41b9bf;
+  cursor: pointer;
+  font-size: 80px;
 }
-

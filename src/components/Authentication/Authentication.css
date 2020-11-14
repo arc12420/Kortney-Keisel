@@ -22,6 +22,7 @@
     font-family: 'Denver-Black';
     color:#2A324B;
     text-decoration: underline;
+    animation: transitionIn 2.5s;
 }
 
 .authenticationInputsAndButton{

@@ -8,6 +8,7 @@ import { loginUser } from "../src/redux/reducer";
 import { connect } from "react-redux";
 import "./App.css";
 import "./reset.css";
+import "./index.css";
 import "./Fonts/Kemuri-Regular.eot";
 
 class App extends Component {
