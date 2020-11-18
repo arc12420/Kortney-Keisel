@@ -9,13 +9,14 @@ function Newsletter(props) {
           <div className="successBox">
             <div className="success">Success!</div>
           </div>
-          <p>You will now receive the newsletter of Author Kortney Keisel!</p>
+          <p>You have successfully subscribed to the newsletter of the Author Kortney Keisel!</p>
+          <p>Make sure to check your email for your FREE book! <br/> It may be in your spam or promotions folders. </p>
         <div className="checkOutBooks">           
                 <span                  
                   className="toBooksButton"
                   onClick={() => props.history.push("/Books")}
                 >
-                  Check out my books!
+                  Check out more of my books!
                 </span>
           </div>
         </div>

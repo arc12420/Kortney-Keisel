@@ -83,7 +83,7 @@ class Nav extends Component {
             }            
           >
             <li>
-              <a href="https://mailchi.mp/8344eea1dbe9/newsletter-landing">
+              <a href="https://www.subscribepage.com/f7q6g9">
                 <span
                   className="newsLetterButton"
                 >
