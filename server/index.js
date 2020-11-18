@@ -1,4 +1,5 @@
 require("dotenv").config();
+// const s3controller  = require("./s3controller")
 const massive = require("massive");
 const express = require("express");
 const session = require("express-session");
@@ -77,6 +78,10 @@ app.put("/api/updateNewBook/:id", controller.updateNewBook);
 // ------------------------------------------------------ABOUT-------------------------------------------------------
 app.get("/api/about", controller.getAbout);
 app.put("/api/updateAbout/:id", controller.updateAbout);
+
+// -----------------------------------------------------S3----------------------------------------------------------
+// app.get('/api/signs3', s3controller.sign_s3);
+// app.post('/api/pic',s3controller.pic );
 
 
 

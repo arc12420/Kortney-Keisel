@@ -5,12 +5,14 @@ import "./Books.css";
 import BooksIndividual from "../Books Individual/Books Individual";
 import { MdAdd } from "react-icons/md";
 import FreeBook from "../Free Book/FreeBook";
+// import AWS from "../AWS/AWS";
 
 class Books extends Component {
   constructor() {
     super();
     this.state = {
       books: [],
+      // picture: ""
     };
   }
 
@@ -36,7 +38,10 @@ class Books extends Component {
       <div className="body">
         <div className="booksComponent">
           <div className="bookCompAddBook">
-            <div className="addBookButton"><MdAdd/></div>
+            <div className="addBookButton">
+              <MdAdd />
+            </div>
+            {/* <AWS picture={this.picture}/> */}
           </div>
           <div className="boxBookPageTitleBox">
             <div className="bookPageTitleBox">

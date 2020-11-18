@@ -2,8 +2,8 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { MdDeleteForever } from "react-icons/md";
 import { RiEditFill } from "react-icons/ri";
-import BK1 from "../../Photos/promised-prince.jpg";
-import BK2 from "../../Photos/rejected-king.jpg";
+import BK1 from "../../Photos/THE PROMISED PRINCE.png";
+import BK2 from "../../Photos/THE REJECTED KING.png";
 
 function BooksIndividual(props) {
   return (
@@ -35,6 +35,8 @@ function BooksIndividual(props) {
             <h5 className="title">{props.books.title}</h5>
             <p className="bkDiscription">{props.books.descriptionp1}</p>
             <p className="bkDiscription">{props.books.descriptionp2}</p>
+            <p className="bkDiscription">{props.books.descriptionp3}</p>
+            <p className="bkDiscription">{props.books.descriptionp4}</p>
           </div>
           <div className="buyButtonContainer">
             <li className="buyLinkButtonBox">
