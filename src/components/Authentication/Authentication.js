@@ -21,8 +21,8 @@ class Authentication extends Component {
     this.setState({ password: value });
   };
 
-  login = () => {
-    // preventDefault();
+  login = (e) => {
+    e.preventDefault();
     const { email, password } = this.state;
     axios
       .post("/api/user", { email, password })

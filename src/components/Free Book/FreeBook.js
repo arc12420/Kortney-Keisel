@@ -1,14 +1,14 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import "./FreeBook.css";
-import loveSavageDance from "./loveSavageDance.jpg";
+import freeBookCover from "../../Photos/THE REJECTED KING.png";
 
 function FreeBook() {
   return (
     <div className ="freeBookComponent">
       <section className="homeFreeBook">
         <div className="homeFreeBookImage">
-          <img src={loveSavageDance} className="freeBook" alt="Free Book"/>
+          <img src={freeBookCover} className="freeBook" alt="Free Book"/>
         </div>
         <div className="freeBookText-Button">
           <div className="freeBookText">

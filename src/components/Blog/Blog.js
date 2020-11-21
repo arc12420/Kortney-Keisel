@@ -25,7 +25,7 @@ class Blog extends Component {
     console.log(this.state.posts);
     const arr = this.state.posts.map((element, index) => {
       return (
-        <div className="pullPost">
+        <div className="pullPost" key={element.id}>
           <Post className="postComp" posts={element} dlt={this.dlt} />
         </div>
       );

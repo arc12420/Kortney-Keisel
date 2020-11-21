@@ -96,8 +96,8 @@ module.exports = {
     const dbInstance = req.app.get("db");
     console.log("body", req.body);
     // console.log("session", req.params);
-    const { title, img, post, userId } = req.body;
-    // const { userId } = req.params;
+    const { title, img, post } = req.body;
+    const { userId } = req.session.user;
 
     dbInstance
       .Posts.addPost([title, img, post, userId])
@@ -117,6 +117,7 @@ module.exports = {
 
     dbInstance
       .Posts.updatePost([params.id, body.title, body.img, body.post])
+      console.log(params.id)
       .then(() => res.sendStatus(200))
       .catch((err) => {
         res.status(500).send({

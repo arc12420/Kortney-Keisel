@@ -1,12 +1,14 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import { RiEditFill } from "react-icons/ri";
+// import NewBookEdit from "./NewBookEdit/NewBookEdit";
 import "../NewBook/NewBook.css";
 
 function Newbook(props) {
   return (
     <div className="newBookComponent">
         <div className="newBookEditBox">
+          {/* <NewBookEdit/> */}
             <div className="editNewBookButton"><RiEditFill/></div>
           </div>
         <section className="imageOneBoxContent">          
