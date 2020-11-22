@@ -227,11 +227,11 @@ getNewBook: (req, res) => {
     });
 },
 updateNewBook: (req, res) => {
-  const dbInstance = req.app.get("db");
+  const db = req.app.get("db");
   const { params, body } = req;
 
   dbInstance
-    .NewBook.updateNewBook([params.id, body.title, body.img, body.releasedate, body.description])
+    db.NewBook.updateNewBook([params.id, body.title, body.img, body.releasedate, body.description])
     .then(() => res.sendStatus(200))
     .catch((err) => {
       res.status(500).send({

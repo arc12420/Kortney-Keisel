@@ -4,7 +4,7 @@ import "./Home.css";
 import FreeBook from "../Free Book/FreeBook";
 import booksPicOne from "../../Photos/Blue-Book.jpg";
 import NewBook from "../NewBook/NewBook";
-import NewBookEdit from "../NewBook/NewBookEdit/NewBookEdit";
+// import NewBookEdit from "../NewBook/NewBookEdit/NewBookEdit";
 
 class Home extends Component {
   constructor() {
@@ -46,23 +46,22 @@ class Home extends Component {
   // --------------------------------------------------------------------------------------------------
 
   render() {
-    console.log(this.state.newbook);
-    console.log(this.state);
+    // console.log(this.state.newbook);
+    // console.log(this.state);
     console.log(this.props.history)
     const arr = this.state.newbook.map((element, index) => {
       // console.log(this.state.newbook.map(element));
-      console.log(this.arr);
       return (
         <div className="pullNewbook" key={element.id}>
           <NewBook className="newBookTopComp" newbook={element} booksPicOne={booksPicOne} />
-          <NewBookEdit className="newBookTopComp" 
+          {/* <NewBookEdit className="newBookTopComp" 
           newbook={element} 
           handleTitle={this.handleTitle} 
           handleReleaseDate={this.handleReleaseDate} 
           handleDescription={this.handleDescription} 
           booksPicOne={booksPicOne}
           // historyP={this.props.history.push("/")} 
-          />
+          /> */}
         </div>
       );
     });

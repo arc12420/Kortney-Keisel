@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { logoutUser, getUser } from "../../redux/reducer";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RiLogoutBoxRLine } from "react-icons/ri";
+import NavHam from "./NavigationHamburger";
 import "./Navigation.css";
 import axios from "axios";
 import KLogo from "../../Logos/KKLogo-2.1-Clear.png";
@@ -13,6 +14,7 @@ class Nav extends Component {
     super();
     this.state = {
       textColor: "red",
+      checkedN: "true"
     };
   }
 
@@ -25,20 +27,33 @@ class Nav extends Component {
       })
       .catch((err) => console.log(err));
   };
+
+handleCheck = event => {
+  this.setState({checkedN: event.target.checked})
+}
+
   // --------------------------RENDERED INFO-------------------------
   render(props) {
     console.log(this.props);
     console.log(this.props.user);
     return (
       <nav className="navigationComponent">
+        <div className="KLogoBox">
+          <img src={KLogo} className="KLogo" alt="Logo" />
+        </div>
         <div className="hiddenButtons">
           <div className="hamburger">
+              <input type="checkbox" 
+              className="toggler"
+              checked={this.state.checkedN}
+              onChange={this.handleCheck}
+              />
             <li>
               <a
-                href="https://www.instagram.com/authorkortneykeisel/"
+                // href="https://www.instagram.com/authorkortneykeisel/"
                 className="iconHamburger"
               >
-                <GiHamburgerMenu />
+                <GiHamburgerMenu/>
               </a>
             </li>
           </div>
@@ -52,10 +67,7 @@ class Nav extends Component {
               </div>
             </div>
           ) : null}
-        </div>
-        <div className="KLogoBox">
-          <img src={KLogo} className="KLogo" alt="Logo" />
-        </div>
+        </div>        
         <div className="navButtons">
           <div
             className={

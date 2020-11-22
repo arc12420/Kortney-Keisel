@@ -51,7 +51,8 @@ class NewBookEdit extends Component {
   // --------------------------------------------------------------------------------------------------
 
   render(props) {
-    console.log(this.props.history);
+    // console.log(this.props.history);
+    console.log(this.state);
     return (
       <div className="newBookComponent">
         <div className="newBookEditBox">
