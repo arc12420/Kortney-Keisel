@@ -14,7 +14,7 @@ class Nav extends Component {
     super();
     this.state = {
       textColor: "red",
-      checkedN: "true"
+      checkedN: true
     };
   }
 
@@ -34,20 +34,25 @@ handleCheck = event => {
 
   // --------------------------RENDERED INFO-------------------------
   render(props) {
-    console.log(this.props);
-    console.log(this.props.user);
+    // console.log(this.props);
+    // console.log(this.props.user);
+    // console.log(this.props.location.pathname);
     return (
       <nav className="navigationComponent">
         <div className="KLogoBox">
           <img src={KLogo} className="KLogo" alt="Logo" />
         </div>
         <div className="hiddenButtons">
-          <div className="hamburger">
+
+          <div className="menuWrap">
               <input type="checkbox" 
               className="toggler"
-              checked={this.state.checkedN}
+              unchecked={this.state.checkedN}
               onChange={this.handleCheck}
               />
+              {this.state.checkedN === true ? null :(
+              <NavHam/>              
+              )}
             <li>
               <a
                 // href="https://www.instagram.com/authorkortneykeisel/"

@@ -15,15 +15,7 @@ class NavHam extends Component {
     };
   }
 
-  logout = () => {
-    axios
-      .get("/api/logout")
-      .then((res) => {
-        this.props.logoutUser();
-        this.props.history.push("/");
-      })
-      .catch((err) => console.log(err));
-  };
+  
   // --------------------------RENDERED INFO-------------------------
   render(props) {
     return (
