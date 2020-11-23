@@ -1,23 +1,65 @@
 @font-face {
-    src: url(../../Fonts/Denver-Black-Font/Denver-Black.ttf);
-    font-family: 'Denver-Black';
-  }
-  
-  .navigationHamComponent{
-    position: fixed;
-    right:0;
-    top:0;
-    z-index: 2;
-    background-color: white;
+  src: url(../../Fonts/Denver-Black-Font/Denver-Black.ttf);
+  font-family: "Denver-Black";
 }
 
-.navHamButtons{
-        width: auto;
-        height:100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        justify-content:space-evenly;
-        font-family: 'Denver-Black';    
+.navigationHamComponent {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  background-color: white;
+  color: rgb(71, 71, 71);
+  padding-bottom: 50px;
+  padding-top: 50px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-left: 10px;
+  padding-right: 25px;
 }
+
+.navHamButtons {
+  width: auto;
+  padding-left: 10px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Denver-Black";
+}
+/* --------------------Functionality---------- */
+nav .navHamButtons div:hover {
+    color: rgb(148, 148, 148); 
+    cursor: pointer;
+    transform: translateY(-10%) scaleY(1);
+}
+
+.navigationHamComponent{    
+        animation: fadeIn 2s;
+      }
+      @keyframes fadeIn{
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      
+      
+      
+
+
+
+
+

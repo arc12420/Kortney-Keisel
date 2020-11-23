@@ -61,7 +61,7 @@ handleCheckClick = event => {
               )}
             <li className="iconHamburgerBox" >
               <a
-                // href="https://www.instagram.com/authorkortneykeisel/"
+                href=""
                 className="iconHamburger"
               >
                 <GiHamburgerMenu/>

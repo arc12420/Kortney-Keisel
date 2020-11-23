@@ -37,3 +37,31 @@ code {
     transform: rotateX(-10deg)
     }
 }
+/* -----------------------hamburger------------
+ */
+
+ @keyframes transitionHamIn {
+  from {
+      opacity: 0;
+      /* transform: rotateX(-10deg); */
+      transform: translateY(-50px);
+  }
+
+  to{
+    opacity: 1;
+    /* transform: rotateX(0); */
+    transform: translateY(0);
+
+  }
+}
+@keyframes transitionHamOut {
+  from {
+    opacity: 1;
+    transform: rotateX(0)
+  }
+
+  to{
+    opacity: 0;
+    transform: rotateX(-10deg)
+    }
+}

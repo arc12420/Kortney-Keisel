@@ -18,9 +18,6 @@ class NavHam extends Component {
       console.log(props)
     return (
       <nav className="navigationHamComponent">
-      {/* <div className="greySpace" 
-      onClick={() => {props.handleCheck()}}
-      >test</div> */}
         <div className="navHamButtons">
           <div
             className={
