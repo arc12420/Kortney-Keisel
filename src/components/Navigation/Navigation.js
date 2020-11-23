@@ -13,7 +13,6 @@ class Nav extends Component {
   constructor() {
     super();
     this.state = {
-      textColor: "red",
       checkedN: true
     };
   }
@@ -32,6 +31,10 @@ handleCheck = event => {
   this.setState({checkedN: event.target.checked})
 }
 
+handleCheckClick = event => {
+  this.setState({checkedN: true})
+}
+
   // --------------------------RENDERED INFO-------------------------
   render(props) {
     // console.log(this.props);
@@ -43,17 +46,20 @@ handleCheck = event => {
           <img src={KLogo} className="KLogo" alt="Logo" />
         </div>
         <div className="hiddenButtons">
-
           <div className="menuWrap">
               <input type="checkbox" 
               className="toggler"
-              unchecked={this.state.checkedN}
+              checked={this.state.checkedN}
               onChange={this.handleCheck}
               />
               {this.state.checkedN === true ? null :(
-              <NavHam/>              
+                <div>
+              <NavHam/>            
+              <div className="greySpace" onClick={() => {this.handleCheckClick()}}
+              ></div>  
+              </div>          
               )}
-            <li>
+            <li className="iconHamburgerBox" >
               <a
                 // href="https://www.instagram.com/authorkortneykeisel/"
                 className="iconHamburger"
@@ -78,7 +84,10 @@ handleCheck = event => {
             className={
               this.props.location.pathname === "/" ? "selected" : "navHome"
             }
-            onClick={() => this.props.history.push("/")}
+            onClick={() => {
+              this.handleCheckClick(); 
+              this.props.history.push("/");
+            }}
           >
             Home
           </div>

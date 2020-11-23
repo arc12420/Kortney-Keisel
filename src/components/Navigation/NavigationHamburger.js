@@ -2,10 +2,7 @@ import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { logoutUser, getUser } from "../../redux/reducer";
-import { RiLogoutBoxRLine } from "react-icons/ri";
 import "./NavigationHamburger.css";
-import axios from "axios";
-import KLogo from "../../Logos/KKLogo-2.1-Clear.png";
 
 class NavHam extends Component {
   constructor() {
@@ -18,8 +15,12 @@ class NavHam extends Component {
   
   // --------------------------RENDERED INFO-------------------------
   render(props) {
+      console.log(props)
     return (
       <nav className="navigationHamComponent">
+      {/* <div className="greySpace" 
+      onClick={() => {props.handleCheck()}}
+      >test</div> */}
         <div className="navHamButtons">
           <div
             className={
@@ -32,8 +33,8 @@ class NavHam extends Component {
           <div
             className={
               this.props.location.pathname === "/Books"
-                ? "selectedHam"
-                : "navHamBooks"
+                ? "selected"
+                : "navBooks"
             }
             onClick={() => this.props.history.push("/Books")}
           >
@@ -42,21 +43,21 @@ class NavHam extends Component {
           <div
             className={
               this.props.location.pathname === "/Newsletter"
-                ? "selectedHam"
-                : "navHamNewsletter"
+                ? "selected"
+                : "navNewsletter"
             }
           >
             <li>
               <a href="https://www.subscribepage.com/f7q6g9">
-                <span className="newsLetterButtonHam">Newsletter</span>
+                <span className="newsLetterButton">Newsletter</span>
               </a>
             </li>
           </div>
           <div
             className={
               this.props.location.pathname === "/About"
-                ? "selectedHam"
-                : "navHamAbout"
+                ? "selected"
+                : "navAbout"
             }
             onClick={() => this.props.history.push("/About")}
           >
@@ -65,8 +66,8 @@ class NavHam extends Component {
           <div
             className={
               this.props.location.pathname === "/Contact"
-                ? "selectedHam"
-                : "navHamContact"
+                ? "selected"
+                : "navContact"
             }
             onClick={() => this.props.history.push("/Contact")}
           >
@@ -75,8 +76,8 @@ class NavHam extends Component {
           <div
             className={
               this.props.location.pathname === "/Blog"
-                ? "selectedHam"
-                : "navHamBlog"
+                ? "selected"
+                : "navBlog"
             }
             onClick={() => this.props.history.push("/Blog")}
           >
