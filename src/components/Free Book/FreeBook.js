@@ -24,7 +24,7 @@ function FreeBook() {
           <p>Who doesn't like falling  <br/> in love for free? </p>
           </div>
           <div className="freeBookButtonBox">
-            <li>
+            <li className="freeBookLI">
               <a href="https://www.subscribepage.com/f7q6g9">
                 <span
                   className="freeBookButton"

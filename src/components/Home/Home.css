@@ -115,12 +115,6 @@ p {
     }
   }
 
-  @media (max-width: 1500px) {
-  }
-
-  @media (max-width: 1450px) {
-  }
-
   @media (max-width: 1400px) {
     .homePage {
       display: flex;
@@ -129,9 +123,6 @@ p {
       height: auto;
       min-height: 100vh;
     }
-  }
-
-  @media (max-width: 1200px) {
   }
 
   @media (max-width: 1100px) {
@@ -146,8 +137,5 @@ p {
     .homeTitle {
       font-size: 7vw;
     }
-  }
-
-  @media (max-width: 650px) {
   }
 

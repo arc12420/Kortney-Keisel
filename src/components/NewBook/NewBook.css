@@ -43,14 +43,14 @@
 /* ------------------------------------------------------------------------ */
 .imageOne {
   margin-top: 10px;
-  width: 30%;
+  width: 20vw;
   height: auto;
   border-radius: 4px;
   object-fit: cover;
 }
 
 .newBookTitle-Info {
-  font-size: 20px;
+  font-size: 2vw;
   width: 45%;
   height: auto;
   margin: 20px;
@@ -80,13 +80,7 @@ p {
   }
 
   .imageOne {
-    width: 35%;
-  }
-}
-
-@media (max-width: 1500px) {
-  .newBookTitle-Info {
-    font-size: 23px;
+    width: 21vw;
   }
 }
 
@@ -141,6 +135,5 @@ p {
   }
 }
 
-@media (max-width: 650px) {
-}
+
 
