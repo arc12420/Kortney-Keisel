@@ -7,7 +7,7 @@
 
 .contactComponent{
     height: auto;
-    min-height: 750px;
+    /* min-height: 750px; */
     width: 80vw;
     display: flex;
     justify-content: center;
@@ -20,11 +20,13 @@
     border-width: 3px;
     margin-top: 50px;
     color:#2b3452ec;
+    padding-top: 40px;
+    padding-bottom: 50px;
 }
 
 .titleAndContentcontact{
     text-align: center;
-    height: 20vh;
+    min-height: unset;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -48,7 +50,7 @@
 
 
 .contactInputFields{
-    min-height:35vh;
+    min-height:50vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -57,7 +59,7 @@
 }
 
 .contactInput{
-    width:30%;
+    width:35%;
     font-size: 25px;
     text-align: center;
     margin-top: 10px;
@@ -76,19 +78,19 @@
     border-color: #f98c88;    
     border-width: 2px;
     border-style: inset;
+    word-wrap: break-word;
 }
 
 /* ---------------------------Button---------------- */
 
 .contactButtonBox{
-    height: 50px;
-    width: 20%;
+    height: auto;
+    width: 15vw;
+    margin-top: 15px;
 }
 
 .contactButton{
-    height: 100%;
-    width: 100%;
-    margin: 10px;
+    height: auto;
     border-radius: 5px;
     font-size: 22px;
     display: flex;
@@ -99,6 +101,10 @@
     border-style: solid;
     text-transform: uppercase;
     font-family: 'Denver-Black';
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .contactButtonBox :hover{
@@ -108,3 +114,85 @@
     cursor: pointer;
     box-shadow: 0 0 10px #000105;
 }
+
+
+/* -------------------------------------------------------------------Media Queries------------------------------------------------------- */
+
+
+  @media (max-width: 1100px) {
+      .contactInputFields{          
+    min-height:40vh;
+      }
+    .contactTitle {
+      font-size: 3vw;
+      text-align: center;
+    }
+    .contactInput{
+        font-size: 2vw;
+        height:auto;
+        min-height: unset;
+        width:56%;
+    }
+    
+    .contactEmail{
+        font-size: 2vw;
+    }
+    .contactContent{
+        font-size: 2.5vw;
+    }
+    .contactButton{
+        font-size: 2vw;
+    }
+
+  }
+
+
+
+  @media (max-width: 850px) {
+    .contactTitle {
+      font-size: 3vw;
+      text-align: center;
+    }
+    .contactInput{
+        font-size: 2.5vw;
+    }    
+    .contactEmail{
+        font-size: 2.5vw;
+    }
+    .contactContent{
+        font-size: 2.5vw;
+    }
+    .contactButton{
+        font-size: 2.5vw;
+    }
+    .contactButtonBox{
+        width: 20vw;
+    }
+  }
+  @media (max-width: 700px) {
+    .contactComponent{
+        width: 90vw;
+    }
+    .contactTitle {
+        font-size: 3.75vw;
+        text-align: center;
+      }
+      .contactInput{
+          font-size: 3.25vw;
+      }    
+      .contactEmail{
+        font-size: 3.25vw;
+        min-height: 100px;
+        width:86%
+      }
+      .contactContent{
+        font-size: 3.25vw;
+      }
+      .contactButton{
+        font-size: 3.25vw;
+      }
+      .contactButtonBox{
+          width: 30vw;
+      }
+
+  }

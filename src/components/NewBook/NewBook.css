@@ -45,8 +45,9 @@
   margin-top: 10px;
   width: 20vw;
   height: auto;
-  border-radius: 4px;
   object-fit: cover;
+  border-radius: 4px;
+  box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.472);
 }
 
 .newBookTitle-Info {

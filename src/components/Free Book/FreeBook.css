@@ -51,7 +51,7 @@
   .freeBook {
     width:20vw;
     margin-right: 95px;
-    border-radius: 7px;  
+    border-radius: 4px;  
     box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.472);
   }
   
@@ -82,7 +82,10 @@
     margin-top: 60px;
     background-color: #f98c88c0;
     border-radius: 8px;
-    box-shadow: -9px 10px 8px 0px rgba(189, 186, 186, 0.75);
+    /* -----Lighter Shadow----- */
+    /* box-shadow: -9px 10px 8px 0px rgba(189, 186, 186, 0.75); */
+    /* --------Dark Shadow--------- */
+    box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.472);
   }
 
   .freeBookText p{
@@ -117,7 +120,7 @@
     border-color: rgb(90, 90, 90);
     border-style: solid;
     text-transform: uppercase;  
-    /* padding:25px;     */
+    box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.472);
   }
   
   .freeBookLI {

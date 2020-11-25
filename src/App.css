@@ -34,7 +34,8 @@ body{
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  height: auto;
 }
 
 .body{
@@ -42,7 +43,8 @@ body{
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  min-height: 90vh;
+  /* min-height: 100vh; */
+  height: auto;
   animation: transitionIn 2.5s;
 }
 
