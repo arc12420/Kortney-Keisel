@@ -39,7 +39,7 @@ class Books extends Component {
         <div className="booksComponent">
           <div className="bookCompAddBook">
             <div className="addBookButton">
-              <MdAdd />
+              {/* <MdAdd /> */}
             </div>
             {/* <AWS picture={this.picture}/> */}
           </div>

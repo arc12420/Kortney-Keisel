@@ -8,7 +8,8 @@ import BK2 from "../../Photos/THE REJECTED KING.png";
 function BooksIndividual(props) {
   return (
     <div className="booksIndividualComponent">
-      <div className="booksBook">
+      <div className="booksBook">        
+      <h5 className="titleHid">{props.books.title}</h5>
         <div className="booksImage">
           <img
             src={
@@ -23,14 +24,14 @@ function BooksIndividual(props) {
           />
         </div>
         <div className="booksTitleDiscButton">
-          <div className="bookCompEditBook">
+          {/* <div className="bookCompEditBook">
             <div className="editBookButton">
               <RiEditFill />
             </div>
             <div className="deleteBookButton">
               <MdDeleteForever />
             </div>
-          </div>
+          </div> */}
           <div className="booksTitleDisc">
             <h5 className="title">{props.books.title}</h5>
             <p className="bkDiscription">{props.books.descriptionp1}</p>

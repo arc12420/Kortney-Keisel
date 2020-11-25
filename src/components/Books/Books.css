@@ -1,217 +1,326 @@
 @font-face {
-    src: url(../../Fonts/Denver-Black-Font/Denver-Black.ttf);
-    font-family: 'Denver-Black';
-  }
-
-  .pullBooks{
-    animation: transitionIn 2.5s;
+  src: url(../../Fonts/Denver-Black-Font/Denver-Black.ttf);
+  font-family: "Denver-Black";
 }
 
-.booksComponent{
-    height: auto;
-    min-height: 750px;
-    width: 80vw;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    justify-content: space-evenly;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: #2b3452ec;
-    border-width: 3px;
-    margin-top: 50px;
+.pullBooks {
+  animation: transitionIn 2.5s;
+}
+
+.booksComponent {
+  height: auto;
+  min-height: 750px;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  justify-content: space-evenly;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #2b3452ec;
+  border-width: 3px;
+  margin-top: 50px;
 }
 /* -----------------------------ADDBOOKBUTTON------------------------------- */
-.bookCompAddBook{
-    width:97%;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: flex-end;
+.bookCompAddBook {
+  width: 97%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.addBookButton{
-    height: 40px;
-    width: 40px;
-    font-size: 33px;
-    color: #f98c88;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.addBookButton {
+  height: 40px;
+  width: 40px;
+  font-size: 33px;
+  color: #f98c88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.addBookButton :hover{
-    cursor: pointer;
-    font-size: 38px;
-    color: #fb807b;
+.addBookButton :hover {
+  cursor: pointer;
+  font-size: 38px;
+  color: #fb807b;
 }
 
 /* ------------------------------------TITLE----------------------- */
-.bookPageTitleBox{
-    width:Auto;
+.bookPageTitleBox {
+  width: Auto;
 }
 
-.bookPageTitle{
-    color: #f98c88;
-    font-size: 35px;
-    font-family: "Denver-Black";
-    margin-bottom: 50px;
-    border-bottom: #f98c88 solid 5px;
-    padding: 5px;
-    animation: transitionIn 2.5s;
+.bookPageTitle {
+  color: #f98c88;
+  font-size: 3vw;
+  font-family: "Denver-Black";
+  margin-bottom: 50px;
+  border-bottom: #f98c88 solid 5px;
+  padding: 5px;
+  animation: transitionIn 2.5s;
 }
 /* -------------------------------------EDITBUTTON-------------------- */
 
-.bookCompEditBook{
-    width:97%;
-    display: flex;
-    justify-content: flex-end;
+.bookCompEditBook {
+  width: 97%;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.editBookButton{
-    height: 40px;
-    width: 40px;
-    font-size: 26px;
-    color: #f98c88;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.editBookButton {
+  height: 40px;
+  width: 40px;
+  font-size: 26px;
+  color: #f98c88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.editBookButton :hover{
-    cursor: pointer;
-    font-size: 30px;
-    color: #fb807b;
+.editBookButton :hover {
+  cursor: pointer;
+  font-size: 30px;
+  color: #fb807b;
 }
-
-
 
 /* -------------------------------------DELETEBUTTON-------------------- */
 
-.deleteBookButton{
-    height: 40px;
-    width: 40px;
-    font-size: 28px;
-    color: #f98c88;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.deleteBookButton {
+  height: 40px;
+  width: 40px;
+  font-size: 28px;
+  color: #f98c88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.deleteBookButton :hover{
-    cursor: pointer;
-    font-size: 31px;
-    color: #fb807b;
+.deleteBookButton :hover {
+  cursor: pointer;
+  font-size: 31px;
+  color: #fb807b;
 }
 
 /* ---------------------------------------------------------------------------- */
-.boxBookPageTitleBox{
-    display: flex;
-    justify-content: center;
-    Width:80vw;
+.boxBookPageTitleBox {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
 }
 
-.booksIndividualComponent{
-    height:100%;
-    width: 100%;
+.booksIndividualComponent {
+  height: 100%;
+  width: 100%;
 }
 
-.booksBook{
-    margin:40px;
-    margin-left: 80px;
-    margin-right: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.booksBook {
+  margin: 40px;
+  /* margin-left: 60px; */
+  /* margin-right: 80px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 }
 
-.booksImage{
-    width: 25%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.booksImage {
+  width: 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 60px;
 }
 
-.bookImg{
-    width: 100%;
+.bookImg {
+  width: 100%;
 }
 
-.booksTitleDiscButton{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 55%;
-    margin-right: 40px;
+.booksTitleDiscButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45vw;
+  /* margin-right: 40px; */
 }
 
-.booksTitleDisc{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 85%;
+.booksTitleDisc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 400px;
+  height: auto;
 }
 
-.bookImg{
-    width: 100%;
-    /* --------------------------------------Remove Next Two Lines When Real Covers Arrive------------------------ */
-    border: 1px solid #777777;
-    border-radius: 5px;
+.bookImg {
+  width: 100%;
+  border: 1px solid #777777;
+  border-radius: 5px;
 }
 
-.title{
+.title {
+  color: #f98c88;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 2.15vw;
+  font-family: "Denver-Black";
+  line-height: 26pt;
+}
+.titleHid {
+    display:none;
     color: #f98c88;
     margin-top: 30px;
     margin-bottom: 15px;
     text-decoration: underline;
     text-align: center;
-    font-size: 30px;
-    font-family: 'Denver-Black';
+    font-size: 2.15vw;
+    font-family: "Denver-Black";
     line-height: 26pt;
 }
 
-.bkDiscription{
-    height: auto;
-    min-height: 100px;
-    text-align: center;
-    align-items: center;
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
+.bkDiscription {
+  height: auto;
+  min-height: 50px;
+  font-size: 1.3vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #2a324b;
+  text-align: center;
+  align-items: center;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.buyButtonContainer{
-    height: 40px;
-    width: 80%;
-    margin-bottom: 80px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
+.buyButtonContainer {
+  height: 40px;
+  color: #252d42;
+  width: 80%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
 }
 
-.buyLinkButtonBox{
-        height: 100%;
-        width: 80%;
-        border-radius: 5px;
-        font-size: 22px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-width: 2px;
-        border-color: rgb(90, 90, 90);
-        border-style: solid;
-        text-transform: uppercase;
-        font-family: 'Denver-Black';
+.buyLinkButtonBox {
+  height: 100%;
+  width: 80%;
+  border-radius: 5px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 2px;
+  border-color: rgb(90, 90, 90);
+  border-style: solid;
+  text-transform: uppercase;
+  font-family: "Denver-Black";
 }
 
-.buyButtonContainer :hover{
-    background-color: #2A324B;
-    color: white;
-    border-color: #2A324B;
-    box-shadow: 0 0 10px #000105;
-    border-width: 1px;
-    border-color: rgba(117, 117, 117, 0.418);
+.buyButtonContainer :hover {
+  background-color: #2a324b;
+  color: white;
+  border-color: #2a324b;
+  box-shadow: 0 0 10px #000105;
+  border-width: 1px;
+  border-color: rgba(117, 117, 117, 0.418);
 }
+
+/* -------------------------------------------------------------------Media Queries------------------------------------------------------- */
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1100px) {
+    .booksImage {
+        width: 25vw;
+      }
+      .bkDiscription {
+        font-size: 1.8vw;
+      }
+      .title {
+        font-size: 2.5vw;
+      }
+      .titleHid {
+        font-size: 2.5vw;
+        display:;
+      }
+      .bookPageTitle {
+        font-size: 3.2vw;
+        margin-bottom: 25px;
+      }
+      .booksBook{
+          margin:0px;
+      }
+      .bookCompAddBook{
+          margin-bottom: 0px;
+      }
+}
+
+@media (max-width: 1000px) {
+    .title{
+        display:none;
+    }
+    .titleHid{
+        display:contents;
+    }
+    .booksBook{
+        flex-direction: column;
+        width: 75vw;
+    }
+    .booksImage{
+        margin: 0px;
+        margin-top: 15px;
+        width:35vw;
+    }
+    .bkDiscription {
+      font-size: 2.2vw;
+    }
+    .booksTitleDiscButton{
+        width:90%;
+    } 
+}
+
+@media (max-width: 800px) {
+    .buyButtonContainer{
+        margin-top: 25px;
+    }
+    .booksTitleDisc{
+        min-height: 200px;
+    }
+    .titleHid {
+        font-size: 3.2vw;
+      }
+      .bookPageTitle {
+        font-size: 4.2vw;
+      }
+      .bkDiscription {
+        font-size: 2.8vw;
+      }
+  }
+  @media (max-width: 600px) {
+    .booksComponent{
+        width:90vw;
+        padding-top: 0px;
+    }
+    .titleHid {
+        font-size: 4.5vw;
+      }
+      .bookPageTitle {
+        font-size: 6.5vw;
+        text-align: center;
+      }
+      .bkDiscription {
+        font-size: 3.5vw;
+      }
+      .booksImage{
+          width:40vw;
+      }
+
+  }

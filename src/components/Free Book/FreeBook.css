@@ -82,10 +82,8 @@
     margin-top: 60px;
     background-color: #f98c88c0;
     border-radius: 8px;
-    /* -----Lighter Shadow----- */
-    /* box-shadow: -9px 10px 8px 0px rgba(189, 186, 186, 0.75); */
     /* --------Dark Shadow--------- */
-    box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.472);
+    /* box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.472); */
   }
 
   .freeBookText p{
@@ -112,6 +110,7 @@
     border-radius: 5px;
     font-size: 1.8vw;
     font-family: 'Denver-Black';
+    color:#2A324B;
     text-align: center;
     display: flex;
     justify-content: center;
