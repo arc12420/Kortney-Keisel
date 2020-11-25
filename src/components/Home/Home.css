@@ -137,10 +137,17 @@ p {
     .homeTitle {
       font-size: 7vw;
       margin-bottom: 0px;
-      margin-top: 25px;
+      margin-top: 40px;
     }
     .imageOneBox{
       padding:0px;
+    }
+    .homePage main{
+      padding:20px;
+      width:100%;
+    }
+    .homePage{
+      width:90vw;
     }
   }
 

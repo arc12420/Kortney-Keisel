@@ -185,6 +185,13 @@
 }
 
 @media (max-width: 800px) {
+  .freeBookTitle{
+    height:auto;
+    line-height: 30px;
+  }
+  .freeBookComponent{
+    width:100%;
+  }
   .freeBook {
     width:50vw;
   }
@@ -193,9 +200,12 @@
   }
   .homeFreeBook{
     padding:0px;
+    width:100%;
   }
   .freeBookText{
     margin-top: 0px;
+    width:86%;
+    padding: 0px;
   }
   .freeBookButtonBox{
     margin: 0px;
