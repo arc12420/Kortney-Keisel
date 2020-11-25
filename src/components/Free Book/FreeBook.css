@@ -168,12 +168,13 @@
   }
   .freeBookButton {
     font-size: 3.5vw; 
-    padding-top:50px;
-    padding-bottom:50px;
+    /* padding-top:50px;
+    padding-bottom:50px; */
+    height:100%;
     width: 50vw;
   }
   .freeBookLI {
-    height: 15%;
+    height: 10vh;
     width: 50vw;
   }
   
@@ -189,6 +190,15 @@
   }
   .freeBookText-Button{
     width:85%;
+  }
+  .homeFreeBook{
+    padding:0px;
+  }
+  .freeBookText{
+    margin-top: 0px;
+  }
+  .freeBookButtonBox{
+    margin: 0px;
   }
 }
 

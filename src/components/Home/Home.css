@@ -136,6 +136,11 @@ p {
   @media (max-width: 800px) {
     .homeTitle {
       font-size: 7vw;
+      margin-bottom: 0px;
+      margin-top: 25px;
+    }
+    .imageOneBox{
+      padding:0px;
     }
   }
 
