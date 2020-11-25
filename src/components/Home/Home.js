@@ -46,22 +46,11 @@ class Home extends Component {
   // --------------------------------------------------------------------------------------------------
 
   render() {
-    // console.log(this.state.newbook);
-    // console.log(this.state);
     console.log(this.props.history)
     const arr = this.state.newbook.map((element, index) => {
-      // console.log(this.state.newbook.map(element));
       return (
         <div className="pullNewbook" key={element.id}>
           <NewBook className="newBookTopComp" newbook={element} booksPicOne={booksPicOne} />
-          {/* <NewBookEdit className="newBookTopComp" 
-          newbook={element} 
-          handleTitle={this.handleTitle} 
-          handleReleaseDate={this.handleReleaseDate} 
-          handleDescription={this.handleDescription} 
-          booksPicOne={booksPicOne}
-          // historyP={this.props.history.push("/")} 
-          /> */}
         </div>
       );
     });

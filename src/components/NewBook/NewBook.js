@@ -9,7 +9,7 @@ function Newbook(props) {
     <div className="newBookComponent">
         <div className="newBookEditBox">
           {/* <NewBookEdit/> */}
-            <div className="editNewBookButton"><RiEditFill/></div>
+            {/* <div className="editNewBookButton"><RiEditFill/></div> */}
           </div>
         <section className="imageOneBoxContent">          
           <img src={props.booksPicOne} className="imageOne" alt="Book" />

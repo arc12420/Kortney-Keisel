@@ -193,9 +193,6 @@ nav .navButtons div:hover {
     .KLogo{
         width:45vw;
     }
-}
-
-@media(max-width:1850px){
     .navigationComponent{
         font-size: 37px;
     }
@@ -205,45 +202,25 @@ nav .navButtons div:hover {
     .selected{
         margin: 0px;
     }
-}
-
-@media(max-width:1500px){
     .navHome{
         margin: 0px;
     }
-}
-
-@media(max-width:1500px){
     .navBooks{
         margin: 0px;
     }
-}
-
-@media(max-width:1500px){
     .navNewsletter{
         margin: 0px;
     }
-}
-
-@media(max-width:1500px){
     .navAbout{
         margin: 0px;
     }
-}
-
-@media(max-width:1500px){
     .navContact{
         margin: 0px;
     }
-}
-
-@media(max-width:1500px){
     .navBlog{
         margin: 0px;
     }
 }
-
-
 
 @media (max-width: 1450px){
     .navigationComponent{

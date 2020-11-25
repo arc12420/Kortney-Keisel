@@ -45,7 +45,8 @@ nav .navHamButtons div:hover {
 }
 
 .navigationHamComponent{    
-        animation: fadeIn 2s;
+        animation: fadeIn 2austin
+        s;
       }
       @keyframes fadeIn{
         from {

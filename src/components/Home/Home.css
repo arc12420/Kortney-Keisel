@@ -1,10 +1,7 @@
 @font-face {
   src: url(../../Fonts/Denver-Black-Font/Denver-Black.ttf);
-  font-family: 'Denver-Black';
+  font-family: "Denver-Black";
 }
-
-
-
 
 .homePage {
   display: flex;
@@ -14,24 +11,23 @@
   min-height: 100vh;
 }
 
-
-li{
-    list-style-type: none;
-    height: 30%;
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+li {
+  list-style-type: none;
+  height: 30%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-a{    
-    text-decoration: none;
-    color: inherit;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+a {
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
@@ -48,7 +44,7 @@ main {
 .homeTitle {
   font-size: 50px;
   color: #f98c88d5;
-  font-family: 'Denver-Black';
+  font-family: "Denver-Black";
   margin-top: 30px;
   margin-bottom: 30px;
   animation: transitionIn 2.5s;
@@ -111,24 +107,47 @@ p {
 
 /* -------------------------------------------------------------------Media Queries------------------------------------------------------- */
 
-@media (max-width: 1400px){
-  .homePage {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: auto;
-    min-height: 100vh;
+
+
+  @media (min-width: 1850px) {
+    .homeTitle {
+      font-size: 70px;
+    }
   }
-  
-  /* .KLogoBox {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    height: auto;
-    width: auto;
-  } */
 
+  @media (max-width: 1500px) {
+  }
 
-}
+  @media (max-width: 1450px) {
+  }
 
+  @media (max-width: 1400px) {
+    .homePage {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: auto;
+      min-height: 100vh;
+    }
+  }
 
+  @media (max-width: 1200px) {
+  }
+
+  @media (max-width: 1100px) {
+    .homeTitle {
+      font-size: 6vw;
+      text-align: center;
+    }
+
+  }
+
+  @media (max-width: 800px) {
+    .homeTitle {
+      font-size: 7vw;
+    }
+  }
+
+  @media (max-width: 650px) {
+  }
 
