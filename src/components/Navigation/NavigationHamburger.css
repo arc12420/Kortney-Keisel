@@ -17,8 +17,8 @@
   height: auto;
   background-color: white;
   color: rgb(71, 71, 71);
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: 175px;
+  padding-top: 100px;
   font-size: 25px;
   text-transform: uppercase;
   font-weight: 600;
@@ -29,7 +29,7 @@
 .navHamButtons {
   width: auto;
   padding-left: 10px;
-  height: 90vh;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -13,7 +13,7 @@ class Nav extends Component {
   constructor() {
     super();
     this.state = {
-      checkedN: true
+      checkedN: true,
     };
   }
 
@@ -27,13 +27,13 @@ class Nav extends Component {
       .catch((err) => console.log(err));
   };
 
-handleCheck = event => {
-  this.setState({checkedN: event.target.checked})
-}
+  handleCheck = (event) => {
+    this.setState({ checkedN: event.target.checked });
+  };
 
-handleCheckClick = event => {
-  this.setState({checkedN: true})
-}
+  handleCheckClick = (event) => {
+    this.setState({ checkedN: true });
+  };
 
   // --------------------------RENDERED INFO-------------------------
   render(props) {
@@ -47,24 +47,26 @@ handleCheckClick = event => {
         </div>
         <div className="hiddenButtons">
           <div className="menuWrap">
-              <input type="checkbox" 
+            <input
+              type="checkbox"
               className="toggler"
               checked={this.state.checkedN}
               onChange={this.handleCheck}
-              />
-              {this.state.checkedN === true ? null :(
-                <div>
-              <NavHam/>            
-              <div className="greySpace" onClick={() => {this.handleCheckClick()}}
-              ></div>  
-              </div>          
-              )}
-            <li className="iconHamburgerBox" >
-              <a
-                href=""
-                className="iconHamburger"
-              >
-                <GiHamburgerMenu/>
+            />
+            {this.state.checkedN === true ? null : (
+              <div className="navHamTopContainer">
+                <NavHam />
+                <div
+                  className="greySpace"
+                  onClick={() => {
+                    this.handleCheckClick();
+                  }}
+                ></div>
+              </div>
+            )}
+            <li className="iconHamburgerBox">
+              <a href="" className="iconHamburger">
+                <GiHamburgerMenu />
               </a>
             </li>
           </div>
@@ -78,14 +80,14 @@ handleCheckClick = event => {
               </div>
             </div>
           ) : null}
-        </div>        
+        </div>
         <div className="navButtons">
           <div
             className={
               this.props.location.pathname === "/" ? "selected" : "navHome"
             }
             onClick={() => {
-              this.handleCheckClick(); 
+              this.handleCheckClick();
               this.props.history.push("/");
             }}
           >
@@ -106,17 +108,13 @@ handleCheckClick = event => {
               this.props.location.pathname === "/Newsletter"
                 ? "selected"
                 : "navNewsletter"
-            }            
+            }
           >
             <li>
               <a href="https://www.subscribepage.com/f7q6g9">
-                <span
-                  className="newsLetterButton"
-                >
-                  Newsletter
-                </span>
+                <span className="newsLetterButton">Newsletter</span>
               </a>
-            </li>            
+            </li>
           </div>
           <div
             className={
@@ -124,7 +122,7 @@ handleCheckClick = event => {
                 ? "selected"
                 : "navAbout"
             }
-            onClick={() => this.props.history.push("/About")}            
+            onClick={() => this.props.history.push("/About")}
           >
             About
           </div>
