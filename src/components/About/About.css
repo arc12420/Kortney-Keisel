@@ -1,142 +1,226 @@
 @font-face {
-    src: url(../../Fonts/Denver-Black-Font/Denver-Black.ttf);
-    font-family: 'Denver-Black';
+  src: url(../../Fonts/Denver-Black-Font/Denver-Black.ttf);
+  font-family: "Denver-Black";
 }
 
-.aboutComponent{
-    height: auto;
-    min-height: 750px;
-    width: 80vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
-    padding: 40px;
-    justify-content: space-evenly;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: #2b3452ec;
-    border-width: 3px;
+.aboutComponent {
+  height: auto;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 40px;
+  justify-content: space-evenly;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #2b3452ec;
+  border-width: 3px;
 }
 
-.aboutComponentTop{    
+.aboutComponentTop {
   animation: transitionIn 2.5s;
 }
 /* -------------------------------------EDIT ABOUT---------------------- */
-.aboutEditBox{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: -50px;
-    margin-top: -50px;
-    margin-Bottom: 50px;
+.aboutEditBox {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -50px;
+  margin-top: -50px;
+  margin-bottom: 50px;
 }
 
-.aboutEdit{
-    height: 40px;
-    width: 40px;
-    font-size: 33px;
-    color: #f98c88;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.aboutEdit {
+  height: 40px;
+  width: 40px;
+  font-size: 33px;
+  color: #f98c88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.aboutEdit:hover{
-    cursor: pointer;
-    font-size: 38px;
-    color: #fb807b;
-  }
+.aboutEdit:hover {
+  cursor: pointer;
+  font-size: 38px;
+  color: #fb807b;
+}
 /* ------------------------------------------------------------------ */
-.aboutTitle{
-    color: #f98c88;
-    font-size: 35px;
-    font-family: "Denver-Black";
-    margin-bottom: 50px;
-    border-bottom: #f98c88 solid 5px;
-    padding: 5px;
-    animation: transitionIn 2.5s;
+.aboutTitle {
+  color: #f98c88;
+  font-size: 35px;
+  font-family: "Denver-Black";
+  margin-bottom: 50px;
+  border-bottom: #f98c88 solid 5px;
+  padding: 5px;
+  animation: transitionIn 2.5s;
 }
 
-.aboutText{
-    width: 95%;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3vw;
-    /* text-align: center; */
-    color: #2b3452ec;
+.aboutText {
+  width: 95%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3vw;
+  /* text-align: center; */
+  color: #2b3452ec;
 }
 
-.aboutImage1-P1 p{
-    text-align: unset;
+.aboutImage1-P1 p {
+  text-align: unset;
 }
 
-.aboutImage2-P2 p{
-    text-align: unset;
+.aboutImage2-P2 p {
+  text-align: unset;
 }
 
-.P3 p{
-    text-align: unset;
+.P3 p {
+  text-align: unset;
 }
 
 /* ----------------Paragraph1------------- */
-.aboutImage1-P1{
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
+.aboutImage1-P1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
 
-.kortneyChildPic{
-    width: 35%;
-    margin-right: 20px;
+.kortneyChildPic {
+  width: 35%;
+  margin-right: 20px;
 }
 
-.aboutP1{
-    width: 55%;
+.aboutP1 {
+  width: 55%;
 }
 
 /* ----------------Paragraph2------------- */
-.aboutImage2-P2{
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
+.aboutImage2-P2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
 
-.aboutP2{
-    width: 55%;
+.aboutP2 {
+  width: 55%;
 }
 
-.kortneyAboutPic{
-    width: 35%;
-    margin-left: 20px;
+.kortneyAboutPic {
+  width: 35%;
+  margin-left: 20px;
 }
-
 
 /* ----------------Paragraph3------------- */
-.P3{
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 50px;
+.P3 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
-.aboutP3{
-    width: 88%;
-    margin-top: 10px;
+.aboutP3 {
+  width: 88%;
+  margin-top: 10px;
 }
 
+/* -------------------------------------------------------------------Media Queries------------------------------------------------------- */
 
+@media (min-width: 1850px) {
+}
 
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1100px) {
+  .aboutText {
+    font-size: 1.8vw;
+    margin-top: 0px;
+  }
+  .aboutEditBox {
+    margin: 0px;
+  }
+  .aboutTitle {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .aboutText {
+    font-size: 2.2vw;
+  }
+  .aboutTitle {
+    font-size: 2.15vw;
+  }
+  .aboutComponent {
+    padding: 0px;
+  }
+  .aboutImage1-P1 {
+    flex-direction: column;
+  }
+  .aboutImage2-P2 {
+    flex-direction: column;
+  }
+  .aboutP1 {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .aboutP2 {
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .aboutP3 {
+    width: 90%;
+  }
+  .kortneyAboutPic {
+    width: 35vw;
+    margin: 0px;
+  }
+  .kortneyChildPic {
+    width: 35vw;
+    margin: 0px;
+  }
+}
+@media (max-width: 800px) {
+    .aboutText {
+        font-size: 2.8vw;
+    }
+    .aboutTitle {
+        font-size: 3.2vw;
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 600px) {
+    .aboutComponent{
+        width:90vw;
+        padding-top: 10px;
+    }
+    .aboutEditBox{
+        display: none;
+    }
+    .aboutText {
+        font-size: 3.5vw;
+    }
+    .aboutTitle {
+        font-size: 4.5vw;
+    }
+    .kortneyAboutPic {
+        width:50vw;
+    }
+    .kortneyChildPic {
+        width:50vw;
+    }
+}

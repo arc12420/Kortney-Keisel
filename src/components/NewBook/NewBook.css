@@ -41,10 +41,95 @@
   color: #fb807b;
 }
 /* ------------------------------------------------------------------------ */
+/* -------------------------------TEMPORARY--------------- */
+.newBookComponent {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.imageOneBoxContentTemp {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.imageOneTemp {
+  margin-top: 10px;
+  width: 20vw;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid #777777;
+  border-radius: 5px;
+  box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.472);
+}
+.newBookTitleTemp {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #252d42;
+}
+.newBookTitleTempTwo {
+  font-size: 45px;
+  margin-top: 75px;
+  color: #252d42;
+}
+.newBookReleaseDateTemp {
+  font-size: 1.5vw;
+  color: #252d42;
+  width: auto;
+  height: auto;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.buyButtonContainerTemp {
+  width: 28vw;
+  height: 13vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.buyLinkButtonBoxTemp {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1.8vw;
+  font-family: "Denver-Black";
+  color: #2a324b;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 2px;
+  border-color: rgb(90, 90, 90);
+  border-style: solid;
+  text-transform: uppercase;
+  box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.472);
+}
+.newBookTitle-InfoTemp {
+  width: 30vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+/* -------------------------------TEMPORARY--------------- */
 .imageOne {
-
-display:none;
-
   margin-top: 10px;
   width: 20vw;
   height: auto;
@@ -97,26 +182,26 @@ p {
 @media (max-width: 1160px) {
   .imageOne {
     width: 324px;
-    height:509px;
+    height: 509px;
   }
   .newBookTitle-Info {
     font-size: 2vw;
   }
-  
-  .newBookTitle{
-    font-size:4vw;
+
+  .newBookTitle {
+    font-size: 4vw;
   }
 }
 
 @media (max-width: 1000px) {
-  .imageOneBoxContent{
+  .imageOneBoxContent {
     align-items: center;
     flex-direction: column;
   }
 
   .imageOne {
     width: 50%;
-    height:auto;
+    height: auto;
   }
 
   .newBookTitle {
@@ -138,6 +223,3 @@ p {
     width: 60%;
   }
 }
-
-
-

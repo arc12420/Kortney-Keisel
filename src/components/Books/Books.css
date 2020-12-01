@@ -161,6 +161,7 @@
   width: 100%;
   border: 1px solid #777777;
   border-radius: 5px;
+  box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.472);
 }
 
 .title {
@@ -234,8 +235,6 @@
 
 /* -------------------------------------------------------------------Media Queries------------------------------------------------------- */
 
-@media (max-width: 1400px) {
-}
 
 @media (max-width: 1100px) {
     .booksImage {
@@ -306,7 +305,7 @@
   @media (max-width: 600px) {
     .booksComponent{
         width:90vw;
-        padding-top: 0px;
+        padding-top: 10px;
     }
     .titleHid {
         font-size: 4.5vw;

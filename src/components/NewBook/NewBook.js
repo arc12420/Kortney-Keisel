@@ -11,7 +11,20 @@ function Newbook(props) {
           {/* <NewBookEdit/> */}
             {/* <div className="editNewBookButton"><RiEditFill/></div> */}
           </div>
-        <section className="imageOneBoxContent">          
+            <p className="newBookTitleTempTwo">{props.newbook.title}</p>
+        <section className="imageOneBoxContentTemp">          
+          <img src={props.booksPicOne} className="imageOneTemp" alt="Book" />
+          <div className="newBookTitle-InfoTemp">
+            <hr />
+            <p className="newBookReleaseDateTemp">Coming January 12th 2021</p>
+            <div className="buyButtonContainerTemp">
+            <li className="buyLinkButtonBoxTemp">
+              <a href={props.newbook.urllink}>Pre-Order your digital copy</a>
+            </li>
+          </div>
+          </div>
+        </section>
+        {/* <section className="imageOneBoxContent">          
           <img src={props.booksPicOne} className="imageOne" alt="Book" />
           <div className="newBookTitle-Info">
             <p className="newBookTitle">{props.newbook.title}</p>
@@ -19,7 +32,7 @@ function Newbook(props) {
             <hr />
             <p className="newBookDescription">{props.newbook.description}</p>
           </div>
-        </section>
+        </section> */}
     </div>
   );
 }
