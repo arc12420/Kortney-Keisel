@@ -11,11 +11,12 @@ function Newbook(props) {
           {/* <NewBookEdit/> */}
             {/* <div className="editNewBookButton"><RiEditFill/></div> */}
           </div>
-            <p className="newBookTitleTempTwo">{props.newbook.title}</p>
+            <p className="newBookTitleTempTwo">My debut novel</p>
         <section className="imageOneBoxContentTemp">          
           <img src={props.booksPicOne} className="imageOneTemp" alt="Book" />
           <div className="newBookTitle-InfoTemp">
             <hr />
+            <p className="newBookReleaseDateTempTitle">{props.newbook.title}</p>
             <p className="newBookReleaseDateTemp">Get yours January 12th 2021</p>
             <div className="buyButtonContainerTemp">
               <hr/>
