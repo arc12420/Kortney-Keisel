@@ -114,6 +114,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.472);
 }
 .buyLinkButtonBoxTemp {
   height: 100%;
@@ -186,14 +187,15 @@ p {
   .newBookTitle {
     font-size: 60px;
   }
-
+  
   .newBookTitle-Info {
     font-size: 35px;
   }
-
+  
   .imageOne {
     width: 21vw;
   }
+  
 }
 
 @media (max-width: 1350px) {
@@ -210,10 +212,28 @@ p {
   .newBookTitle-Info {
     font-size: 2vw;
   }
-
+  
   .newBookTitle {
     font-size: 4vw;
   }
+  /* -------------------------------TEMPORARY--------------- */
+  .imageOneTemp {
+    width: 25vw;
+  }
+  .newBookTitle-InfoTemp {
+    width: 45vw;
+    height:350px;
+  }
+  .newBookTitleTempTwo {
+    font-size: 4vw;
+  }
+  .newBookReleaseDateTemp {
+    font-size: 2vw;
+  }
+  .newBookReleaseDateTempTitle {
+    font-size: 2vw;
+  }
+  /* -------------------------------TEMPORARY--------------- */
 }
 
 @media (max-width: 1000px) {
@@ -221,20 +241,56 @@ p {
     align-items: center;
     flex-direction: column;
   }
-
+  
   .imageOne {
     width: 50%;
     height: auto;
   }
-
+  
   .newBookTitle {
     font-size: 6vw;
   }
-
+  
   .newBookTitle-Info {
     font-size: 35px;
     width: 80%;
   }
+  /* -------------------------------TEMPORARY--------------- */
+  .imageOneBoxContentTemp{
+    flex-direction: column;
+  }
+  .newBookTitle-InfoTemp {
+    width: 75%;
+    height:auto;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  } 
+  .buyButtonContainerTemp{
+    margin-top: 20px;
+    width:50vw;
+  }
+  .buyLinkButtonBoxTemp{
+    font-size: 3.5vw;
+  }
+  .newBookTitleTempTwo {
+    font-size: 4.7vw;
+  }
+  .newBookReleaseDateTemp {
+    font-size: 3.5vw;
+  }
+  .newBookReleaseDateTempTitle {
+    font-size: 3.5vw;
+    text-decoration: none;
+    border-bottom:white solid 5px;
+  }
+  .imageOneTemp{
+    margin: 0px;
+    width:50%;
+  }
+
+
+  /* -------------------------------TEMPORARY--------------- */
 }
 
 @media (max-width: 800px) {
@@ -245,4 +301,21 @@ p {
   .imageOne {
     width: 60%;
   }
+  /* -------------------------------TEMPORARY--------------- */
+  .imageOneTemp{
+    width:60%;
+  }
+  .newBookTitleTempTwo {
+    font-size: 4.7vw;
+    margin-top: 20px;
+  }
+  .newBookTitle-InfoTemp{
+    width:86%;
+  }
+  .buyButtonContainerTemp{
+    height: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  /* -------------------------------TEMPORARY--------------- */
 }
