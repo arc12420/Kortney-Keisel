@@ -9,7 +9,7 @@
 
 .booksComponent {
   height: auto;
-  min-height: 750px;
+  /* min-height: 750px; */
   width: 80vw;
   display: flex;
   justify-content: center;
