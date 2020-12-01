@@ -79,8 +79,6 @@ resetFields = () => {
         <div className="contactComponent">
           <div className="titleAndContentContact">
             <h6 className="contactTitle">Have a question for Kortney?</h6>
-
-            <p className="contactContent">Email her here!</p>
           </div>
           <div className="contactInputFields">
             <input

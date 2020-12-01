@@ -59,7 +59,6 @@ class Home extends Component {
         <div className="homePage">
           <main>
             <div className="imageOneBox">
-              <header className="homeTitle">Coming Soon!</header>
               {arr}
             </div>
             <FreeBook />

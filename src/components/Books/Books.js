@@ -43,11 +43,6 @@ class Books extends Component {
             </div>
             {/* <AWS picture={this.picture}/> */}
           </div>
-          <div className="boxBookPageTitleBox">
-            <div className="bookPageTitleBox">
-              <div className="bookPageTitle">Kortney's Books</div>
-            </div>
-          </div>
           {arr}
         </div>
         <FreeBook />
