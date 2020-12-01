@@ -40,6 +40,40 @@
   font-size: 30px;
   color: #fb807b;
 }
+.imageOne {
+  margin-top: 10px;
+  width: 20vw;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.472);
+}
+
+.newBookTitle-Info {
+  font-size: 2vw;
+  width: 45%;
+  height: auto;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.newBookTitle {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+}
+.buyLinkButtonBoxTemp :hover{
+  background-color: #2A324B;
+  color: white;
+  border-color: #2A324B;
+  box-shadow: 0 0 10px #000105;
+}
 /* ------------------------------------------------------------------------ */
 /* -------------------------------TEMPORARY--------------- */
 .newBookEditBox {
@@ -114,7 +148,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.472);
 }
 .buyLinkButtonBoxTemp {
   height: 100%;
@@ -132,6 +165,7 @@
   border-radius: 5px;
   text-transform: uppercase;
   background-color: white;
+  box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.472);
 }
 .newBookTitle-InfoTemp {
   background-color: #41b9bfaf;
@@ -153,34 +187,7 @@ hr{
   display: none;
 }
 /* -------------------------------TEMPORARY--------------- */
-.imageOne {
-  margin-top: 10px;
-  width: 20vw;
-  height: auto;
-  object-fit: cover;
-  border-radius: 4px;
-  box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.472);
-}
 
-.newBookTitle-Info {
-  font-size: 2vw;
-  width: 45%;
-  height: auto;
-  margin: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.newBookTitle {
-  font-size: 50px;
-  margin-bottom: 10px;
-}
-
-p {
-  text-align: center;
-}
 
 /* ------------------------------------------Media queries--------------------------------------- */
 @media (min-width: 1850px) {
