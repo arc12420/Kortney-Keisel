@@ -37,12 +37,12 @@ class Books extends Component {
     return (
       <div className="body">
         <div className="booksComponent">
-          <div className="bookCompAddBook">
+          {/* <div className="bookCompAddBook">
             <div className="addBookButton">
-              {/* <MdAdd /> */}
+              <MdAdd />
             </div>
-            {/* <AWS picture={this.picture}/> */}
-          </div>
+            <AWS picture={this.picture}/>
+          </div> */}
           {arr}
         </div>
         <FreeBook />

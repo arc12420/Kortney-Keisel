@@ -9,7 +9,6 @@ function Newsletter(props) {
           <div className="successBox">
             <div className="success">Success!</div>
           </div>
-          <p>You have successfully subscribed to the newsletter of the Author Kortney Keisel!</p>
           <p>Make sure to check your email for your FREE book! <br/> It may be in your spam or promotions folders. </p>
         <div className="checkOutBooks">           
                 <span                  
