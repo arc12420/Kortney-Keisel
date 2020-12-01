@@ -39,7 +39,7 @@ class Blog extends Component {
             {/* {props.isLoggedIn === true ? (             */}
               <div className="addPostButton">
                 {/* <p className="tooltipAddPost">Add Post</p> */}
-                <MdAdd />
+                {/* <MdAdd /> */}
               </div>
           {/* // ) : null} */}
             </div>

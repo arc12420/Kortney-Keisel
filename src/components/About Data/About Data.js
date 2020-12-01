@@ -10,7 +10,7 @@ function AboutData(props) {
       <div className="aboutText">
         <div className="aboutEditBox">
           <div className="aboutEdit">
-            <RiEditFill />
+            {/* <RiEditFill /> */}
           </div>
         </div>
         <h5 className="aboutTitle">About Kortney</h5>

@@ -3,10 +3,6 @@
     font-family: 'Denver-Black';
 }
 
-
-
-
-
 .aboutComponent{
     height: auto;
     min-height: 750px;
@@ -65,12 +61,12 @@
 
 .aboutText{
     width: 95%;
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 27px;
+    font-size: 1.3vw;
     /* text-align: center; */
     color: #2b3452ec;
 }
@@ -95,16 +91,15 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .kortneyChildPic{
     width: 30%;
-    margin: 20px;
+    margin-right: 20px;
 }
 
 .aboutP1{
-    width: 50%;
+    width: 55%;
 }
 
 /* ----------------Paragraph2------------- */
@@ -115,16 +110,15 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .aboutP2{
-    width: 50%;
+    width: 55%;
 }
 
 .kortneyAboutPic{
     width: 35%;
-    margin: 20px;
+    margin-left: 20px;
 }
 
 
@@ -136,11 +130,12 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 .aboutP3{
     width: 88%;
+    margin-top: 10px;
 }
 
 

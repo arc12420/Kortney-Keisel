@@ -2,6 +2,15 @@
   src: url(../../Fonts/Denver-Black-Font/Denver-Black.ttf);
   font-family: "Denver-Black";
 }
+/* ---------------------------------------TEMPORARY--------------------- */
+.homePageMain{
+  height:auto;
+  min-height: unset;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+/* ---------------------------------------TEMPORARY--------------------- */
+
 
 .homePage {
   display: flex;

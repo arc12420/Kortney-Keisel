@@ -57,10 +57,10 @@ class Home extends Component {
     return (
       <div className="body">
         <div className="homePage">
-          <main>
-            <div className="imageOneBox">
+          <main className="homePageMain">
+            {/* <div className="imageOneBox">
               {arr}
-            </div>
+            </div> */}
             <FreeBook />
           </main>
           <hr />
