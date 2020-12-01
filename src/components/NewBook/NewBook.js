@@ -16,10 +16,11 @@ function Newbook(props) {
           <img src={props.booksPicOne} className="imageOneTemp" alt="Book" />
           <div className="newBookTitle-InfoTemp">
             <hr />
-            <p className="newBookReleaseDateTemp">Coming January 12th 2021</p>
+            <p className="newBookReleaseDateTemp">Get yours January 12th 2021</p>
             <div className="buyButtonContainerTemp">
+              <hr/>
             <li className="buyLinkButtonBoxTemp">
-              <a href={props.newbook.urllink}>Pre-Order your digital copy</a>
+              <a href={props.newbook.urllink}>Pre-Order your <br/>digital copy</a>
             </li>
           </div>
           </div>
