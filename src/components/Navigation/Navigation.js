@@ -35,9 +35,6 @@ class Nav extends Component {
     this.setState({ checkedN: true });
   };
   
-  handlePostNav = (event) => {
-    this.setState({ checkedN: false});
-  }
   
   // --------------------------RENDERED INFO-------------------------
   render(props) {
@@ -92,10 +89,9 @@ class Nav extends Component {
             className={
               this.props.location.pathname === "/" ? "selected" : "navHome"
             }
-            onClick={() => {
-              this.handleCheckClick();
-              this.props.history.push("/");
-            }}
+            onClick={() => 
+              this.props.history.push("/")
+            }
           >
             Home
           </div>

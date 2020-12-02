@@ -76,10 +76,10 @@
 p {
   text-align: center;
 }
-.buyLinkButtonBoxTemp :hover{
-  background-color: #2A324B;
+.buyLinkButtonBoxTemp :hover {
+  background-color: #2a324b;
   color: white;
-  border-color: #2A324B;
+  border-color: #2a324b;
   box-shadow: 0 0 10px #000105;
 }
 /* ------------------------------------------------------------------------ */
@@ -149,7 +149,7 @@ p {
   flex-direction: column;
   text-decoration: underline;
   font-family: "Denver-Black";
-  border-bottom:#252d42 solid 5px;
+  border-bottom: #252d42 solid 5px;
   text-decoration: none;
 }
 .buyButtonContainerTemp {
@@ -180,7 +180,7 @@ p {
 .newBookTitle-InfoTemp {
   /* background-color: #41b9bfaf; */
   width: 30vw;
-  height:350px;
+  height: 350px;
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
@@ -193,26 +193,24 @@ p {
   border-radius: 5px;
   line-height: 40px;
 }
-hr{
+hr {
   display: none;
 }
 /* -------------------------------TEMPORARY--------------- */
-
 
 /* ------------------------------------------Media queries--------------------------------------- */
 @media (min-width: 1850px) {
   .newBookTitle {
     font-size: 60px;
   }
-  
+
   .newBookTitle-Info {
     font-size: 35px;
   }
-  
+
   .imageOne {
     width: 21vw;
   }
-  
 }
 
 @media (max-width: 1350px) {
@@ -229,7 +227,7 @@ hr{
   .newBookTitle-Info {
     font-size: 2vw;
   }
-  
+
   .newBookTitle {
     font-size: 4vw;
   }
@@ -239,7 +237,7 @@ hr{
   }
   .newBookTitle-InfoTemp {
     width: 45vw;
-    height:350px;
+    height: 350px;
   }
   .newBookTitleTempTwo {
     font-size: 5vw;
@@ -258,40 +256,37 @@ hr{
     align-items: center;
     flex-direction: column;
   }
-  
+
   .imageOne {
     width: 50%;
     height: auto;
   }
-  
+
   .newBookTitle {
     font-size: 6vw;
   }
-  
+
   .newBookTitle-Info {
     font-size: 35px;
     width: 80%;
   }
   /* -------------------------------TEMPORARY--------------- */
-  .imageOneBoxContentTemp{
+  .imageOneBoxContentTemp {
     flex-direction: column;
   }
   .newBookTitle-InfoTemp {
     width: 75%;
-    height:auto;
+    height: auto;
     margin-top: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
-  } 
-  .buyButtonContainerTemp{
+  }
+  .buyButtonContainerTemp {
     margin-top: 20px;
-    width:50vw;
+    width: 50vw;
   }
-  .buyLinkButtonBoxTemp{
+  .buyLinkButtonBoxTemp {
     font-size: 3.5vw;
-  }
-  .newBookTitleTempTwo {
-    /* font-size: 5vw; */
   }
   .newBookReleaseDateTemp {
     font-size: 3.5vw;
@@ -300,14 +295,13 @@ hr{
     font-size: 3.5vw;
     text-decoration: none;
   }
-  .imageOneTemp{
+  .imageOneTemp {
     margin: 0px;
-    width:50%;
+    width: 50%;
   }
-  .imageOneBox{
+  .imageOneBox {
     padding-top: 40px;
   }
-
 
   /* -------------------------------TEMPORARY--------------- */
 }
@@ -321,20 +315,25 @@ hr{
     width: 60%;
   }
   /* -------------------------------TEMPORARY--------------- */
-  .imageOneTemp{
-    width:60%;
+  .imageOneTemp {
+    width: 60%;
   }
   .newBookTitleTempTwo {
     /* font-size: 4.7vw; */
     margin-top: 20px;
   }
-  .newBookTitle-InfoTemp{
-    width:86%;
+  .newBookTitle-InfoTemp {
+    width: 86%;
   }
-  .buyButtonContainerTemp{
+  .buyButtonContainerTemp {
     height: 90%;
     padding-top: 10px;
     padding-bottom: 10px;
   }
   /* -------------------------------TEMPORARY--------------- */
+}
+@media (max-width: 600px) {
+  .newBookTitleTempTwo {
+    font-size: 8vw;
+  }
 }
