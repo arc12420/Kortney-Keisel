@@ -140,7 +140,7 @@ p {
 }
 .newBookReleaseDateTempTitle {
   font-size: 1.75vw;
-  color: white;
+  color: #252d42;
   width: auto;
   height: auto;
   display: flex;
@@ -149,7 +149,7 @@ p {
   flex-direction: column;
   text-decoration: underline;
   font-family: "Denver-Black";
-  border-bottom:white solid 5px;
+  border-bottom:#252d42 solid 5px;
   text-decoration: none;
 }
 .buyButtonContainerTemp {
@@ -178,7 +178,7 @@ p {
   box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.472);
 }
 .newBookTitle-InfoTemp {
-  background-color: #41b9bfaf;
+  /* background-color: #41b9bfaf; */
   width: 30vw;
   height:350px;
   display: flex;
