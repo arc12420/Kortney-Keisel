@@ -23,7 +23,10 @@ class NavHam extends Component {
             className={
               this.props.location.pathname === "/" ? "selected" : "navHome"
             }
-            onClick={() => this.props.history.push("/")}
+            onClick={() => {
+              this.props.history.push("/") 
+              this.props.handleCheckClick();
+            }}
           >
             Home
           </div>
@@ -33,7 +36,10 @@ class NavHam extends Component {
                 ? "selected"
                 : "navBooks"
             }
-            onClick={() => this.props.history.push("/Books")}
+            onClick={() =>{ 
+              this.props.history.push("/Books"); 
+              this.props.handleCheckClick();
+            }}
           >
             BOOKS
           </div>
@@ -56,7 +62,10 @@ class NavHam extends Component {
                 ? "selected"
                 : "navAbout"
             }
-            onClick={() => this.props.history.push("/About")}
+            onClick={() => {
+              this.props.history.push("/About"); 
+              this.props.handleCheckClick();
+            }}
           >
             About
           </div>
@@ -66,7 +75,10 @@ class NavHam extends Component {
                 ? "selected"
                 : "navContact"
             }
-            onClick={() => this.props.history.push("/Contact")}
+            onClick={() => {
+              this.props.history.push("/Contact"); 
+              this.props.handleCheckClick();
+            }}
           >
             Contact
           </div>
@@ -76,7 +88,10 @@ class NavHam extends Component {
                 ? "selected"
                 : "navBlog"
             }
-            onClick={() => this.props.history.push("/Blog")}
+            onClick={() => {
+              this.props.history.push("/Blog"); 
+              this.props.handleCheckClick();
+            }}
           >
             Blog
           </div>

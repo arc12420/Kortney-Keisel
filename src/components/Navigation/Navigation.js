@@ -30,16 +30,21 @@ class Nav extends Component {
   handleCheck = (event) => {
     this.setState({ checkedN: event.target.checked });
   };
-
+  
   handleCheckClick = (event) => {
     this.setState({ checkedN: true });
   };
-
+  
+  handlePostNav = (event) => {
+    this.setState({ checkedN: false});
+  }
+  
   // --------------------------RENDERED INFO-------------------------
   render(props) {
     // console.log(this.props);
     // console.log(this.props.user);
     // console.log(this.props.location.pathname);
+    console.log(this.state.checkedN)
     return (
       <nav className="navigationComponent">
         <div className="KLogoBox">
@@ -52,10 +57,11 @@ class Nav extends Component {
               className="toggler"
               checked={this.state.checkedN}
               onChange={this.handleCheck}
-            />
+              />
             {this.state.checkedN === true ? null : (
               <div className="navHamTopContainer">
-                <NavHam />
+                <NavHam 
+                handleCheckClick={this.handleCheckClick}/>
                 <div
                   className="greySpace"
                   onClick={() => {
