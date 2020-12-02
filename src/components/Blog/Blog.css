@@ -3,7 +3,9 @@
     font-family: 'Denver-Black';
   }
 
-
+.postContent{
+  width:90%;
+}
 
 .blogComponent{
   height: auto;
@@ -88,4 +90,22 @@
   margin-bottom: 75px;
   animation: transitionIn 2.5s;
 
+}
+
+/* -------------------------------------------------------Media queries------------------------------------------ */
+
+@media (max-width:1200px) {
+}
+
+
+@media (max-width: 1000px) {
+  .pullPost{
+    margin-bottom: 35px;
+  }
+  .blogTitle{
+    font-size: 7vw;
+  }
+}
+
+@media (max-width: 800px) {
 }

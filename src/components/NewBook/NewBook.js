@@ -11,7 +11,7 @@ function Newbook(props) {
           {/* <NewBookEdit/> */}
             {/* <div className="editNewBookButton"><RiEditFill/></div> */}
           </div>
-            <p className="newBookTitleTempTwo">Coming soon</p>
+            <p className="newBookTitleTempTwo">Coming Soon</p>
         <section className="imageOneBoxContentTemp">          
           <img src={props.booksPicOne} className="imageOneTemp" alt="Book" />
           <div className="newBookTitle-InfoTemp">

@@ -1,7 +1,7 @@
 .postComponent {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 75vw;
   height: auto;
   max-width: 100%;
   align-items: flex-start;
@@ -9,10 +9,11 @@
   border-radius: 4px;
   border-width: 5px;
   border-color: rgb(48, 47, 47);
+  box-shadow: -12px 14px 11px 0px rgba(0, 0, 0, 0.486);
 }
 
-.postContent {
-  max-width: 90%;
+.postContentPost {
+  max-width: 100%;
   overflow: visible;
   word-wrap: break-word;
   word-break: normal;
@@ -20,8 +21,7 @@
 }
 
 .updateAndPost {
-  box-shadow: -12px 14px 11px 0px rgba(0, 0, 0, 0.486);
-  width: 75vw;
+  width: 100%;
   min-height: 5vh;
   display: flex;
   justify-content: flex-end;
@@ -123,15 +123,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  margin: 20px;
-  /* border-radius: 4px;
-    border-width: 2px;
-    border-color: #41b9bf;
-    border-style: solid; */
+  margin: 40px;
 }
 .postContentBox {
-  width: 80%;
+  width: 100%;
 }
 
 .titleAndButtons {
@@ -148,7 +143,6 @@
   min-height: 150px;
   margin-right: 20px;
   object-fit: contain;
-  /* opacity: 1500%; */
 }
 
 .profilePic {
@@ -166,136 +160,27 @@
   display: none;
 }
 
-@media (max-width: 1025px) {
-  .namePicAndTitle {
-    -webkit-box-shadow: -12px 14px 11px 1px rgba(0, 0, 0, 0.79);
-    -moz-box-shadow: -12px 14px 11px 1px rgba(0, 0, 0, 0.79);
-    box-shadow: 0px 14px 11px 1px rgba(0, 0, 0, 0.79);
-    margin: 0px;
-    margin-right: 10px;
-  }
+/* -------------------------------------------------------Media queries------------------------------------------ */
 
-  .updateAndPost {
-    -webkit-box-shadow: 0px 14px 0px 1px rgba(0, 0, 0, 0.79);
-    -moz-box-shadow: 0px 14px 0px 1px rgba(0, 0, 0, 0.79);
-    box-shadow: 0px 14px 0px 1px rgba(0, 0, 0, 0.79);
-    margin: 0px;
-  }
-
-  .postInfo {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .uploadedImage {
-    width: 90%;
-    max-width: unset;
-    max-height: unset;
-    min-height: unset;
-    min-width: 90%;
-  }
-
-  .postContent {
-    width: 90%;
-    font-size: 38px;
-  }
-
-  .profilePic {
-    width: 95%;
-    max-width: unset;
-    max-height: unset;
-    min-height: unset;
-  }
-
-  .postTitle {
-    font-size: 40px;
-  }
-
-  .picAndTitle {
-    font-size: 40px;
-  }
-
-  .postButtons {
-    font-size: 30px;
-  }
-
-  .profileInfoTwo {
-    display: none;
+@media (max-width:1000px) {
+  .postContentPost{
+    font-size: 2vw;
   }
 }
-@media (max-width: 500px) {
-  .namePicAndTitle {
-    -webkit-box-shadow: -12px 14px 11px 1px rgba(0, 0, 0, 0.79);
-    -moz-box-shadow: -12px 14px 11px 1px rgba(0, 0, 0, 0.79);
-    box-shadow: 0px 14px 11px 1px rgba(0, 0, 0, 0.79);
-    margin: 0px;
-    margin-right: 10px;
-  }
 
-  .postComponent {
-    width: 100vw;
-  }
 
-  .updateAndPost {
-    -webkit-box-shadow: 0px 14px 0px 1px rgba(0, 0, 0, 0.79);
-    -moz-box-shadow: 0px 14px 0px 1px rgba(0, 0, 0, 0.79);
-    box-shadow: 0px 14px 0px 1px rgba(0, 0, 0, 0.79);
-    margin: 0px;
-    width: 100vw;
-    position: initial;
-    min-width: 100vw;
-    margin-left: -20px;
-  }
-
-  .postInfo {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .uploadedImage {
-    width: 90%;
-    max-width: unset;
-    max-height: unset;
-    min-height: unset;
-    min-width: 90%;
-  }
-
-  .postContent {
-    width: 90%;
-    font-size: 20px;
-  }
-
-  .profilePicTwo {
+@media (max-width: 1000px) {
+  .postContentPost{
+    font-size: 3vw;
     width: 100%;
-    max-width: unset;
-    max-height: unset;
-    min-height: unset;
   }
-
-  .profileNamesTwo {
-    margin-left: 10px;
+  .postInfo{
+    margin:10px;
   }
-
-  .postTitle {
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 5px;
-  }
-
-  .picAndTitle {
-    font-size: 40px;
-    display: none;
-    position: -ms-page;
-  }
-
-  .postButtons {
-    font-size: 20px;
+  .postTitle{
+    font-size: 5vw;
   }
 }
 
-/*# sourceMappingURL=Post.css.map */
+@media (max-width: 800px) {
+}

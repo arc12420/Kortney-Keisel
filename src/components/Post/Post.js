@@ -17,14 +17,14 @@ function Post(props) {
               className="editPost"
               onClick={() => props.history.push(`/Edit/${props.posts.id}`)}
             >
-              <RiEditFill />
+              {/* <RiEditFill /> */}
               {/* <p className="tooltipEdit" >Edit</p>             */}
             </h5>
             <h5
               className="deletePost"
               onClick={() => props.dlt(props.posts.id)}
             >
-              <MdDeleteForever />
+              {/* <MdDeleteForever /> */}
               {/* <p className="tooltipDelete" >Delete</p>       */}
             </h5>
           </div>
@@ -39,7 +39,7 @@ function Post(props) {
             />
           )}
           <div className="postContentBox">
-            <div className="postContent">{props.posts.post}</div>
+            <div className="postContentPost">{props.posts.post}</div>
           </div>
         </div>
       </div>

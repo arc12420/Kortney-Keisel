@@ -2,6 +2,14 @@
   src: url(../../Fonts/Denver-Black-Font/Denver-Black.ttf);
   font-family: "Denver-Black";
 }
+@font-face {
+  src: url(../../Fonts/Garleriny-Regular.ttf);
+  font-family: "Garleriny";
+}
+@font-face {
+  src: url(../../Fonts/Paeonia-Regular.ttf);
+  font-family: "Paeonia-Regular";
+}
 
 .newBookComponent {
   height: 100%;
@@ -114,10 +122,10 @@ p {
   color: #252d42;
 }
 .newBookTitleTempTwo {
-  font-size: 45px;
-  text-decoration: underline;
-  text-transform: uppercase;
+  font-size: 6vw;
   color: #f98c88;
+  font-family: "Paeonia-Regular";
+  margin-bottom: 20px;
 }
 .newBookReleaseDateTemp {
   font-size: 1.75vw;
@@ -141,6 +149,8 @@ p {
   flex-direction: column;
   text-decoration: underline;
   font-family: "Denver-Black";
+  border-bottom:white solid 5px;
+  text-decoration: none;
 }
 .buyButtonContainerTemp {
   width: 28vw;
@@ -232,7 +242,7 @@ hr{
     height:350px;
   }
   .newBookTitleTempTwo {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   .newBookReleaseDateTemp {
     font-size: 2vw;
@@ -281,7 +291,7 @@ hr{
     font-size: 3.5vw;
   }
   .newBookTitleTempTwo {
-    font-size: 4.7vw;
+    /* font-size: 5vw; */
   }
   .newBookReleaseDateTemp {
     font-size: 3.5vw;
@@ -289,11 +299,13 @@ hr{
   .newBookReleaseDateTempTitle {
     font-size: 3.5vw;
     text-decoration: none;
-    border-bottom:white solid 5px;
   }
   .imageOneTemp{
     margin: 0px;
     width:50%;
+  }
+  .imageOneBox{
+    padding-top: 40px;
   }
 
 
@@ -313,7 +325,7 @@ hr{
     width:60%;
   }
   .newBookTitleTempTwo {
-    font-size: 4.7vw;
+    /* font-size: 4.7vw; */
     margin-top: 20px;
   }
   .newBookTitle-InfoTemp{
