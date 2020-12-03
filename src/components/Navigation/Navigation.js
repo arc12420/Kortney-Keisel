@@ -47,6 +47,7 @@ class Nav extends Component {
         <div className="KLogoBox">
           <img src={KLogo} className="KLogo" alt="Logo" />
         </div>
+        {/* ------------------------------------------hambuger/logout buttons------------------------------- */}
         <div className="hiddenButtons">
           <div className="menuWrap">
             <input
@@ -58,6 +59,7 @@ class Nav extends Component {
             {this.state.checkedN === true ? null : (
               <div className="navHamTopContainer">
                 <NavHam 
+                className="navHamCont"
                 handleCheckClick={this.handleCheckClick}/>
                 <div
                   className="greySpace"
@@ -84,6 +86,7 @@ class Nav extends Component {
             </div>
           ) : null}
         </div>
+        {/* -----------------------------------------Navigation buttons------------------------------- */}
         <div className="navButtons">
           <div
             className={

@@ -82,7 +82,8 @@ class NavHam extends Component {
           >
             Contact
           </div>
-          <div
+
+          {/* <div
             className={
               this.props.location.pathname === "/Blog"
                 ? "selected"
@@ -94,7 +95,8 @@ class NavHam extends Component {
             }}
           >
             Blog
-          </div>
+          </div> */}
+
         </div>
       </nav>
     );

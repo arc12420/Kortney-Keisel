@@ -47,12 +47,24 @@
     background-color: rgb(59, 59, 59);
     opacity:.5;
 }
+.menuWrap{
+}
+.navHamTopContainer{
+    animation: fadeIn 1s;
+  }
+  @keyframes fadeIn{
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
 .hamburger{
     height: 100%;
     width: 100%;
     display: flex;
-    transform: translateY(none);
 }
 
 
