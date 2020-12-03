@@ -138,18 +138,16 @@ class Nav extends Component {
           >
             Contact
           </div>
-          <div
+
+          {/* <div
             className={
               this.props.location.pathname === "/Blog" ? "selected" : "navBlog"
             }
             onClick={() => this.props.history.push("/Blog")}
           >
             Blog
-          </div>
+          </div> */}
         </div>
-        {/* <div className="KLogoBox">
-          <img src={KLogo} className="KLogo" alt="Logo" />
-        </div> */}
       </nav>
     );
   }

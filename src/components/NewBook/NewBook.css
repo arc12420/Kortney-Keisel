@@ -307,6 +307,9 @@ hr {
 }
 
 @media (max-width: 800px) {
+  .newBookReleaseDateTempTitle{
+    border-width: 3.5px;
+  }
   .newBookTitle-Info {
     font-size: 4vw;
     width: 90%;
@@ -335,5 +338,16 @@ hr {
 @media (max-width: 600px) {
   .newBookTitleTempTwo {
     font-size: 8vw;
+  }
+  .newBookReleaseDateTempTitle{
+    border-width: 2px;
+  }
+}
+@media (max-width: 500px) {  
+  .buyButtonContainerTemp {
+    height: 60px;
+  }
+  .buyLinkButtonBoxTemp {
+    line-height: 25px;
   }
 }
