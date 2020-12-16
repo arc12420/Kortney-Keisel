@@ -1,3 +1,6 @@
+// **************************************App.JS********************************************
+
+// -------------------------------------DEPENDENCIES---------------------------------------
 import React, { Component } from "react";
 import Navigation from "./components/Navigation/Navigation";
 import Footer from "./components/Footer/Footer";
@@ -11,6 +14,8 @@ import "./reset.css";
 import "./index.css";
 import "./Fonts/Kemuri-Regular.eot";
 
+// -------------------------------------FUNCTIONALITY------------------------------------
+
 class App extends Component {
   componentDidMount() {
     axios.get("/api/verify").then((res) => {
@@ -19,6 +24,8 @@ class App extends Component {
       }
     });
   }
+
+  // -----------------------------------STRUCTURE--------------------------------------------
 
   render() {
     // console.log(this.props);
