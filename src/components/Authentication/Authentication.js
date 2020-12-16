@@ -1,9 +1,13 @@
+// **************************************AUTHENTICATION.JS*****************************************
+
+// -------------------------------------DEPENDENCIES---------------------------------------
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { loginUser } from "../../redux/reducer";
 import "./Authentication.css";
 import axios from "axios";
 
+// -------------------------------------FUNCTIONALITY--------------------------------------
 class Authentication extends Component {
   constructor() {
     super();
@@ -13,6 +17,7 @@ class Authentication extends Component {
     };
   }
 
+  // -------------------------------------HANDELERS-------------------------------------------
   handleEmail = (value) => {
     this.setState({ email: value });
   };
@@ -21,6 +26,7 @@ class Authentication extends Component {
     this.setState({ password: value });
   };
 
+  // -------------------------------------FUNCTIONS-------------------------------------------
   login = (e) => {
     e.preventDefault();
     const { email, password } = this.state;
@@ -37,10 +43,10 @@ class Authentication extends Component {
       });
   };
 
-  
+  // -----------------------------------STRUCTURE---------------------------------------------
   render() {
     return (
-      <div className="body" >
+      <div className="body">
         <main className="authenticationComponent">
           <h6 className="welcome">Welcome Kortney!</h6>
           <div className="authenticationInputsAndButton">
@@ -50,14 +56,13 @@ class Authentication extends Component {
                 className="authenticationEmailInput"
                 onChange={(event) => this.handleEmail(event.target.value)}
               />
-              <form
-                onSubmit={ this.login}>
-              <input
-                placeholder="Password"
-                className="authenticationPasswordInput"
-                type="password"
-                onChange={(event) => this.handlePassword(event.target.value)}
-              />
+              <form onSubmit={this.login}>
+                <input
+                  placeholder="Password"
+                  className="authenticationPasswordInput"
+                  type="password"
+                  onChange={(event) => this.handlePassword(event.target.value)}
+                />
               </form>
             </div>
             <div className="authButtonBox">
