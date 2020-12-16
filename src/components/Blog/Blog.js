@@ -1,9 +1,13 @@
+// **************************************ABOUT.JS*****************************************
+
+// -------------------------------------DEPENDENCIES---------------------------------------
 import React, { Component } from "react";
 import axios from "axios";
 import Post from "../Post/Post";
 import { MdAdd } from "react-icons/md";
 import "./Blog.css";
 
+// -------------------------------------FUNCTIONALITY--------------------------------------
 class Blog extends Component {
   constructor() {
     super();
@@ -21,6 +25,8 @@ class Blog extends Component {
       posts: post.data,
     });
   }
+
+   // -----------------------------------STRUCTURE---------------------------------------------
   render(props) {
     console.log(this.state.posts);
     const arr = this.state.posts.map((element, index) => {
