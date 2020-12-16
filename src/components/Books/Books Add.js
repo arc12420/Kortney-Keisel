@@ -1,3 +1,6 @@
+// **************************************ABOUT.JS*****************************************
+
+// -------------------------------------DEPENDENCIES---------------------------------------
 import React, { Component } from "react";
 import axios from "axios";
 import { withRouter } from "react-router-dom";
@@ -6,6 +9,7 @@ import BooksIndividual from "../Books Individual/Books Individual";
 import { MdAdd } from "react-icons/md";
 import FreeBook from "../Free Book/FreeBook";
 
+// -------------------------------------FUNCTIONALITY--------------------------------------
 class Books extends Component {
   constructor() {
     super();
@@ -23,7 +27,7 @@ class Books extends Component {
       books: book.data,
     });
   }
-  // ---------------------------------Structure------------------
+  // -----------------------------------STRUCTURE---------------------------------------------
   render() {
     const arr = this.state.books.map((element, index) => {
       return (
@@ -34,9 +38,7 @@ class Books extends Component {
     });
     return (
       <div className="body">
-        <div className="booksComponent">
-            ADD
-        </div>
+        <div className="booksComponent">ADD</div>
         <FreeBook />
       </div>
     );

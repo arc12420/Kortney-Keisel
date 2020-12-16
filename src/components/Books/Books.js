@@ -1,3 +1,6 @@
+// **************************************BOOKS.JS*****************************************
+
+// -------------------------------------DEPENDENCIES---------------------------------------
 import React, { Component } from "react";
 import axios from "axios";
 import { withRouter } from "react-router-dom";
@@ -7,6 +10,7 @@ import { MdAdd } from "react-icons/md";
 import FreeBook from "../Free Book/FreeBook";
 // import AWS from "../AWS/AWS";
 
+// -------------------------------------FUNCTIONALITY--------------------------------------
 class Books extends Component {
   constructor() {
     super();
@@ -25,7 +29,7 @@ class Books extends Component {
       books: book.data,
     });
   }
-  // ---------------------------------Structure------------------
+  // -----------------------------------STRUCTURE---------------------------------------------
   render() {
     const arr = this.state.books.map((element, index) => {
       return (
