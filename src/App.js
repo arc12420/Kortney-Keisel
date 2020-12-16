@@ -28,19 +28,16 @@ class App extends Component {
   // -----------------------------------STRUCTURE--------------------------------------------
 
   render() {
-    // console.log(this.props);
-    // console.log(this.props.location);
-    // console.log(this.props.location.pathname);
     return (
       <div>
         <div className="app">
           <div className="projectHeader">
             <div className="navLeader">
-                <Navigation />
+              <Navigation />
             </div>
             {routes}
             <div className="footerLeader">
-                <Footer/>
+              <Footer />
             </div>
           </div>
         </div>

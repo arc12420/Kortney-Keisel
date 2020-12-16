@@ -6,7 +6,6 @@ import axios from "axios";
 import { withRouter } from "react-router-dom";
 import "./Contact.css";
 
-
 // -------------------------------------FUNCTIONALITY--------------------------------------
 class Contact extends Component {
   constructor() {
@@ -18,7 +17,7 @@ class Contact extends Component {
     };
   }
 
-// -------------------------------------HANDELERS-------------------------------------------
+  // -------------------------------------HANDELERS-------------------------------------------
 
   handleEmail = (value) => {
     this.setState({ email: value });
@@ -33,23 +32,20 @@ class Contact extends Component {
     console.log(this.state);
   };
 
-// -------------------------------------FUNCTIONS-------------------------------------------
+  // -------------------------------------FUNCTIONS-------------------------------------------
 
   requiredEmail = () => {
-var rEmail = this.state.email.value;
-if (rEmail !== "@")
-{
-alert("Please enter a valid email");
-return false;
-}
-else 
-{
-alert('Code has accepted : you can try another');
-return true; 
-}
-}
+    var rEmail = this.state.email.value;
+    if (rEmail !== "@") {
+      alert("Please enter a valid email");
+      return false;
+    } else {
+      alert("Code has accepted : you can try another");
+      return true;
+    }
+  };
 
-resetFields = () => {
+  resetFields = () => {
     let inputs = document.querySelectorAll("input", "textarea");
     inputs.forEach((input) => (input.value = ""));
     this.setState({ email: "", name: "", emailBody: "" });
@@ -80,7 +76,7 @@ resetFields = () => {
 
   render() {
     return (
-      <div className = "body">
+      <div className="body">
         <div className="contactComponent">
           <div className="titleAndContentContact">
             <h6 className="contactTitle">Have a question for Kortney?</h6>

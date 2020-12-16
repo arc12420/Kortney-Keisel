@@ -1,20 +1,23 @@
+// **************************************ABOUTDATA.JS*****************************************
+
+// -------------------------------------DEPENDENCIES---------------------------------------
 import React from "react";
 import { withRouter } from "react-router-dom";
 import { RiEditFill } from "react-icons/ri";
 import kortneyChildPic from "../../Photos/KKChildPhoto.JPG";
 import kortneyAboutPic from "../../Photos/FAM.jpg";
 
+// -----------------------------------STRUCTURE---------------------------------------------
 function AboutData(props) {
   return (
     <div className="aboutComponent">
       <div className="aboutText">
         <div className="aboutEditBox">
-          <div className="aboutEdit">
-            {/* <RiEditFill /> */}
-          </div>
+          <div className="aboutEdit">{/* <RiEditFill /> */}</div>
         </div>
         <h5 className="aboutTitle">About Kortney</h5>
         <div className="aboutImage1-P1">
+          {/* ------------WHEN S3 GETS SET UP-------------------- */}
           {/* <img
           src={props.about.img1}
           className="kortneyChildPic"
@@ -32,6 +35,7 @@ function AboutData(props) {
         <div className="aboutImage2-P2">
           <p className="aboutP2">{props.about.paragraph2}</p>
 
+          {/* ------------WHEN S3 GETS SET UP-------------------- */}
           {/* <img
           src={props.about.img2}
           className="kortneyAboutPic"
