@@ -1,8 +1,13 @@
+// **************************************CONTACT.JS********************************************
+
+// -------------------------------------DEPENDENCIES---------------------------------------
 import React, { Component } from "react";
 import axios from "axios";
 import { withRouter } from "react-router-dom";
 import "./Contact.css";
 
+
+// -------------------------------------FUNCTIONALITY--------------------------------------
 class Contact extends Component {
   constructor() {
     super();
@@ -13,7 +18,7 @@ class Contact extends Component {
     };
   }
 
-  // ----------------------------------------------Input Handlers---------------------------------------
+// -------------------------------------HANDELERS-------------------------------------------
 
   handleEmail = (value) => {
     this.setState({ email: value });
@@ -28,7 +33,7 @@ class Contact extends Component {
     console.log(this.state);
   };
 
-  // --------------------------------------------------------Functions--------------------------------------
+// -------------------------------------FUNCTIONS-------------------------------------------
 
   requiredEmail = () => {
 var rEmail = this.state.email.value;
@@ -71,7 +76,7 @@ resetFields = () => {
       });
   };
 
-  // ----------------------------------------------------Structure-------------------------------------------------------
+  // -----------------------------------STRUCTURE------------------------------------------
 
   render() {
     return (
