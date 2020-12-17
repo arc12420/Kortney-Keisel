@@ -1,3 +1,6 @@
+// **************************************ABOUT.JS*****************************************
+
+// -------------------------------------DEPENDENCIES---------------------------------------
 import React, { Component } from "react";
 import axios from "axios";
 import "./Home.css";
@@ -7,6 +10,7 @@ import booksPicOne from "../../Photos/THE PROMISED PRINCE.png";
 import NewBook from "../NewBook/NewBook";
 // import NewBookEdit from "../NewBook/NewBookEdit/NewBookEdit";
 
+// -------------------------------------FUNCTIONALITY--------------------------------------
 class Home extends Component {
   constructor() {
     super();
@@ -19,14 +23,14 @@ class Home extends Component {
       books: [],
     };
   }
-
+  
   componentDidMount() {
     this.getData();
   }
   async getData() {
     const newbook = await axios.get("/api/newbook");
     const book = await axios.get("/api/books");
-
+    
     this.setState({
       newbook: newbook.data,
       title: newbook.data[0].title,
@@ -36,8 +40,9 @@ class Home extends Component {
       books: book.data,
     });
   }
-
-  // ---------------------------------------------------------edit post-----------------------
+  
+  // -------------------------------------HANDELERS-------------------------------------------
+  // -------------------------------------EDIT NEWBOOK INFO-----------------------------------
   handleTitle = (value) => {
     this.setState({ title: value });
   };
@@ -48,7 +53,8 @@ class Home extends Component {
     this.setState({ description: value });
   };
   // --------------------------------------------------------------------------------------------------
-
+  
+  // -----------------------------------STRUCTURE---------------------------------------------
   render() {
     console.log(this.props.history)
     // const arr = this.state.newbook.map((element, index) => {
