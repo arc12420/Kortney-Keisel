@@ -1,3 +1,6 @@
+// **************************************ABOUT.JS*****************************************
+
+// -------------------------------------DEPENDENCIES---------------------------------------
 import React from "react";
 import { withRouter } from "react-router-dom";
 import { MdDeleteForever } from "react-icons/md";
@@ -5,11 +8,13 @@ import { RiEditFill } from "react-icons/ri";
 import BK1 from "../../Photos/THE PROMISED PRINCE.png";
 import BK2 from "../../Photos/THE REJECTED KING.png";
 
+// -------------------------------------FUNCTIONALITY--------------------------------------
+// -----------------------------------STRUCTURE---------------------------------------------
 function BooksIndividual(props) {
   return (
     <div className="booksIndividualComponent">
-      <div className="booksBook">        
-      <h5 className="titleHid">{props.books.title}</h5>
+      <div className="booksBook">
+        <h5 className="titleHid">{props.books.title}</h5>
         <div className="booksImage">
           <img
             src={
