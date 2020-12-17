@@ -1,13 +1,18 @@
+// **************************************Footer.JS*****************************************
+
+// -------------------------------------DEPENDENCIES---------------------------------------
 import React from "react";
 import "./Footer.css";
 import { SiFacebook } from "react-icons/si";
 import { AiFillInstagram } from "react-icons/ai";
 import { GrPinterest } from "react-icons/gr";
 
+// -------------------------------------FUNCTIONALITY--------------------------------------
+// -----------------------------------STRUCTURE---------------------------------------------
 function Home(props) {
   return (
     <footer>
-      <ul className="iconsBox">   
+      <ul className="iconsBox">
         <li>
           <a
             href="https://www.facebook.com/groups/1095939214157711/"
