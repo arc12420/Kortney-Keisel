@@ -1,3 +1,6 @@
+// **************************************Navigation.JS*****************************************
+
+// -------------------------------------DEPENDENCIES---------------------------------------
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
@@ -9,6 +12,7 @@ import "./Navigation.css";
 import axios from "axios";
 import KLogo from "../../Logos/KKLogo-2.1-Clear.png";
 
+// -------------------------------------FUNCTIONALITY--------------------------------------
 class Nav extends Component {
   constructor() {
     super();
@@ -17,6 +21,7 @@ class Nav extends Component {
     };
   }
 
+  // -------------------------------------FUNCTIONS-------------------------------------------
   logout = () => {
     axios
       .get("/api/logout")
@@ -27,27 +32,27 @@ class Nav extends Component {
       .catch((err) => console.log(err));
   };
 
+  // -------------------------------------HANDELERS-------------------------------------------
   handleCheck = (event) => {
     this.setState({ checkedN: event.target.checked });
   };
-  
+
   handleCheckClick = (event) => {
     this.setState({ checkedN: true });
   };
-  
-  
-  // --------------------------RENDERED INFO-------------------------
+
+  // -----------------------------------STRUCTURE---------------------------------------------
   render(props) {
     // console.log(this.props);
     // console.log(this.props.user);
     // console.log(this.props.location.pathname);
-    console.log(this.state.checkedN)
+    console.log(this.state.checkedN);
     return (
       <nav className="navigationComponent">
         <div className="KLogoBox">
           <img src={KLogo} className="KLogo" alt="Logo" />
         </div>
-        {/* ------------------------------------------hambuger/logout buttons------------------------------- */}
+        {/* v------------------------------------------HAMBURGER/LOGOUT BUTTONS-------------------------------v */}
         <div className="hiddenButtons">
           <div className="menuWrap">
             <input
@@ -55,12 +60,13 @@ class Nav extends Component {
               className="toggler"
               checked={this.state.checkedN}
               onChange={this.handleCheck}
-              />
+            />
             {this.state.checkedN === true ? null : (
               <div className="navHamTopContainer">
-                <NavHam 
-                className="navHamCont"
-                handleCheckClick={this.handleCheckClick}/>
+                <NavHam
+                  className="navHamCont"
+                  handleCheckClick={this.handleCheckClick}
+                />
                 <div
                   className="greySpace"
                   onClick={() => {
@@ -86,15 +92,13 @@ class Nav extends Component {
             </div>
           ) : null}
         </div>
-        {/* -----------------------------------------Navigation buttons------------------------------- */}
+        {/* v-----------------------------------------NAVIGATION BUTTONS-------------------------------v */}
         <div className="navButtons">
           <div
             className={
               this.props.location.pathname === "/" ? "selected" : "navHome"
             }
-            onClick={() => 
-              this.props.history.push("/")
-            }
+            onClick={() => this.props.history.push("/")}
           >
             Home
           </div>
@@ -141,7 +145,7 @@ class Nav extends Component {
           >
             Contact
           </div>
-
+          {/* --------------------------------------------------BLOG PAGE REMOVED UNTIL DATA TO ENTER------------------------ */}
           {/* <div
             className={
               this.props.location.pathname === "/Blog" ? "selected" : "navBlog"
