@@ -51,7 +51,8 @@
   .freeBook {
     width:20vw;
     margin-right: 95px;
-    border-radius: 4px;  
+    border: 1px solid #777777;
+    border-radius: 5px;
     box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.472);
   }
   
