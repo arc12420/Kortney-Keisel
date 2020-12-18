@@ -181,7 +181,7 @@
     line-height: 26pt;
 }
 
-.bkDiscription {
+.bkDescription {
   height: auto;
   min-height: 50px;
   font-size: 1.3vw;  
@@ -235,7 +235,7 @@
     .booksImage {
         width: 25vw;
       }
-      .bkDiscription {
+      .bkDescription {
         font-size: 1.8vw;
       }
       .title {
@@ -272,7 +272,7 @@
         margin-top: 15px;
         width:35vw;
     }
-    .bkDiscription {
+    .bkDescription {
       font-size: 2.2vw;
     }
     .booksTitleDiscButton{
@@ -293,7 +293,7 @@
       .bookPageTitle {
         font-size: 4.2vw;
       }
-      .bkDiscription {
+      .bkDescription {
         font-size: 2.8vw;
       }
   }
@@ -309,7 +309,7 @@
         font-size: 6.5vw;
         text-align: center;
       }
-      .bkDiscription {
+      .bkDescription {
         font-size: 3.5vw;
       }
       .booksImage{
