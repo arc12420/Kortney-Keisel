@@ -136,13 +136,11 @@
   margin-right: 60px;
 }
 
-
 .booksTitleDiscButton {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 45vw;
-  /* margin-right: 40px; */
 }
 
 .booksTitleDisc {
