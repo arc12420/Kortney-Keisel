@@ -83,14 +83,11 @@
     margin-top: 60px;
     background-color: #f98c88c0;
     border-radius: 8px;
-    /* --------Dark Shadow--------- */
-    /* box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.472); */
   }
 
   .freeBookText p{
     margin-top: 10px;
     margin-bottom: 10px;
-    /* font-family:Kemuri ; */
     text-transform: none;
   }
   
