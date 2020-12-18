@@ -39,15 +39,7 @@
   color: #f98c88;
 }
 
-.postTitle {
-  width: 650px;
-  margin-left: 10px;
-  margin-top: 10px;
-  font-size: 25px;
-  font-weight: bold;
-  text-decoration: underline;
-  color: #fb807b;
-}
+
 
 .editPost {
   height: 40px;
@@ -112,6 +104,15 @@
 }
 
 /* ----------------------------------------------------------------------- */
+.postTitle {
+  width: 650px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #fb807b;
+}
 .postTitle {
   display: flex;
   align-items: center;
