@@ -16,18 +16,17 @@ function Newbook(props) {
         {/* <NewBookEdit/> */}
         {/* <div className="editNewBookButton"><RiEditFill/></div> */}
       </div>
-      <p className="newBookTitleTempTwo">Coming Soon</p>
+      <p className="newBookTitleTempTwo">Now Available!</p>
       <section className="imageOneBoxContentTemp">
         <img src={props.booksPicOne} className="imageOneTemp" alt="Book" />
         <div className="newBookTitle-InfoTemp">
           <hr />
-          <p className="newBookReleaseDateTempTitle">January 12, 2021</p>
+          <p className="newBookReleaseDateTempTitle">Get your copy today!</p>
           <div className="buyButtonContainerTemp">
             <hr />
             <li className="buyLinkButtonBoxTemp">
               <a href={props.newbook.urllink}>
-                Pre-Order your <br />
-                copy
+                PURCHASE
               </a>
             </li>
           </div>
