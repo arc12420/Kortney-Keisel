@@ -6,9 +6,13 @@ import axios from "axios";
 import { withRouter } from "react-router-dom";
 import "./Books.css";
 import BooksIndividual from "../Books Individual/Books Individual";
-import { MdAdd } from "react-icons/md";
+import { MdAdd, MdFeaturedPlayList } from "react-icons/md";
 import FreeBook from "../Free Book/FreeBook";
 // import AWS from "../AWS/AWS";
+
+// -------------------------Note When Changing----------------------------------------
+// -FreeBook Section : You can manually change this.state to hide or unhide that section.
+// -BookCompAddBook component: This is a part of the unfinished Admin features.
 
 // -------------------------------------FUNCTIONALITY--------------------------------------
 class Books extends Component {
@@ -16,7 +20,7 @@ class Books extends Component {
     super();
     this.state = {
       books: [],
-      // picture: ""
+      hideFreeBook: true
     };
   }
 
@@ -29,6 +33,8 @@ class Books extends Component {
       books: book.data,
     });
   }
+
+  
   // -----------------------------------STRUCTURE---------------------------------------------
   render() {
     const arr = this.state.books.map((element, index) => {
@@ -49,7 +55,9 @@ class Books extends Component {
           </div> */}
           {arr}
         </div>
+        {this.state.hideFreeBook ? null :
         <FreeBook />
+        }
       </div>
     );
   }
