@@ -70,7 +70,8 @@ class Home extends Component {
         <div className="homePage">
           <main className="homePageMain">
             <div className="imageOneBox">
-              {arr}
+              {/* {arr} */}
+              <NewBook/>
             </div>
             <FreeBook />
           </main>

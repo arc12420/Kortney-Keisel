@@ -1,4 +1,4 @@
-// **************************************ABOUT.JS*****************************************
+// **************************************NewBook.JS*****************************************
 
 // -------------------------------------DEPENDENCIES---------------------------------------
 import React from "react";
@@ -6,6 +6,7 @@ import { withRouter } from "react-router-dom";
 import { RiEditFill } from "react-icons/ri";
 // import NewBookEdit from "./NewBookEdit/NewBookEdit";
 import "../NewBook/NewBook.css";
+import comingSoonImage from "../../Photos/THE STOLEN PRINCESS.jpeg"
 
 // -------------------------------------FUNCTIONALITY--------------------------------------
 // -----------------------------------STRUCTURE---------------------------------------------
@@ -16,20 +17,21 @@ function Newbook(props) {
         {/* <NewBookEdit/> */}
         {/* <div className="editNewBookButton"><RiEditFill/></div> */}
       </div>
-      <p className="newBookTitleTempTwo">Now Available!</p>
+      {/* <p className="newBookTitleTempTwo">Now Available!</p> */}
+      <p className="newBookTitleTempTwo">Coming Soon!</p>
       <section className="imageOneBoxContentTemp">
-        <img src={props.booksPicOne} className="imageOneTemp" alt="Book" />
+        <img src={comingSoonImage} className="imageOneTemp" alt="Book" />
         <div className="newBookTitle-InfoTemp">
           <hr />
-          <p className="newBookReleaseDateTempTitle">Get your copy today!</p>
-          <div className="buyButtonContainerTemp">
-            <hr />
-            <li className="buyLinkButtonBoxTemp">
+          <p className="newBookReleaseDateTempTitle">More Information Coming the week of 2/21</p>
+          {/* <div className="buyButtonContainerTemp"> */}
+            {/* <hr /> */}
+            {/* <li className="buyLinkButtonBoxTemp">
               <a href={props.newbook.urllink}>
                 PURCHASE
               </a>
-            </li>
-          </div>
+            </li> */}
+          {/* </div> */}
         </div>
       </section>
       {/* <section className="imageOneBoxContent">          

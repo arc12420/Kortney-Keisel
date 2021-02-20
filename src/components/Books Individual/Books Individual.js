@@ -7,6 +7,7 @@ import { MdDeleteForever } from "react-icons/md";
 import { RiEditFill } from "react-icons/ri";
 import BK1 from "../../Photos/THE PROMISED PRINCE.png";
 import BK2 from "../../Photos/THE REJECTED KING.png";
+import BK3 from "../../Photos/THE STOLEN PRINCESS.jpeg";
 
 // -------------------------------------FUNCTIONALITY--------------------------------------
 // -----------------------------------STRUCTURE---------------------------------------------
@@ -22,6 +23,8 @@ function BooksIndividual(props) {
                 ? BK1
                 : props.books.title === "The Rejected King"
                 ? BK2
+                : props.books.title === "The Rejected King"
+                ? BK3
                 : null
             }
             className="bookImg"
