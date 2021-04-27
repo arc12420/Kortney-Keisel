@@ -151,6 +151,7 @@ p {
   font-family: "Denver-Black";
   border-bottom: #252d42 solid 5px;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 .buyButtonContainerTemp {
   width: 28vw;
