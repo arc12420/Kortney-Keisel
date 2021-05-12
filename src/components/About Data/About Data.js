@@ -17,6 +17,7 @@ function AboutData(props) {
         </div>
         <h5 className="aboutTitle">About Kortney</h5>
         <div className="aboutImage1-P1">
+      {console.log('ABOUT DATA HIT')}
           {/* ------------WHEN S3 GETS SET UP-------------------- */}
           {/* <img
           src={props.about.img1}

@@ -4,7 +4,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Post from "../Post/Post";
-import { MdAdd } from "react-icons/md";
+// import { MdAdd } from "react-icons/md";
 import "./Blog.css";
 
 // -------------------------------------FUNCTIONALITY--------------------------------------

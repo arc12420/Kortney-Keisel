@@ -12,6 +12,8 @@ code {
     monospace;
 }
 
+/* ----------------------------------Each Page transition---------------------- */
+
 @keyframes transitionIn {
   from {
       opacity: 0;

@@ -3,7 +3,7 @@
 // -------------------------------------DEPENDENCIES---------------------------------------
 import React from "react";
 import { withRouter } from "react-router-dom";
-import { RiEditFill } from "react-icons/ri";
+// import { RiEditFill } from "react-icons/ri";
 // import NewBookEdit from "./NewBookEdit/NewBookEdit";
 import "../NewBook/NewBook.css";
 import comingSoonImage from "../../Photos/THE STOLEN PRINCESS.png"

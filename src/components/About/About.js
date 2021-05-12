@@ -24,11 +24,13 @@ class About extends Component {
     });
   }
 
+  
   // -----------------------------------STRUCTURE---------------------------------------------
   render() {
     const arr = this.state.about.map((element, index) => {
       return (
         <div className="aboutComponentTop">
+          {console.log('ABOUT HIT')}
           <AboutData className="about" about={element} />
         </div>
       );

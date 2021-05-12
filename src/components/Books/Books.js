@@ -6,7 +6,7 @@ import axios from "axios";
 import { withRouter } from "react-router-dom";
 import "./Books.css";
 import BooksIndividual from "../Books Individual/Books Individual";
-import { MdAdd, MdFeaturedPlayList } from "react-icons/md";
+// import { MdAdd, MdFeaturedPlayList } from "react-icons/md";
 import FreeBook from "../Free Book/FreeBook";
 // import AWS from "../AWS/AWS";
 

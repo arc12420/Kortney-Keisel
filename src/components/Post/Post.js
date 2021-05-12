@@ -4,8 +4,8 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import "./Post.css";
-import { RiEditFill } from "react-icons/ri";
-import { MdDeleteForever } from "react-icons/md";
+// import { RiEditFill } from "react-icons/ri";
+// import { MdDeleteForever } from "react-icons/md";
 
 // -------------------------------------FUNCTIONALITY--------------------------------------
 // -----------------------------------STRUCTURE---------------------------------------------
