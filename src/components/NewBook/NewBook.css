@@ -125,7 +125,7 @@ p {
   font-size: 6vw;
   color: #f98c88;
   font-family: "Paeonia-Regular";
-  margin-bottom: 20px;
+  margin-bottom: 10vh;
 }
 .newBookReleaseDateTemp {
   font-size: 1.75vw;
@@ -149,16 +149,18 @@ p {
   flex-direction: column;
   text-decoration: underline;
   font-family: "Denver-Black";
-  border-bottom: #252d42 solid 5px;
+  border-bottom: #252d42 solid 4px;
   text-decoration: none;
   margin-bottom: 20px;
 }
+
 .buyButtonContainerTemp {
   width: 28vw;
   height: 13vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 4vh;
 }
 .buyLinkButtonBoxTemp {
   height: 100%;
@@ -178,10 +180,29 @@ p {
   background-color: white;
   box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.472);
 }
+.releaseDateBox{
+ font-size:110%;
+ padding-bottom: 3vh;
+ border-bottom: 4px solid #252d42;
+ width:65%;
+ margin-bottom: 4vh;
+ padding-top: 4vh;
+}
+.newBookDescription{
+  padding-top: 1vh;
+  padding-bottom:1vh;
+font-size:17px;
+/* font-family: paeonia; */
+line-height: 20px;
+}
 .newBookTitle-InfoTemp {
-  /* background-color: #41b9bfaf; */
-  width: 30vw;
-  height: 350px;
+  /* WITH NO DESCRIPTION USE THIS WIDTH */
+  /* width: 30vw; */
+
+  /* WITH A DESCRIPTION USE THIS WIDTH */
+  width: 37vw;
+  /* height: 350px; */
+  height:auto;
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
@@ -242,6 +263,7 @@ hr {
   }
   .newBookTitleTempTwo {
     font-size: 5vw;
+    margin-bottom: 10vh;
   }
   .newBookReleaseDateTemp {
     font-size: 2vw;
@@ -274,6 +296,9 @@ hr {
   /* -------------------------------TEMPORARY--------------- */
   .imageOneBoxContentTemp {
     flex-direction: column;
+  }
+  .newBookTitleTempTwo {
+    margin-bottom: 20px;
   }
   .newBookTitle-InfoTemp {
     width: 75%;
