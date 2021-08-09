@@ -73,7 +73,7 @@ class Home extends Component {
               {/* {arr} */}
               <NewBook/>
             </div>
-            {/* <FreeBook /> */}
+            <FreeBook />
           </main>
           <hr />
         </div>

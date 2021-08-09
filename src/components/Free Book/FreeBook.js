@@ -4,7 +4,11 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import "./FreeBook.css";
-import freeBookCover from "../../Photos/THE REJECTED KING.png";
+// import freeBookCover from "../../Photos/THE REJECTED KING.png";
+// import freeBookCover from "../../Photos/THE FORGOTTEN QUEEN.jpg";
+// import freeBookCover from "../../Photos/THE STOLEN PRINCESS.png"; 
+// import freeBookCover from "../../Photos/THE REJECTED KING.png"; 
+import freeBookCover from "../../Photos/THE PROMISED PRINCE.png";
 
 // -------------------------------------FUNCTIONALITY--------------------------------------
 // *!----------------------------------------Page Info ----------------------------------------------------

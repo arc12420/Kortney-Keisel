@@ -6,7 +6,8 @@ import { withRouter } from "react-router-dom";
 import { RiEditFill } from "react-icons/ri";
 // import NewBookEdit from "./NewBookEdit/NewBookEdit";
 import FreeBook from "../Free Book/FreeBook";
-import "../NewBook/NewBook.css";import comingSoonImageForgottonQueen from "../../Photos/THE FORGOTTEN QUEEN.jpg";
+import "../NewBook/NewBook.css";
+import comingSoonImageForgottonQueen from "../../Photos/THE FORGOTTEN QUEEN.jpg";
 import comingSoonImageStolenPrincess from "../../Photos/THE STOLEN PRINCESS.png"; 
 import comingSoonImageRejectedKing from "../../Photos/THE REJECTED KING.png"; 
 import comingSoonImagePromisedPrince from "../../Photos/THE PROMISED PRINCE.png"; 
@@ -14,15 +15,15 @@ import comingSoonImagePromisedPrince from "../../Photos/THE PROMISED PRINCE.png"
 // *!----------------------------------------Page Info ----------------------------------------------------
 
 // **------------Title-----------------------
-let topSectionTitle = "Featured Book";
+// let topSectionTitle = "Featured Book";
 // let topSectionTitle = "Now Available!";
-// let topSectionTitle = "Coming Soon!";
+let topSectionTitle = "Coming Soon!";
 
 // **--------------Image------------------
-let image = comingSoonImagePromisedPrince;
+// let image = comingSoonImagePromisedPrince;
 // let image = comingSoonImageRejectedKing;
 // let image = comingSoonImageStolenPrincess;
-// let image = comingSoonImageForgottonQueen;
+let image = comingSoonImageForgottonQueen;
 
 // **--------------ImageButton------------------
 // let image = comingSoonImagePromisedPrince;
@@ -31,11 +32,12 @@ let image = comingSoonImagePromisedPrince;
 // let image = comingSoonImageForgottonQueen;
 
 // **-------------------TopSectionText--------------
-// let topSectionInfo = "forgottonQueen";
-let topSectionInfo = "None";
+let topSectionInfo = "forgottonQueen";
+// let topSectionInfo = "None";
 
 // **-------------------FreeBookOnTop--------------
-let freeBookTop = true;
+// let freeBookTop = true;
+let freeBookTop = false;
 
 
 
