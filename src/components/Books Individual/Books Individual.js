@@ -8,6 +8,7 @@ import { RiEditFill } from "react-icons/ri";
 import BK1 from "../../Photos/THE PROMISED PRINCE.png";
 import BK2 from "../../Photos/THE REJECTED KING.png";
 import BK3 from "../../Photos/THE STOLEN PRINCESS.png";
+import BK4 from "../../Photos/THE FORGOTTEN QUEEN.jpg";
 
 // -------------------------------------FUNCTIONALITY--------------------------------------
 // -----------------------------------STRUCTURE---------------------------------------------
@@ -25,6 +26,8 @@ function BooksIndividual(props) {
                 ? BK2
                 : props.books.title === "The Stolen Princess"
                 ? BK3
+                : props.books.title === "The Forgotten Queen"
+                ? BK4
                 : null
             }
             className="bookImg"
@@ -49,7 +52,10 @@ function BooksIndividual(props) {
           </div>
           <div className="buyButtonContainer">
             <li className="buyLinkButtonBox">
+              {props.books.title === "The Forgotten Queen" ? 
+              (<a href={props.books.urllink}>Pre-Order</a>) :
               <a href={props.books.urllink}>Purchase</a>
+              }
             </li>
           </div>
         </div>
