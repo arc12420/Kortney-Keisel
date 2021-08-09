@@ -118,12 +118,11 @@ class Nav extends Component {
                 ? "selected"
                 : "navNewsletter"
             }
+          
+            
+            onClick={() => this.props.history.push("/Newsletter")}
           >
-            <li>
-              <a href="https://www.subscribepage.com/f7q6g9">
-                <span className="newsLetterButton">Newsletter</span>
-              </a>
-            </li>
+            Newsletter
           </div>
           <div
             className={

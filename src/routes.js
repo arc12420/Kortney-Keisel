@@ -7,13 +7,13 @@ import Books from "./components/Books/Books";
 import Contact from "./components/Contact/Contact";
 import Blog from "./components/Blog/Blog";
 import Success from "./components/Newsletter/Success";
-// import Newsletter from "./components/Newsletter/Newsletter";
+import Newsletter from "./components/Newsletter/Newsletter";
 
 export default (
   <Switch>
     <Route exact path="/" component={Home} />
     <Route path="/Books" component={Books} />
-    {/* <Route path="/Newsletter" component={Newsletter} /> */}
+    <Route path="/Newsletter" component={Newsletter} />
     <Route path="/About" component={About} />
     <Route path="/Contact" component={Contact} />
     <Route path="/Blog" component={Blog} />
