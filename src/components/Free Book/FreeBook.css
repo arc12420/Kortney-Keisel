@@ -65,6 +65,16 @@
     align-items: center;
     flex-direction: column;
   }
+  
+  .commentaryText-Button {
+    width: 30vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
 
   .freeBookTitle{
     font-family: Denver-Black;
@@ -73,9 +83,28 @@
     font-size: 2vw;
     margin: 10px;
   }
+
+  .commentaryTitle{
+    font-family: Denver-Black;
+    text-decoration: underline;
+    text-underline-position: under;
+    font-size: 1.5vw;
+    margin: 2vh;
+    line-height:5vh;
+  }
   
   .freeBookText {
     font-size: 1.5vw;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-top: 60px;
+    background-color: #f98c88c0;
+    border-radius: 8px;
+  }
+  
+  .commentaryText {
     color: white;
     text-align: center;
     text-transform: uppercase;
@@ -92,6 +121,16 @@
   }
   
   .freeBookButtonBox{
+      width:100%;
+      height:250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      margin-bottom: 25px;
+  }
+  
+  .commentaryButtonBox{
       width:100%;
       height:250px;
       display: flex;
@@ -131,6 +170,36 @@
     border-color: #2A324B;
     box-shadow: 0 0 10px #000105;
   }
+  
+  .commentaryButton {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.8vw;
+    font-family: 'Denver-Black';
+    color:#2A324B;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 2px;
+    border-color: rgb(90, 90, 90);
+    border-style: solid;
+    text-transform: uppercase;  
+    box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.472);
+  }
+  
+  .commentaryLI {
+    height: 50%;
+    width: 28vw;
+  }
+    
+  .commentaryButtonBox :hover{
+    background-color: #2A324B;
+    color: white;
+    border-color: #2A324B;
+    box-shadow: 0 0 10px #000105;
+  }
 /* -------------------------------------------------------Media queries------------------------------------------ */
 
 @media (max-width:1200px) {
@@ -138,6 +207,12 @@
     height: 80%;
   }
   .freeBookLI {
+    height: 40%;
+  }
+  .commentaryButton {
+    height: 80%;
+  }
+  .commentaryLI {
     height: 40%;
   }
   .homeFreeBookImage {
@@ -177,6 +252,28 @@
     height: 10vh;
     width: 50vw;
   }
+  .commentaryText {
+    font-size: 4vw;
+    width: 100%;
+  }
+  .commentaryText-Button{
+    width:75%;
+  }
+  .commentaryTitle{
+    font-size: 4.7vw;
+    line-height:10vh;
+  }
+  .commentaryButton {
+    font-size: 3.5vw; 
+    /* padding-top:50px;
+    padding-bottom:50px; */
+    height:100%;
+    width: 50vw;
+  }
+  .commentaryLI {
+    height: 10vh;
+    width: 50vw;
+  }
   
   .freeBook {
     width:40vw;
@@ -188,6 +285,10 @@
   .freeBookTitle{
     height:auto;
     line-height: 30px;
+  }
+  .commentaryTitle{
+    height:auto;
+    /* line-height: 30px; */
   }
   .freeBookComponent{
     width:100%;
@@ -208,6 +309,21 @@
     padding: 0px;
   }
   .freeBookButtonBox{
+    margin: 0px;
+  }
+  .commentaryText-Button{
+    width:85%;
+  }
+  .homeFreeBook{
+    padding:0px;
+    width:100%;
+  }
+  .commentaryText{
+    margin-top: 0px;
+    width:86%;
+    padding: 0px;
+  }
+  .commentaryButtonBox{
     margin: 0px;
   }
 }

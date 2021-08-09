@@ -5,10 +5,44 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { RiEditFill } from "react-icons/ri";
 // import NewBookEdit from "./NewBookEdit/NewBookEdit";
-import "../NewBook/NewBook.css";
-import comingSoonImage from "../../Photos/THE FORGOTTEN QUEEN.jpg";
+import FreeBook from "../Free Book/FreeBook";
+import "../NewBook/NewBook.css";import comingSoonImageForgottonQueen from "../../Photos/THE FORGOTTEN QUEEN.jpg";
+import comingSoonImageStolenPrincess from "../../Photos/THE STOLEN PRINCESS.png"; 
+import comingSoonImageRejectedKing from "../../Photos/THE REJECTED KING.png"; 
+import comingSoonImagePromisedPrince from "../../Photos/THE PROMISED PRINCE.png"; 
+
+// *!----------------------------------------Page Info ----------------------------------------------------
+
+// **------------Title-----------------------
+let topSectionTitle = "Featured Book";
+// let topSectionTitle = "Now Available!";
+// let topSectionTitle = "Coming Soon!";
+
+// **--------------Image------------------
+let image = comingSoonImagePromisedPrince;
+// let image = comingSoonImageRejectedKing;
+// let image = comingSoonImageStolenPrincess;
+// let image = comingSoonImageForgottonQueen;
+
+// **--------------ImageButton------------------
+// let image = comingSoonImagePromisedPrince;
+// let image = comingSoonImageRejectedKing;
+// let image = comingSoonImageStolenPrincess;
+// let image = comingSoonImageForgottonQueen;
+
+// **-------------------TopSectionText--------------
+// let topSectionInfo = "forgottonQueen";
+let topSectionInfo = "None";
+
+// **-------------------FreeBookOnTop--------------
+let freeBookTop = true;
+
+
 
 // -------------------------------------FUNCTIONALITY--------------------------------------
+// takeToBook = () => {
+//   this.props.history.push("/")
+// };
 // -----------------------------------STRUCTURE---------------------------------------------
 function Newbook(props) {
   return (
@@ -17,11 +51,17 @@ function Newbook(props) {
         {/* <NewBookEdit/> */}
         {/* <div className="editNewBookButton"><RiEditFill/></div> */}
       </div>
-      {/* <p className="newBookTitleTempTwo">Now Available!</p> */}
-      <p className="newBookTitleTempTwo">Coming Soon!</p>
+      <p className="newBookTitleTempTwo">{topSectionTitle}</p>
       <section className="imageOneBoxContentTemp">
-        <img src={comingSoonImage} className="imageOneTemp" alt="Book" />
-        <div className="newBookTitle-InfoTemp">
+        <img src={image} className="imageOneTemp" alt="Book" 
+        // onclick={this.takeToBook}
+        />
+                
+
+{/* ----------------------------------COMING SOON SECTION---------------------------------------------------------------- */}
+{/* ---------------------------THE FORGOTTON QUEEN INFO------------------------ */}
+{topSectionInfo === "forgottonQueen" ? 
+  (<div className="newBookTitle-InfoTemp">
           <hr />
           <p className="newBookReleaseDateTempTitle">The Forgotten Queen</p>
           <div className="releaseDateBox">
@@ -59,12 +99,29 @@ function Newbook(props) {
             <li className="buyLinkButtonBoxTemp">
               <a
                 href={`https://www.amazon.com/gp/product/B098ZN9DNS/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1`}
-              >
+                >
                 PRE-ORDER
               </a>
             </li>
           </div>
+        </div>)
+
+: freeBookTop === true ? (
+  <div className="commentaryText-Button">
+          <div className="commentaryText">
+            <div className="commentaryTitle">Want to read the deleted scenes from The Promised Prince with commentary?</div>
+            {/* <p>"Want to read deleted scenes from The Promised Prince with commentary?</p> */}
+          </div>
+          <div className="commentaryButtonBox">
+            <li className="commentaryLI">
+              <a href="https://www.subscribepage.com/f7q6g9">
+                <span className="commentaryButton">Get access here!</span>
+              </a>
+            </li>
+          </div>
         </div>
+        ) : alert("warning")}
+
       </section>
       {/* <section className="imageOneBoxContent">          
           <img src={props.booksPicOne} className="imageOne" alt="Book" />
