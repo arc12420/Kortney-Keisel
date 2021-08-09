@@ -35,8 +35,10 @@ class App extends Component {
             <div className="navLeader">
               <Navigation />
             </div>
-            {routes}
-            <div className="footerLeader">
+            <div className="pageMaster">
+              {routes}
+            </div>
+            <div className="footerMaster">
               <Footer />
             </div>
           </div>

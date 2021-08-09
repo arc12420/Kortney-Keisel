@@ -19,12 +19,17 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.pageMaster{
+  height: auto;
+  width: auto;
+}
+
 .navLeader{
   display: flex;
   justify-content: center;
 }
 
-.footerLeader{
+.footerMaster{
   display: flex;
   justify-content: center;
 }
