@@ -3,7 +3,7 @@
 // -------------------------------------DEPENDENCIES---------------------------------------
 import React from "react";
 import { withRouter } from "react-router-dom";
-import { RiEditFill } from "react-icons/ri";
+// import { RiEditFill } from "react-icons/ri";
 import kortneyChildPic from "../../Photos/KKChildPhoto.JPG";
 import kortneyAboutPic from "../../Photos/FAM.jpg";
 

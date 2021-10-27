@@ -3,8 +3,8 @@
 // -------------------------------------DEPENDENCIES---------------------------------------
 import React from "react";
 import { withRouter } from "react-router-dom";
-import { MdDeleteForever } from "react-icons/md";
-import { RiEditFill } from "react-icons/ri";
+// import { MdDeleteForever } from "react-icons/md";
+// import { RiEditFill } from "react-icons/ri";
 import BK1 from "../../Photos/THE PROMISED PRINCE.png";
 import BK2 from "../../Photos/THE REJECTED KING.png";
 import BK3 from "../../Photos/THE STOLEN PRINCESS.png";
