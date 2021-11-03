@@ -9,8 +9,12 @@ import BK1 from "../../Photos/THE PROMISED PRINCE.png";
 import BK2 from "../../Photos/THE REJECTED KING.png";
 import BK3 from "../../Photos/THE STOLEN PRINCESS.png";
 import BK4 from "../../Photos/THE FORGOTTEN QUEEN.jpg";
+import BK5 from "../../Photos/COMPARED.jpg";
 
 // -------------------------------------FUNCTIONALITY--------------------------------------
+const boldText ={
+  fontWeight: "bold"
+}
 // -----------------------------------STRUCTURE---------------------------------------------
 function BooksIndividual(props) {
   return (
@@ -28,6 +32,8 @@ function BooksIndividual(props) {
                 ? BK3
                 : props.books.title === "The Forgotten Queen"
                 ? BK4
+                : props.books.title === "COMPARED"
+                ? BK5
                 : null
             }
             className="bookImg"
@@ -45,14 +51,16 @@ function BooksIndividual(props) {
           </div> */}
           <div className="booksTitleDisc">
             <h5 className="title">{props.books.title}</h5>
+            <p className="bkDescription" style={boldText}>{props.books.descriptionp1title}</p>
             <p className="bkDescription">{props.books.descriptionp1}</p>
             <p className="bkDescription">{props.books.descriptionp2}</p>
+            <p className="bkDescription" style={boldText}>{props.books.descriptionp3title}</p>
             <p className="bkDescription">{props.books.descriptionp3}</p>
             <p className="bkDescription">{props.books.descriptionp4}</p>
           </div>
           <div className="buyButtonContainer">
             <li className="buyLinkButtonBox">
-              {props.books.title === "The Forgotten Queen" ? 
+              {props.books.title === "COMPARED" ? 
               (<a href={props.books.urllink}>Pre-Order</a>) :
               <a href={props.books.urllink}>Purchase</a>
               }

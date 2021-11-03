@@ -7,7 +7,8 @@ import { withRouter } from "react-router-dom";
 // import NewBookEdit from "./NewBookEdit/NewBookEdit";
 // import FreeBook from "../Free Book/FreeBook";
 import "../NewBook/NewBook.css";
-import comingSoonImageForgottonQueen from "../../Photos/THE FORGOTTEN QUEEN.jpg";
+import comingSoonImageForgottonQueen from "../../Photos/COMPARED.jpg";
+// import comingSoonImageForgottonQueen from "../../Photos/THE FORGOTTEN QUEEN.jpg";
 // import comingSoonImageStolenPrincess from "../../Photos/THE STOLEN PRINCESS.png"; 
 // import comingSoonImageRejectedKing from "../../Photos/THE REJECTED KING.png"; 
 // import comingSoonImagePromisedPrince from "../../Photos/THE PROMISED PRINCE.png"; 
@@ -45,6 +46,11 @@ let freeBookTop = false;
 // takeToBook = () => {
 //   this.props.history.push("/")
 // };
+
+const boldText ={
+  fontWeight: "bold"
+}
+
 // -----------------------------------STRUCTURE---------------------------------------------
 function Newbook(props) {
   return (
@@ -65,42 +71,34 @@ function Newbook(props) {
 {topSectionInfo === "forgottonQueen" ? 
   (<div className="newBookTitle-InfoTemp">
           <hr />
-          <p className="newBookReleaseDateTempTitle">The Forgotten Queen</p>
+          <p className="newBookReleaseDateTempTitle">COMPARED</p>
           <div className="releaseDateBox">
             <p>Available</p>
-            <p className="newBookReleaseDate">September 27th 2021</p>
+            <p className="newBookReleaseDate">January 4th 2022</p>
           </div>
           <hr />
           <div className="newBookDescriptionsContainer">
-            <p className="newBookDescription">
-              She's trying to remember. He's trying to pretend.
+            <p className="newBookDescription"style={boldText}>
+            Meg
             </p>
             <p className="newBookDescription">
-              Sydria Hasler is a blank slate. After a tragic accident, her
-              images of the past have vanished. All she wants is to get her
-              memory back and return home—wherever home is. But the more she
-              rebuilds her past, the more she wants to fight for a future with
-              King Marx. Too bad it's all a sham.
+            Confession: I’m attracted to my student’s dad. Let me give you Tyler Dixon’s resume: thoughtful, manly, father of the year, widower, ridiculously attractive (basically the opposite of a dad bod).
             </p>
             <p className="newBookDescription">
-              King Marx McKane has never cared about anyone or anything,
-              especially being king. When his father forces him to marry a
-              mysterious woman, he starts taking things seriously. The only way
-              out of his arranged marriage is to pretend that he's falling in
-              love with his wife. This charade might end up being the most
-              reckless thing Marx has ever done. Is he willing to sacrifice his
-              life and his kingdom to set Sydria free?
+            This might sound like good news for someone like me—someone who dreams of getting married and becoming a mom—but it’s not. Dating a parent is grounds for immediate removal at my school…and that’s not even the worst part. Tyler Dixon is taking up space in my mind that should—no, does—belong to my on-again, off-again boyfriend, Zak. One of the last things my mother said to me before she died was that she wanted me to marry Zak, and I’m not about to go against her deathbed wish. I just need off-again Zak to be back on so that I get the happy ending my mother wanted for me. It’s a solid plan…as long as I stop getting distracted by Tyler Dixon.
+            </p>
+            <p className="newBookDescription"style={boldText}>
+              Tyler
             </p>
             <p className="newBookDescription">
-              Can their fake relationship lead Sydria and Marx to their genuine
-              selves, or will deception cost them their freedom?
+            Being a widower isn’t like the movies. There’s not a block of women knocking on my door, bringing me casseroles every day. No, real life is work, laundry, and groceries—all while being both the mom and the dad. I’m barely surviving. I don’t have time to date. Which is good since the only woman I’m interested in keeps pushing me away: Miss Johnson—as in, my son's teacher. Emphasis on the Miss. Getting Meg to agree to go out with me might take all year, but she’s worth the effort. It’s either this or the never-ending depths of loneliness—no big deal.
             </p>
           </div>
           <div className="buyButtonContainerTemp">
             <hr />
             <li className="buyLinkButtonBoxTemp">
               <a
-                href={`https://www.amazon.com/gp/product/B098ZN9DNS/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1`}
+                href={`https://www.amazon.com/gp/product/B09JZSK4J2/ref=dbs_a_def_rwt_bibl_vppi_i4`}
                 >
                 PRE-ORDER
               </a>

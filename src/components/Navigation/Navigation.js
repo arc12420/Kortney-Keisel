@@ -18,6 +18,7 @@ class Nav extends Component {
     super();
     this.state = {
       checkedN: true,
+      showBlog: false
     };
   }
 
@@ -31,6 +32,8 @@ class Nav extends Component {
       })
       .catch((err) => console.log(err));
   };
+
+
 
   // -------------------------------------HANDELERS-------------------------------------------
   handleCheck = (event) => {
@@ -46,7 +49,7 @@ class Nav extends Component {
     // console.log(this.props);
     // console.log(this.props.user);
     // console.log(this.props.location.pathname);
-    console.log(this.state.checkedN);
+    // console.log(this.state.checkedN);
     return (
       <nav className="navigationComponent">
         <div className="KLogoBox">
@@ -145,15 +148,18 @@ class Nav extends Component {
           >
             Contact
           </div>
-          {/* --------------------------------------------------BLOG PAGE REMOVED UNTIL DATA TO ENTER------------------------ */}
-          {/* <div
+          {/* --------------------------------------------------BLOG PAGE------------------------ */}
+          {this.state.showBlog === true ?
+          <div
             className={
               this.props.location.pathname === "/Blog" ? "selected" : "navBlog"
             }
             onClick={() => this.props.history.push("/Blog")}
           >
             Blog
-          </div> */}
+          </div>
+          : null
+          }
         </div>
       </nav>
     );
