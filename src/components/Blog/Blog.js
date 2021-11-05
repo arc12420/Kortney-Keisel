@@ -20,10 +20,14 @@ class Blog extends Component {
     this.getData();
   }
   async getData() {
+    {console.log("Requested Data")}
     const post = await axios.get("/api/posts");
+    {console.log("Received Data")}
     this.setState({
       posts: post.data,
+
     });
+    {console.log('Ended')}
   }
 
    // -----------------------------------STRUCTURE---------------------------------------------
@@ -41,14 +45,6 @@ class Blog extends Component {
         <div className="blogComponent">
           <p className="blogTitle">Kortney's Blog</p>
           <div className="postMain">
-            <div className="addPostButtonBox">
-            {/* {props.isLoggedIn === true ? (             */}
-              <div className="addPostButton">
-                {/* <p className="tooltipAddPost">Add Post</p> */}
-                {/* <MdAdd /> */}
-              </div>
-          {/* // ) : null} */}
-            </div>
             <div className="postContent">{arr}</div>
           </div>
         </div>

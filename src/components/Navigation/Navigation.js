@@ -18,7 +18,7 @@ class Nav extends Component {
     super();
     this.state = {
       checkedN: true,
-      showBlog: false
+      showBlog: true
     };
   }
 

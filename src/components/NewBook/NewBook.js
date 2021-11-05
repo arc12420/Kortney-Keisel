@@ -74,7 +74,7 @@ function Newbook(props) {
           <p className="newBookReleaseDateTempTitle">COMPARED</p>
           <div className="releaseDateBox">
             <p>Available</p>
-            <p className="newBookReleaseDate">January 4th 2022</p>
+            <p className="newBookReleaseDate">January 4th, 2022</p>
           </div>
           <hr />
           <div className="newBookDescriptionsContainer">
