@@ -85,8 +85,12 @@ function Post(props) {
           </div>
           {/* ----------------------SECTION 6----------------------- */}
           <div className="sectionData">
+            <a href="https://www.grammarly.com/">
             <p className="sectionTitle">{props.posts.title6}</p>
+            </a>
+            <a href="https://www.grammarly.com/">
             <img src={image6}/>
+            </a>
             <p>{props.posts.section6}</p>
           </div>
           {/* ----------------------SECTION 7----------------------- */}
@@ -101,8 +105,12 @@ function Post(props) {
           </div>
           {/* ----------------------SECTION 8----------------------- */}
           <div className="sectionData">
+            <a href="https://www.optimumnutrition.com/en-us/Products/Protein/Shakes-%26-Powders/OPTIMUM-NUTRITION-GOLD-STANDARD-100%25-WHEY-PROTEIN/p/1095080?gclsrc=aw.ds&&gclid=CjwKCAiA1aiMBhAUEiwACw25MZd3grJIPl2mP7H9C-mgNvDeBONH7I3B7d9889Esz9BI_d4u-4MPRRoCW3YQAvD_BwE">
             <p className="sectionTitle">{props.posts.title8}</p>
+            </a>
+            <a href="https://www.optimumnutrition.com/en-us/Products/Protein/Shakes-%26-Powders/OPTIMUM-NUTRITION-GOLD-STANDARD-100%25-WHEY-PROTEIN/p/1095080?gclsrc=aw.ds&&gclid=CjwKCAiA1aiMBhAUEiwACw25MZd3grJIPl2mP7H9C-mgNvDeBONH7I3B7d9889Esz9BI_d4u-4MPRRoCW3YQAvD_BwE">
             <img src={image8}/>
+            </a>
             <p>{props.posts.section8}</p>
           </div>
           {/* ----------------------SECTION 9----------------------- */}
