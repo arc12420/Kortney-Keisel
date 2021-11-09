@@ -14,6 +14,7 @@ import image7 from "../../Photos/Blog Images/img7.jpg";
 import image8 from "../../Photos/Blog Images/img8.jpg";
 import image9 from "../../Photos/Blog Images/img9.jpg";
 import image10 from "../../Photos/Blog Images/img10.jpg";
+import Sycamore from "../../Photos/Blog Images/320.jpg";
 
 // -------------------------------------FUNCTIONALITY--------------------------------------
 // -----------------------------------STRUCTURE---------------------------------------------
@@ -23,67 +24,106 @@ function Post(props) {
     <div className="postComponent">
         <div className="titleContainer">
           <p className="postTitle">{props.posts.title}</p>
-          <p className="sectionData">{props.posts.titlesection1}</p>
+          <div className="blogTitleInfo">
+          <a href="https://www.320sycamoreblog.com" classname="blogLink">
+          <span className="sectionData">When my sweet friend Melissa from the 320 Sycamore Blog asked me to participate in her favorite things blog tour, I was a little intimidated, but mostly honored. Everything Melissa posts is inspirational and darling—it’s like climbing into a Hallmark movie that was decorated well. I’ve never done anything like this before, but there is a first time for everything. All of my favorite things are pretty practical. I guess there wasn’t a lot of fluff in my life in 2021.</span>
+          </a>
+          <a href="https://www.320sycamoreblog.com">
+            <img classname="sycamoreImage" src={Sycamore}/>
+            </a>  
+          </div>
           <p className="sectionData">{props.posts.titlesection2}</p>
           {/* ----------------------SECTION 1----------------------- */}
           <div className="sectionData"> 
+          <a href="https://www.amazon.com/gp/product/B081GJ4HLJ">
             <p className="sectionTitle">{props.posts.title1}</p>
-            <p>{props.posts.section1}</p>
+            </a>
+          <a href="https://www.amazon.com/gp/product/B081GJ4HLJ">
             <img src={image1}/>
+            </a>            
+            <p>{props.posts.section1}</p>
           </div>
           {/* ----------------------SECTION 2----------------------- */}
           <div className="sectionData">
+          <a href="https://www.amazon.com/gp/product/B08RXVZFVB">
             <p className="sectionTitle">{props.posts.title2}</p>
-            <p>{props.posts.section2}</p>
+            </a>
+          <a href="https://www.amazon.com/gp/product/B08RXVZFVB">
             <img src={image2}/>
+            </a>
+            <p>{props.posts.section2}</p>
           </div>
           {/* ----------------------SECTION 3----------------------- */}
           <div className="sectionData">
+          <a href="https://www.amazon.com/gp/product/B076MPR3Q3">
             <p className="sectionTitle">{props.posts.title3}</p>
-            <p>{props.posts.section3}</p>
+            </a>
+          <a href="https://www.amazon.com/gp/product/B076MPR3Q3">
             <img src={image3}/>
+            </a>
+            <p>{props.posts.section3}</p>
           </div>
           {/* ----------------------SECTION 4----------------------- */}
           <div className="sectionData">
+          <a href="https://www.amazon.com/Its-10-Lvin-Cond-Size/dp/B008XKC5NY">
             <p className="sectionTitle">{props.posts.title4}</p>
-            <p>{props.posts.section4}</p>
+            </a>
+          <a href="https://www.amazon.com/Its-10-Lvin-Cond-Size/dp/B008XKC5NY">
             <img src={image4}/>
+            </a>
+            <p>{props.posts.section4}</p>
           </div>
           {/* ----------------------SECTION 5----------------------- */}
           <div className="sectionData">
+          <a href="https://www.amazon.com/dp/B07NXN4F7X">
             <p className="sectionTitle">{props.posts.title5}</p>
-            <p>{props.posts.section5}</p>
+            </a>
+          <a href="https://www.amazon.com/dp/B07NXN4F7X">
             <img src={image5}/>
+            </a>
+            <p>{props.posts.section5}</p>
           </div>
           {/* ----------------------SECTION 6----------------------- */}
           <div className="sectionData">
             <p className="sectionTitle">{props.posts.title6}</p>
-            <p>{props.posts.section6}</p>
             <img src={image6}/>
+            <p>{props.posts.section6}</p>
           </div>
           {/* ----------------------SECTION 7----------------------- */}
           <div className="sectionData">
+          <a href="https://www.amazon.com/Rubbermaid-Commercial-HYGEN-Quick-Connect-Frame/dp/B005KCOB4Y">
             <p className="sectionTitle">{props.posts.title7}</p>
-            <p>{props.posts.section7}</p>
+            </a>
+          <a href="https://www.amazon.com/Rubbermaid-Commercial-HYGEN-Quick-Connect-Frame/dp/B005KCOB4Y">
             <img src={image7}/>
+            </a>
+            <p>{props.posts.section7}</p>
           </div>
           {/* ----------------------SECTION 8----------------------- */}
           <div className="sectionData">
             <p className="sectionTitle">{props.posts.title8}</p>
-            <p>{props.posts.section8}</p>
             <img src={image8}/>
+            <p>{props.posts.section8}</p>
           </div>
           {/* ----------------------SECTION 9----------------------- */}
           <div className="sectionData">
+          <a href="https://www.smallwoodhome.com/">
             <p className="sectionTitle">{props.posts.title9}</p>
-            <p>{props.posts.section9}</p>
+            </a>
+          <a href="https://www.smallwoodhome.com/">
             <img src={image9}/>
+            </a>
+            <p>{props.posts.section9}</p>
           </div>
           {/* ----------------------SECTION 10----------------------- */}
           <div className="sectionData">
+          <a href="https://www.amazon.com/dp/B08WYQVXLS">
             <p className="sectionTitle">{props.posts.title10}</p>
-            <p>{props.posts.section10}</p>
+            </a>
+          <a href="https://www.amazon.com/dp/B08WYQVXLS">
             <img src={image10}/>
+            </a>
+            <p>{props.posts.section10}</p>
           </div>
       </div>
     </div>

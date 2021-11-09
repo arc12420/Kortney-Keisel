@@ -182,18 +182,18 @@ p {
 }
 .releaseDateBox{
  font-size:110%;
- padding-bottom: 3vh;
+ padding-bottom: 2vh;
  border-bottom: 4px solid #252d42;
  width:65%;
- margin-bottom: 4vh;
- padding-top: 4vh;
+ margin-bottom: 2vh;
+ padding-top: 1vh;
 }
 .newBookDescription{
   padding-top: 1vh;
   padding-bottom:1vh;
-font-size:17px;
+font-size:20px;
 /* font-family: paeonia; */
-line-height: 20px;
+line-height: 25px;
 }
 .newBookTitle-InfoTemp {
   /* WITH NO DESCRIPTION USE THIS WIDTH */

@@ -55,8 +55,8 @@ function BooksIndividual(props) {
             <p className="bkDescription">{props.books.descriptionp1}</p>
             <p className="bkDescription">{props.books.descriptionp2}</p>
             <p className="bkDescription" style={boldText}>{props.books.descriptionp3title}</p>
-            <p className="bkDescription">{props.books.descriptionp3}</p>
             <p className="bkDescription">{props.books.descriptionp4}</p>
+            <p className="bkDescription">{props.books.descriptionp3}</p>
           </div>
           <div className="buyButtonContainer">
             <li className="buyLinkButtonBox">
