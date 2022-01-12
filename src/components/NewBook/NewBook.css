@@ -58,7 +58,7 @@
 }
 
 .newBookTitle-Info {
-  font-size: 2vw;
+  font-size: 1.5vw;
   width: 45%;
   height: auto;
   margin: 20px;
@@ -109,7 +109,7 @@ p {
 }
 .imageOneTemp {
   margin-top: 10px;
-  width: 20vw;
+  width: 22vw;
   height: auto;
   object-fit: cover;
   border: 1px solid #777777;
@@ -185,22 +185,22 @@ p {
  padding-bottom: 2vh;
  border-bottom: 4px solid #252d42;
  width:65%;
- margin-bottom: 2vh;
- padding-top: 1vh;
+ margin-bottom: 4vh;
+ padding-top: 4vh;
+ display: none;
 }
 .newBookDescription{
   padding-top: 1vh;
   padding-bottom:1vh;
-font-size:20px;
-/* font-family: paeonia; */
-line-height: 25px;
+font-size:1.25vw;
+line-height: 2.5vh;
 }
 .newBookTitle-InfoTemp {
   /* WITH NO DESCRIPTION USE THIS WIDTH */
   /* width: 30vw; */
 
   /* WITH A DESCRIPTION USE THIS WIDTH */
-  width: 37vw;
+  width: 43vw;
   /* height: 350px; */
   height:auto;
   display: flex;
@@ -237,7 +237,7 @@ hr {
 
 @media (max-width: 1350px) {
   .imageOne {
-    width: 35%;
+    /* width: 35%; */
   }
 }
 
@@ -259,17 +259,23 @@ hr {
   }
   .newBookTitle-InfoTemp {
     width: 45vw;
-    height: 350px;
+    height: auto;
   }
   .newBookTitleTempTwo {
     font-size: 5vw;
-    margin-bottom: 10vh;
+    margin-bottom: 2.5vh;
   }
   .newBookReleaseDateTemp {
     font-size: 2vw;
   }
   .newBookReleaseDateTempTitle {
     font-size: 2vw;
+  }
+  .newBookComponent{
+    padding-bottom: 0px;
+  }
+  .newBookDescription{
+    font-size:1.5vw;
   }
   /* -------------------------------TEMPORARY--------------- */
 }
@@ -312,13 +318,13 @@ hr {
     width: 50vw;
   }
   .buyLinkButtonBoxTemp {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
   }
   .newBookReleaseDateTemp {
     font-size: 3.5vw;
   }
   .newBookReleaseDateTempTitle {
-    font-size: 3.5vw;
+    font-size: 2.6vw;
     text-decoration: none;
   }
   .imageOneTemp {
@@ -328,6 +334,10 @@ hr {
   .imageOneBox {
     padding-top: 40px;
   }
+  .newBookDescription{
+    font-size:2vw;
+    line-height:2.25vw;
+  }
 
   /* -------------------------------TEMPORARY--------------- */
 }
@@ -335,6 +345,11 @@ hr {
 @media (max-width: 800px) {
   .newBookReleaseDateTempTitle{
     border-width: 3.5px;
+    font-size:4vw;
+  }
+  .newBookDescription{
+    font-size:3.5vw;
+    line-height:3vw;
   }
   .newBookTitle-Info {
     font-size: 4vw;
@@ -348,7 +363,7 @@ hr {
     width: 60%;
   }
   .newBookTitleTempTwo {
-    /* font-size: 4.7vw; */
+    font-size: 7vw;
     margin-top: 20px;
   }
   .newBookTitle-InfoTemp {
@@ -358,6 +373,10 @@ hr {
     height: 90%;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .buyLinkButtonBoxTemp{
+    padding:10px;    
+    font-size: 4vw;
   }
   /* -------------------------------TEMPORARY--------------- */
 }

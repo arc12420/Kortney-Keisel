@@ -7,7 +7,7 @@ import { withRouter } from "react-router-dom";
 // import NewBookEdit from "./NewBookEdit/NewBookEdit";
 // import FreeBook from "../Free Book/FreeBook";
 import "../NewBook/NewBook.css";
-import comingSoonImageForgottonQueen from "../../Photos/COMPARED.jpg";
+import comingSoonImageCompared from "../../Photos/COMPARED.jpg";
 // import comingSoonImageForgottonQueen from "../../Photos/THE FORGOTTEN QUEEN.jpg";
 // import comingSoonImageStolenPrincess from "../../Photos/THE STOLEN PRINCESS.png"; 
 // import comingSoonImageRejectedKing from "../../Photos/THE REJECTED KING.png"; 
@@ -17,14 +17,15 @@ import comingSoonImageForgottonQueen from "../../Photos/COMPARED.jpg";
 
 // **------------Title-----------------------
 // let topSectionTitle = "Featured Book";
-// let topSectionTitle = "Now Available!";
-let topSectionTitle = "Coming Soon!";
+let topSectionTitle = "Now Available!";
+// let topSectionTitle = "Coming Soon!";
 
 // **--------------Image------------------
 // let image = comingSoonImagePromisedPrince;
 // let image = comingSoonImageRejectedKing;
 // let image = comingSoonImageStolenPrincess;
-let image = comingSoonImageForgottonQueen;
+// let image = comingSoonImageForgottonQueen;
+let image = comingSoonImageCompared;
 
 // **--------------ImageButton------------------
 // let image = comingSoonImagePromisedPrince;
@@ -73,8 +74,8 @@ function Newbook(props) {
           <hr />
           <p className="newBookReleaseDateTempTitle">COMPARED</p>
           <div className="releaseDateBox">
-            <p>Available</p>
-            <p className="newBookReleaseDate">January 4th, 2022</p>
+            {/* <p>Available</p>
+            <p className="newBookReleaseDate">January 4th 2022</p> */}
           </div>
           <hr />
           <div className="newBookDescriptionsContainer">
@@ -100,7 +101,7 @@ function Newbook(props) {
               <a
                 href={`https://www.amazon.com/gp/product/B09JZSK4J2/ref=dbs_a_def_rwt_bibl_vppi_i4`}
                 >
-                PRE-ORDER
+                Now Available
               </a>
             </li>
           </div>
