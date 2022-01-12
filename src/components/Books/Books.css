@@ -128,19 +128,20 @@
 }
 
 .booksImage {
-  width: 20vw;
+  width: 22.5vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-right: 60px;
+  /* margin-right: 6.5%; */
 }
 
 .booksTitleDiscButton {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 45vw;
+  width: 50vw;
+  margin-left:1.5vw;
 }
 
 .booksTitleDisc {
@@ -162,10 +163,10 @@
 .title {
   color: #f98c88;
   margin-top: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 3vh;
   text-decoration: underline;
   text-align: center;
-  font-size: 2.15vw;
+  font-size: 2.1vw;
   font-family: "Denver-Black";
   line-height: 26pt;
 }
@@ -183,15 +184,16 @@
 
 .bkDescription {
   height: auto;
-  min-height: 50px;
-  font-size: 1.3vw;  
+  min-height: 1vh;
+  font-size: 1.5vw;  
   font-family: Arial, Helvetica, sans-serif;
   color: #2a324b;
   text-align: center;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 1vh;
   display: flex;
   justify-content: space-between;
+  line-height:3.25vh;
 }
 
 .buyButtonContainer {
@@ -208,7 +210,7 @@
   height: 100%;
   width: 80%;
   border-radius: 5px;
-  font-size: 22px;
+  font-size: 1.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,6 +239,7 @@
       }
       .bkDescription {
         font-size: 1.8vw;
+        line-height: 3vh;
       }
       .title {
         font-size: 2.5vw;
@@ -262,10 +265,12 @@
     }
     .titleHid{
         display:contents;
+        font-size:3.5VW;
     }
     .booksBook{
         flex-direction: column;
         width: 75vw;
+        margin-top: 1.5vh;
     }
     .booksImage{
         margin: 0px;
@@ -274,10 +279,15 @@
     }
     .bkDescription {
       font-size: 2.2vw;
+      line-height: 3.4vh;
     }
     .booksTitleDiscButton{
         width:90%;
     } 
+    .booksTitleDisc{
+        margin-top:2vh;
+        min-height:10vh;
+    }
 }
 
 @media (max-width: 800px) {
@@ -286,16 +296,22 @@
     }
     .booksTitleDisc{
         min-height: 200px;
+        margin-top:2vh;
     }
     .titleHid {
-        font-size: 3.2vw;
+        font-size: 4.6vw;
       }
       .bookPageTitle {
         font-size: 4.2vw;
       }
       .bkDescription {
-        font-size: 2.8vw;
+        font-size: 3.5vw;
+        Line-height:3.4vh;
       }
+     .booksImage{
+        width:42vw;
+    }
+      
   }
   @media (max-width: 600px) {
     .booksComponent{
@@ -303,7 +319,8 @@
         padding-top: 10px;
     }
     .titleHid {
-        font-size: 4.5vw;
+        font-size: 5vw;
+        margin-top:3vh;
       }
       .bookPageTitle {
         font-size: 6.5vw;
@@ -311,9 +328,16 @@
       }
       .bkDescription {
         font-size: 3.5vw;
+        line-Height: 3.25vh;
       }
       .booksImage{
-          width:40vw;
+          width:42vw;
+      }
+      .booksBook{
+        padding-top: 1vh;
+      }
+      .booksTitleDisc{
+        Margin-top: 1vh;
       }
 
   }

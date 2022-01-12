@@ -60,10 +60,10 @@ function BooksIndividual(props) {
           </div>
           <div className="buyButtonContainer">
             <li className="buyLinkButtonBox">
-              {props.books.title === "COMPARED" ? 
-              (<a href={props.books.urllink}>Pre-Order</a>) :
+              {/* {props.books.title === "COMPARED" ? 
+              (<a href={props.books.urllink}>Pre-Order</a>) : */}
               <a href={props.books.urllink}>Purchase</a>
-              }
+              {/* } */}
             </li>
           </div>
         </div>
