@@ -288,7 +288,7 @@
   }
   .commentaryTitle{
     height:auto;
-    /* line-height: 30px; */
+    line-height: 5vh;
   }
   .freeBookComponent{
     width:100%;
@@ -327,5 +327,10 @@
     margin: 0px;
   }
 }
+@media (max-width: 600px) {
+  .commentaryTitle{
+    line-height:4vh;
+  }
+  }
 
 

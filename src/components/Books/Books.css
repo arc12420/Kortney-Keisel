@@ -297,6 +297,9 @@
     .buyButtonContainer{
         margin-top: 25px;
     }
+    .buyLinkButtonBox{
+      font-size:3vw;
+    }
     .booksTitleDisc{
         min-height: 200px;
         margin-top:2vh;
