@@ -156,16 +156,17 @@ p {
 
 .buyButtonContainerTemp {
   width: 28vw;
-  height: 13vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 4vh;
 }
 .buyLinkButtonBoxTemp {
+  /* Padding:10px; */
   height: 100%;
   width: 100%;
-  font-size: 1.5vw;
+  font-size: 1.75vw;
   font-family: "Denver-Black";
   color: #2a324b;
   text-align: center;
@@ -179,6 +180,9 @@ p {
   text-transform: uppercase;
   background-color: white;
   box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.472);
+}
+.buyLinkButtonBoxTemp a{
+  Padding:10px;
 }
 .releaseDateBox{
  font-size:110%;
@@ -315,10 +319,18 @@ hr {
   }
   .buyButtonContainerTemp {
     margin-top: 20px;
-    width: 50vw;
+    /* width: 50vw; */
+    height: auto;
+    width:50vw;
   }
   .buyLinkButtonBoxTemp {
-    font-size: 2.5vw;
+    font-size: 3vw;
+    /* padding: 15px; */
+    height: auto;
+    width:100%;
+  }
+  .buyLinkButtonBoxTemp a{
+    padding: 15px;
   }
   .newBookReleaseDateTemp {
     font-size: 3.5vw;
@@ -375,8 +387,11 @@ hr {
     padding-bottom: 10px;
   }
   .buyLinkButtonBoxTemp{
-    padding:10px;    
+    /* padding:10px;     */
     font-size: 4vw;
+  }
+  .buyLinkButtonBoxTemp a{
+    padding:15px;    
   }
   /* -------------------------------TEMPORARY--------------- */
 }

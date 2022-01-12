@@ -197,7 +197,7 @@
 }
 
 .buyButtonContainer {
-  height: 40px;
+  height: auto;
   color: #252d42;
   width: 80%;
   margin-bottom: 50px;
@@ -219,6 +219,9 @@
   border-style: solid;
   text-transform: uppercase;
   font-family: "Denver-Black";
+}
+.buyLinkButtonBox a{
+  padding: 15px;
 }
 
 .buyButtonContainer :hover {
