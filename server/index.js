@@ -86,5 +86,5 @@ app.put("/api/updateAbout/:id", controller.updateAbout);
 
 
 app.listen(SERVER_PORT, () =>
-  console.log(`You are connected to port ${SERVER_PORT}.`)
+  console.log(`You have docked to port ${SERVER_PORT}.`)
 );

@@ -20,14 +20,14 @@ class Blog extends Component {
     this.getData();
   }
   async getData() {
-    {console.log("Requested Data")}
+    console.log("Requested Data")
     const post = await axios.get("/api/posts");
-    {console.log("Received Data")}
+    console.log("Received Data")
     this.setState({
       posts: post.data,
 
     });
-    {console.log('Ended')}
+    console.log('Ended')
   }
 
    // -----------------------------------STRUCTURE---------------------------------------------

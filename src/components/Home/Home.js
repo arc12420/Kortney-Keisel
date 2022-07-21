@@ -5,7 +5,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import "./Home.css";
 import FreeBook from "../Free Book/FreeBook";
-import booksPicOne from "../../Photos/THE PROMISED PRINCE.png";
+// import booksPicOne from "../../Photos/THE PROMISED PRINCE.png";
 // import booksPicOne from "../../Photos/Blue-Book.jpg";
 import NewBook from "../NewBook/NewBook";
 // import NewBookEdit from "../NewBook/NewBookEdit/NewBookEdit";
@@ -58,13 +58,13 @@ class Home extends Component {
   render() {
     console.log(this.props.history)
     // const arr = this.state.newbook.map((element, index) => {
-    const arr = this.state.books.map((element, index) => {
-      return (
-        <div className="pullNewbook" key={element.id}>
-          <NewBook className="newBookTopComp" newbook={element} booksPicOne={booksPicOne} />
-        </div>
-      );
-    });
+    // const arr = this.state.books.map((element, index) => {
+    //   return (
+    //     <div className="pullNewbook" key={element.id}>
+    //       <NewBook className="newBookTopComp" newbook={element} booksPicOne={booksPicOne} />
+    //     </div>
+    //   );
+    // });
     return (
       <div className="body">
         <div className="homePage">

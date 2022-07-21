@@ -79,9 +79,10 @@ class Nav extends Component {
               </div>
             )}
             <li className="iconHamburgerBox">
-              <a href="" className="iconHamburger">
+              {/* <a href="" className="iconHamburger"> */}
+              <div className="iconHamburger">
                 <GiHamburgerMenu />
-              </a>
+              </div>
             </li>
           </div>
           {this.props.isLoggedIn === true ? (

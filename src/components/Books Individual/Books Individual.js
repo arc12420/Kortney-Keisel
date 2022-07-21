@@ -17,6 +17,7 @@ const boldText ={
 }
 // -----------------------------------STRUCTURE---------------------------------------------
 function BooksIndividual(props) {
+  // console.log(props.books.title)
   return (
     <div className="booksIndividualComponent">
       <div className="booksBook">
@@ -41,14 +42,6 @@ function BooksIndividual(props) {
           />
         </div>
         <div className="booksTitleDiscButton">
-          {/* <div className="bookCompEditBook">
-            <div className="editBookButton">
-              <RiEditFill />
-            </div>
-            <div className="deleteBookButton">
-              <MdDeleteForever />
-            </div>
-          </div> */}
           <div className="booksTitleDisc">
             <h5 className="title">{props.books.title}</h5>
             <p className="bkDescription" style={boldText}>{props.books.descriptionp1title}</p>
@@ -59,7 +52,7 @@ function BooksIndividual(props) {
             <p className="bkDescription">{props.books.descriptionp3}</p>
           </div>
           <div className="buyButtonContainer">
-            <li className="buyLinkButtonBox">
+            <li className="buyLinkButtonBox" key={props.books.title}>
               {/* {props.books.title === "COMPARED" ? 
               (<a href={props.books.urllink}>Pre-Order</a>) : */}
               <a href={props.books.urllink}>Purchase</a>
